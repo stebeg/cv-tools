@@ -9,7 +9,7 @@ import java.net.URLConnection;
 
 /**
  * An implementation for retrieving content from an {@link URL}.
- * 
+ *
  * @author Steffen Berger
  */
 class UrlContentReaderImpl implements UrlContentReader {
@@ -17,12 +17,10 @@ class UrlContentReaderImpl implements UrlContentReader {
     private final UrlConnectionBuilder urlConnectionBuilder;
 
     /**
-     * Creates a new instance of the implementation for retrieving content from
-     * an {@link URL}.
+     * Creates a new instance of the implementation for retrieving content from an {@link URL}.
      *
-     * @param urlConnectionBuilder An implementation of
-     * {@link UrlConnectionBuilder} is needed to build a connection for the
-     * given {@link URL}.
+     * @param urlConnectionBuilder An implementation of {@link UrlConnectionBuilder} is needed to
+     *                             build a connection for the given {@link URL}.
      */
     UrlContentReaderImpl(UrlConnectionBuilder urlConnectionBuilder) {
         this.urlConnectionBuilder = urlConnectionBuilder;
@@ -40,8 +38,8 @@ class UrlContentReaderImpl implements UrlContentReader {
         final URLConnection urlConnection = this.urlConnectionBuilder.build(url);
         final String jsonContent;
         try (final InputStream inputStream = urlConnection.getInputStream();
-                final InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                final BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
+            final InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+            final BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
             final StringBuilder response = new StringBuilder();
             String inputLine;
             while ((inputLine = bufferedReader.readLine()) != null) {

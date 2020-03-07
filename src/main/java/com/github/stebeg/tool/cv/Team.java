@@ -1,12 +1,11 @@
 package com.github.stebeg.tool.cv;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.util.Objects;
 
 /**
  * Represents comic team information from Comicvine.
- * 
+ *
  * @author Steffen Berger
  */
 public class Team {
@@ -23,7 +22,7 @@ public class Team {
     /**
      * Creates a new representation of comic team information from Comicvine.
      *
-     * @param id The team's unique ID.
+     * @param id   The team's unique ID.
      * @param name The team's name.
      */
     Team(long id, String name) {
@@ -53,8 +52,8 @@ public class Team {
     @Override
     public String toString() {
         return "Team{"
-                + "id=" + this.id + ", "
-                + "name='" + this.name + "'}";
+            + "id=" + this.id + ", "
+            + "name='" + this.name + "'}";
     }
 
     /**
@@ -73,7 +72,7 @@ public class Team {
         }
         final Team team = (Team) o;
         return getId() == team.getId()
-                && Objects.equals(this.name, team.getName());
+            && Objects.equals(this.name, team.getName());
     }
 
     /**

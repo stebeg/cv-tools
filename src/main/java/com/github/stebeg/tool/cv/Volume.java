@@ -3,9 +3,8 @@ package com.github.stebeg.tool.cv;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents information of a comic series/volume retrieved from the Comicvine
- * API.
- * 
+ * Represents information of a comic series/volume retrieved from the Comicvine API.
+ *
  * @author Steffen Berger
  */
 public class Volume {
@@ -42,10 +41,9 @@ public class Volume {
     private Image image = null;
 
     /**
-     * Creates a new representation of a comic volume retrieved from the
-     * Comicvine API.
+     * Creates a new representation of a comic volume retrieved from the Comicvine API.
      *
-     * @param id The unique ID of the series/volume.
+     * @param id   The unique ID of the series/volume.
      * @param name The name of the series/volume.
      */
     Volume(long id, String name) {
@@ -93,8 +91,7 @@ public class Volume {
     /**
      * Sets the year the first issue of the series/volume was released.
      *
-     * @param startYear The year the first issue of the series/volume was
-     * released.
+     * @param startYear The year the first issue of the series/volume was released.
      */
     void setStartYear(Integer startYear) {
         this.startYear = startYear;
@@ -133,8 +130,8 @@ public class Volume {
     }
 
     /**
-     * @return An image of the series/volume. This is usually the cover of the
-     * first issue of the series/volume.
+     * @return An image of the series/volume. This is usually the cover of the first issue of the
+     * series/volume.
      */
     public Image getImage() {
         return this.image;

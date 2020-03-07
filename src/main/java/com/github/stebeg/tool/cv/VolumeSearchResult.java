@@ -2,13 +2,12 @@ package com.github.stebeg.tool.cv;
 
 import com.google.common.collect.Lists;
 import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
 
 /**
- * A representation of the result retrieved from the Comicvine API when
- * searching for volumes. The search result is split into pages.
- * 
+ * A representation of the result retrieved from the Comicvine API when searching for volumes. The
+ * search result is split into pages.
+ *
  * @author Steffen Berger
  */
 public class VolumeSearchResult {
@@ -31,27 +30,25 @@ public class VolumeSearchResult {
     private final List<Volume> volumes = Lists.newArrayList();
 
     /**
-     * Creates a new representation of the result retrieved from the Comicvine
-     * API when searching for volumes. The search result is split into pages.
+     * Creates a new representation of the result retrieved from the Comicvine API when searching for
+     * volumes. The search result is split into pages.
      *
-     * @param statusCode The status code of the response. {code 1} means the
-     * request was successful.
-     * @param numberOfPageResults The number of volumes for the current result
-     * page.
+     * @param statusCode           The status code of the response. {code 1} means the request was
+     *                             successful.
+     * @param numberOfPageResults  The number of volumes for the current result page.
      * @param numberOfTotalResults The total number of found volumes.
      */
     VolumeSearchResult(
-            int statusCode,
-            long numberOfPageResults,
-            long numberOfTotalResults) {
+        int statusCode,
+        long numberOfPageResults,
+        long numberOfTotalResults) {
         this.statusCode = statusCode;
         this.numberOfPageResults = numberOfPageResults;
         this.numberOfTotalResults = numberOfTotalResults;
     }
 
     /**
-     * @return The status code of the response. {code 1} means the request was
-     * successful.
+     * @return The status code of the response. {code 1} means the request was successful.
      */
     public int getStatusCode() {
         return this.statusCode;

@@ -5,7 +5,7 @@ import java.net.URL;
 
 /**
  * An interface for retrieving content from an {@link URL}.
- * 
+ *
  * @author Steffen Berger
  */
 interface UrlContentReader {
@@ -15,8 +15,8 @@ interface UrlContentReader {
      *
      * @param url The {@link URL}.
      * @return The JSON content as {@link String}.
-     * @throws IOException When reading the content from the {@link URL} fails,
-     * i.e. the {@link URL} is invalid.
+     * @throws IOException When reading the content from the {@link URL} fails, i.e. the {@link URL}
+     *                     is invalid.
      */
     String getJson(URL url) throws IOException;
 

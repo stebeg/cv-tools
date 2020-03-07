@@ -1,13 +1,11 @@
 package com.github.stebeg.tool.cv;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.util.Objects;
 
 /**
- * Represents information of a creator of a comic book issue retrieved from the
- * Comicvine API.
- * 
+ * Represents information of a creator of a comic book issue retrieved from the Comicvine API.
+ *
  * @author Steffen Berger
  */
 public class Person {
@@ -26,10 +24,10 @@ public class Person {
     private final String role;
 
     /**
-     * Creates a new representation of a creator of a comic book issue retrieved
-     * from the Comicvine API.
+     * Creates a new representation of a creator of a comic book issue retrieved from the Comicvine
+     * API.
      *
-     * @param id The unique ID of the creator.
+     * @param id   The unique ID of the creator.
      * @param name The name of the creator.
      * @param role The role of the creator (e.g. writer, cover artist, ...)
      */
@@ -54,9 +52,8 @@ public class Person {
     }
 
     /**
-     * @return The role(s) of the creator (e.g. writer, cover artist, ...). If a
-     * creator has multiple roles in creating an issue, the roles are separated
-     * by comma.
+     * @return The role(s) of the creator (e.g. writer, cover artist, ...). If a creator has multiple
+     * roles in creating an issue, the roles are separated by comma.
      */
     public String getRole() {
         return this.role;
@@ -70,9 +67,9 @@ public class Person {
     @Override
     public String toString() {
         return "Person{"
-                + "id=" + this.id + ", "
-                + "name='" + this.name + "'" + ", "
-                + "role='" + this.role + "'}";
+            + "id=" + this.id + ", "
+            + "name='" + this.name + "'" + ", "
+            + "role='" + this.role + "'}";
     }
 
     /**
@@ -91,8 +88,8 @@ public class Person {
         }
         final Person person = (Person) o;
         return getId() == person.getId()
-                && Objects.equals(this.name, person.getName())
-                && Objects.equals(this.role, person.getRole());
+            && Objects.equals(this.name, person.getName())
+            && Objects.equals(this.role, person.getRole());
     }
 
     /**

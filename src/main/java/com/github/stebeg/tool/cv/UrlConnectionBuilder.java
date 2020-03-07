@@ -6,7 +6,7 @@ import java.net.URLConnection;
 
 /**
  * An interface for building {@link URLConnection}s.
- * 
+ *
  * @author Steffen Berger
  */
 interface UrlConnectionBuilder {

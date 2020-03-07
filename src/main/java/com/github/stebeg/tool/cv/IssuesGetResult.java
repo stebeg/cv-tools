@@ -2,13 +2,11 @@ package com.github.stebeg.tool.cv;
 
 import com.google.common.collect.Lists;
 import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
 
 /**
- * A representation of the result retrieved from the Comicvine API when reading
- * issues of a volume.
- * 
+ * A representation of the result retrieved from the Comicvine API when reading issues of a volume.
+ *
  * @author Steffen Berger
  */
 public class IssuesGetResult {
@@ -31,26 +29,25 @@ public class IssuesGetResult {
     private final List<Issue> issues = Lists.newArrayList();
 
     /**
-     * Creates a new representation of the result retrieved from the Comicvine
-     * API when reading issues of a volume.
+     * Creates a new representation of the result retrieved from the Comicvine API when reading issues
+     * of a volume.
      *
-     * @param statusCode The status code of the response. {code 1} means the
-     * request was successful.
-     * @param numberOfPageResults The number of issues in this response.
+     * @param statusCode           The status code of the response. {code 1} means the request was
+     *                             successful.
+     * @param numberOfPageResults  The number of issues in this response.
      * @param numberOfTotalResults The total number of issues of the volume.
      */
     IssuesGetResult(
-            int statusCode,
-            long numberOfPageResults,
-            long numberOfTotalResults) {
+        int statusCode,
+        long numberOfPageResults,
+        long numberOfTotalResults) {
         this.statusCode = statusCode;
         this.numberOfPageResults = numberOfPageResults;
         this.numberOfTotalResults = numberOfTotalResults;
     }
 
     /**
-     * @return The status code of the response. {code 1} means the request was
-     * successful.
+     * @return The status code of the response. {code 1} means the request was successful.
      */
     public int getStatusCode() {
         return this.statusCode;

@@ -2,14 +2,12 @@ package com.github.stebeg.tool.cv;
 
 import com.google.common.collect.Lists;
 import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
 import java.util.Objects;
 
 /**
- * Represents information of a comic series issue retrieved from the Comicvine
- * API.
- * 
+ * Represents information of a comic series issue retrieved from the Comicvine API.
+ *
  * @author Steffen Berger
  */
 public class Issue {
@@ -60,10 +58,9 @@ public class Issue {
     private final List<Person> personList = Lists.newArrayList();
 
     /**
-     * Creates a new representation of a comic series issue retrieved from the
-     * Comicvine API.
+     * Creates a new representation of a comic series issue retrieved from the Comicvine API.
      *
-     * @param id The unique ID of the issue.
+     * @param id          The unique ID of the issue.
      * @param issueNumber The issue number.
      */
     Issue(long id, String issueNumber) {
@@ -194,17 +191,17 @@ public class Issue {
     @Override
     public String toString() {
         return "Issue{"
-                + "id=" + this.id + ", "
-                + "issueNumber='" + this.issueNumber + "', "
-                + "name='" + this.name + "', "
-                + "description='" + this.description + "', "
-                + "coverDate='" + this.coverDate + "', "
-                + "inStoreDate='" + this.inStoreDate + "', "
-                + "image=" + this.image + ", "
-                + "characters=" + this.characters + ", "
-                + "teams=" + this.teams + ", "
-                + "personList=" + this.personList
-                + "}";
+            + "id=" + this.id + ", "
+            + "issueNumber='" + this.issueNumber + "', "
+            + "name='" + this.name + "', "
+            + "description='" + this.description + "', "
+            + "coverDate='" + this.coverDate + "', "
+            + "inStoreDate='" + this.inStoreDate + "', "
+            + "image=" + this.image + ", "
+            + "characters=" + this.characters + ", "
+            + "teams=" + this.teams + ", "
+            + "personList=" + this.personList
+            + "}";
     }
 
     /**
@@ -223,15 +220,15 @@ public class Issue {
         }
         final Issue issue = (Issue) o;
         return getId() == issue.getId()
-                && Objects.equals(getIssueNumber(), issue.getIssueNumber())
-                && Objects.equals(getName(), issue.getName())
-                && Objects.equals(getDescription(), issue.getDescription())
-                && Objects.equals(getCoverDate(), issue.getCoverDate())
-                && Objects.equals(getInStoreDate(), issue.getInStoreDate())
-                && Objects.equals(getImage(), issue.getImage())
-                && Objects.equals(getCharacters(), issue.getCharacters())
-                && Objects.equals(getTeams(), issue.getTeams())
-                && Objects.equals(getPersonList(), issue.getPersonList());
+            && Objects.equals(getIssueNumber(), issue.getIssueNumber())
+            && Objects.equals(getName(), issue.getName())
+            && Objects.equals(getDescription(), issue.getDescription())
+            && Objects.equals(getCoverDate(), issue.getCoverDate())
+            && Objects.equals(getInStoreDate(), issue.getInStoreDate())
+            && Objects.equals(getImage(), issue.getImage())
+            && Objects.equals(getCharacters(), issue.getCharacters())
+            && Objects.equals(getTeams(), issue.getTeams())
+            && Objects.equals(getPersonList(), issue.getPersonList());
     }
 
     /**
@@ -241,7 +238,9 @@ public class Issue {
      */
     @Override
     public int hashCode() {
-        return Objects.hash(getClass().getName(), this.id, this.issueNumber, this.name, this.description,
-                this.coverDate, this.inStoreDate, this.image, this.characters, this.teams, this.personList);
+        return Objects
+            .hash(getClass().getName(), this.id, this.issueNumber, this.name, this.description,
+                this.coverDate, this.inStoreDate, this.image, this.characters, this.teams,
+                this.personList);
     }
 }

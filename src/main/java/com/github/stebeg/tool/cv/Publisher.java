@@ -1,12 +1,11 @@
 package com.github.stebeg.tool.cv;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.util.Objects;
 
 /**
  * Represents comic book publisher information from Comicvine.
- * 
+ *
  * @author Steffen Berger
  */
 public class Publisher {
@@ -21,10 +20,9 @@ public class Publisher {
     private final String name;
 
     /**
-     * Creates a new representation of comic book publisher information from
-     * Comicvine.
+     * Creates a new representation of comic book publisher information from Comicvine.
      *
-     * @param id The publisher's unique ID.
+     * @param id   The publisher's unique ID.
      * @param name The publisher's name.
      */
     Publisher(long id, String name) {
@@ -62,7 +60,7 @@ public class Publisher {
         }
         final Publisher publisher = (Publisher) o;
         return this.id == publisher.getId()
-                && Objects.equals(this.name, publisher.getName());
+            && Objects.equals(this.name, publisher.getName());
     }
 
     /**

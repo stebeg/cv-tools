@@ -2,16 +2,15 @@ package com.github.stebeg.tool.cv;
 
 import com.google.common.base.Preconditions;
 import com.google.common.net.HttpHeaders;
-import org.apache.http.HttpStatus;
-
-import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
+import javax.net.ssl.HttpsURLConnection;
+import org.apache.http.HttpStatus;
 
 /**
  * An implementation for building {@link URLConnection}s.
- * 
+ *
  * @author Steffen Berger
  */
 class UrlConnectionBuilderImpl implements UrlConnectionBuilder {
@@ -19,15 +18,13 @@ class UrlConnectionBuilderImpl implements UrlConnectionBuilder {
     private static final String MEDIA_TYPE = "application/json; charset=utf-8";
 
     /**
-     * Creates a new instance of the implementation for building
-     * {@link URLConnection}s.
+     * Creates a new instance of the implementation for building {@link URLConnection}s.
      */
     UrlConnectionBuilderImpl() {
     }
 
     /**
-     * {@inheritDoc} The request method of the created {@link URLConnection} is
-     * set to {@code GET}.
+     * {@inheritDoc} The request method of the created {@link URLConnection} is set to {@code GET}.
      *
      * @param url {@inheritDoc}
      * @return {@inheritDoc}

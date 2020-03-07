@@ -3,9 +3,8 @@ package com.github.stebeg.tool.cv;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * A representation of the result retrieved from the Comicvine API when reading
- * issue information.
- * 
+ * A representation of the result retrieved from the Comicvine API when reading issue information.
+ *
  * @author Steffen Berger
  */
 public class IssueGetResult {
@@ -20,12 +19,11 @@ public class IssueGetResult {
     private final Issue issue;
 
     /**
-     * Creates a new representation of the result retrieved from the Comicvine
-     * API when reading issue information.
+     * Creates a new representation of the result retrieved from the Comicvine API when reading issue
+     * information.
      *
-     * @param statusCode The status code of the response. {code 1} means the
-     * request was successful.
-     * @param issue The retrieved issue.
+     * @param statusCode The status code of the response. {code 1} means the request was successful.
+     * @param issue      The retrieved issue.
      */
     IssueGetResult(int statusCode, Issue issue) {
         this.statusCode = statusCode;
@@ -33,8 +31,7 @@ public class IssueGetResult {
     }
 
     /**
-     * @return The status code of the response. {code 1} means the request was
-     * successful.
+     * @return The status code of the response. {code 1} means the request was successful.
      */
     public int getStatusCode() {
         return this.statusCode;

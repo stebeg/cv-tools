@@ -1,12 +1,11 @@
 package com.github.stebeg.tool.cv;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.util.Objects;
 
 /**
  * Represents image locations retrieved from the Comicvine API.
- * 
+ *
  * @author Steffen Berger
  */
 public class Image {
@@ -21,11 +20,10 @@ public class Image {
     private final String thumbUrl;
 
     /**
-     * Creates a new representation of an image locations retrieved from the
-     * Comicvine API.
+     * Creates a new representation of an image locations retrieved from the Comicvine API.
      *
      * @param originalUrl The original URL to the image.
-     * @param thumbUrl The URL to the thumbnail of the image.
+     * @param thumbUrl    The URL to the thumbnail of the image.
      */
     Image(String originalUrl, String thumbUrl) {
         this.originalUrl = originalUrl;
@@ -54,8 +52,8 @@ public class Image {
     @Override
     public String toString() {
         return "Image{"
-                + "originalUrl='" + this.originalUrl + "', "
-                + "thumbUrl='" + this.thumbUrl + "'}";
+            + "originalUrl='" + this.originalUrl + "', "
+            + "thumbUrl='" + this.thumbUrl + "'}";
     }
 
     /**
@@ -74,7 +72,7 @@ public class Image {
         }
         final Image image = (Image) o;
         return Objects.equals(this.originalUrl, image.getOriginalUrl())
-                && Objects.equals(this.thumbUrl, image.getThumbUrl());
+            && Objects.equals(this.thumbUrl, image.getThumbUrl());
     }
 
     /**
