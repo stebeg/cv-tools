@@ -1,0 +1,51 @@
+{
+  "error": "OK",
+  "limit": 2,
+  "offset": 0,
+  "number_of_page_results": 2,
+  "number_of_total_results": 205,
+  "status_code": 1,
+  "results": [
+    {
+      "cover_date": "1960-08-31",
+      "description": "<h3>The Planet of Doomed Men<\/h3>",
+      "id": 4869,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/4457-2013-4869-1-green-lantern.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/4457-2013-4869-1-green-lantern.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/4457-2013-4869-1-green-lantern.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/4457-2013-4869-1-green-lantern.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/4457-2013-4869-1-green-lantern.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/4457-2013-4869-1-green-lantern.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/4457-2013-4869-1-green-lantern.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/4457-2013-4869-1-green-lantern.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/api\/image\/original\/4457-2013-4869-1-green-lantern.jpg",
+        "image_tags": "All Images"
+      },
+      "issue_number": "1",
+      "name": "The Planet of Doomed Men; Menace of the Giant Puppet!",
+      "store_date": "1960-05-24"
+    },
+    {
+      "cover_date": "1960-10-01",
+      "description": "<h3>Secret of the Golden Thunderbolts<\/h3>",
+      "id": 4944,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/4529-2013-4944-1-green-lantern.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/4529-2013-4944-1-green-lantern.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/4529-2013-4944-1-green-lantern.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/4529-2013-4944-1-green-lantern.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/4529-2013-4944-1-green-lantern.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/4529-2013-4944-1-green-lantern.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/4529-2013-4944-1-green-lantern.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/4529-2013-4944-1-green-lantern.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/api\/image\/original\/4529-2013-4944-1-green-lantern.jpg",
+        "image_tags": "All Images"
+      },
+      "issue_number": "2",
+      "name": "The Secret of the Golden Thunderbolts!; Riddle of the Frozen Ghost Town!",
+      "store_date": "1960-07-26"
+    }
+  ],
+  "version": "1.0"
+}

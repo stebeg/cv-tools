@@ -20,7 +20,10 @@
  */
 package com.github.stebeg.tool.cv;
 
-import com.google.gson.Gson;
+import com.github.stebeg.tool.cv.issue.IssueReader;
+import com.github.stebeg.tool.cv.issue.IssueReaderProvider;
+import com.github.stebeg.tool.cv.volume.VolumeReader;
+import com.github.stebeg.tool.cv.volume.VolumeReaderProvider;
 
 /**
  * Provides instances of implementations of the interfaces for reading information from the
@@ -30,33 +33,26 @@ import com.google.gson.Gson;
  */
 public final class ComicvineToolsProvider {
 
-    private static final VolumeReader VOLUME_READER = new VolumeReaderImpl(
-        new UrlBuilderImpl(),
-        new UrlContentReaderImpl(new UrlConnectionBuilderImpl()),
-        new Gson());
+  private static final VolumeReader VOLUME_READER = VolumeReaderProvider.getInstance();
+  private static final IssueReader ISSUE_READER = IssueReaderProvider.getInstance();
 
-    private static final IssueReader ISSUE_READER = new IssueReaderImpl(
-        new UrlBuilderImpl(),
-        new UrlContentReaderImpl(new UrlConnectionBuilderImpl()),
-        new Gson());
+  private ComicvineToolsProvider() {
+    throw new UnsupportedOperationException();
+  }
 
-    private ComicvineToolsProvider() {
-        throw new UnsupportedOperationException();
-    }
+  /**
+   * @return The only instance of the implementation of {@link VolumeReader}.
+   * @see VolumeReader
+   */
+  public static VolumeReader getVolumeReader() {
+    return VOLUME_READER;
+  }
 
-    /**
-     * @return The only instance of the implementation of {@link VolumeReader}.
-     * @see VolumeReader
-     */
-    public static VolumeReader getVolumeReader() {
-        return VOLUME_READER;
-    }
-
-    /**
-     * @return The only instance of the implementation of {@link IssueReader}.
-     * @see IssueReader
-     */
-    public static IssueReader getIssueReader() {
-        return ISSUE_READER;
-    }
+  /**
+   * @return The only instance of the implementation of {@link IssueReader}.
+   * @see IssueReader
+   */
+  public static IssueReader getIssueReader() {
+    return ISSUE_READER;
+  }
 }

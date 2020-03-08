@@ -1,8 +1,9 @@
 package com.github.stebeg.tool.cv;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.github.stebeg.tool.cv.issue.IssueReader;
+import com.github.stebeg.tool.cv.volume.VolumeReader;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -14,8 +15,6 @@ public class ComicvineToolsProviderTest {
   public void testGetVolumeReader() {
     final VolumeReader volumeReader1 = ComicvineToolsProvider.getVolumeReader();
     final VolumeReader volumeReader2 = ComicvineToolsProvider.getVolumeReader();
-
-    assertTrue(volumeReader1 instanceof VolumeReaderImpl);
     assertEquals(volumeReader1, volumeReader2);
   }
 
@@ -23,8 +22,6 @@ public class ComicvineToolsProviderTest {
   public void testGetIssueReader() {
     final IssueReader issueReader1 = ComicvineToolsProvider.getIssueReader();
     final IssueReader issueReader2 = ComicvineToolsProvider.getIssueReader();
-
-    assertTrue(issueReader1 instanceof IssueReaderImpl);
     assertEquals(issueReader1, issueReader2);
   }
 

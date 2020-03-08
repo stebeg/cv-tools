@@ -1,0 +1,61 @@
+{
+  "error": "OK",
+  "limit": 2,
+  "offset": 0,
+  "number_of_page_results": 2,
+  "number_of_total_results": 544,
+  "status_code": 1,
+  "results": [
+    {
+      "count_of_issues": 205,
+      "description": "<p>The Description of Green Lantern Volume 2.</p>",
+      "id": 2839,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/4457-2013-4869-1-green-lantern.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/4457-2013-4869-1-green-lantern.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/4457-2013-4869-1-green-lantern.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/4457-2013-4869-1-green-lantern.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/4457-2013-4869-1-green-lantern.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/4457-2013-4869-1-green-lantern.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/4457-2013-4869-1-green-lantern.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/4457-2013-4869-1-green-lantern.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/api\/image\/original\/4457-2013-4869-1-green-lantern.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Green Lantern",
+      "publisher": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "start_year": "1960",
+      "resource_type": "volume"
+    },
+    {
+      "count_of_issues": 38,
+      "description": "<p>The Description of Green Lantern Volume 1.</p>",
+      "id": 25944,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/732037-gl_1.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/732037-gl_1.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/732037-gl_1.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/732037-gl_1.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/732037-gl_1.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/732037-gl_1.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/732037-gl_1.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/732037-gl_1.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/api\/image\/original\/732037-gl_1.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Green Lantern",
+      "publisher": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "start_year": "1941",
+      "resource_type": "volume"
+    }
+  ],
+  "version": "1.0"
+}
