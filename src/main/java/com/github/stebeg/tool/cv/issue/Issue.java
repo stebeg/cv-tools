@@ -2,7 +2,7 @@ package com.github.stebeg.tool.cv.issue;
 
 import com.github.stebeg.tool.cv.character.SimpleCharacter;
 import com.github.stebeg.tool.cv.image.Image;
-import com.github.stebeg.tool.cv.person.SimplePerson;
+import com.github.stebeg.tool.cv.person.SimplePersonWithRole;
 import com.github.stebeg.tool.cv.team.SimpleTeam;
 import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
@@ -59,7 +59,7 @@ public class Issue {
   private final List<SimpleTeam> teams = new ArrayList<>();
 
   @SerializedName(value = PERSON_CREDITS_ATTRIBUTE_NAME)
-  private final List<SimplePerson> personList = new ArrayList<>();
+  private final List<SimplePersonWithRole> personList = new ArrayList<>();
 
   /**
    * Creates a new representation of a comic series issue retrieved from the Comicvine API.
@@ -183,7 +183,7 @@ public class Issue {
   /**
    * @return A list of creators of the issue (e.g. writer, cover artist, ...)
    */
-  public List<SimplePerson> getPersonList() {
+  public List<SimplePersonWithRole> getPersonList() {
     return this.personList;
   }
 
@@ -211,18 +211,18 @@ public class Issue {
   /**
    * {@inheritDoc}
    *
-   * @param o {@inheritDoc}
+   * @param obj {@inheritDoc}
    * @return {@inheritDoc}
    */
   @Override
-  public boolean equals(Object o) {
-    if (this == o) {
+  public boolean equals(final Object obj) {
+    if (this == obj) {
       return true;
     }
-    if (o == null || getClass() != o.getClass()) {
+    if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final Issue issue = (Issue) o;
+    final Issue issue = (Issue) obj;
     return getId() == issue.getId()
         && Objects.equals(getIssueNumber(), issue.getIssueNumber())
         && Objects.equals(getName(), issue.getName())
@@ -243,8 +243,8 @@ public class Issue {
   @Override
   public int hashCode() {
     return Objects
-        .hash(getClass().getName(), this.id, this.issueNumber, this.name, this.description,
-            this.coverDate, this.inStoreDate, this.image, this.characters, this.teams,
-            this.personList);
+        .hash(getClass().getName(), this.id, this.issueNumber, this.name,
+            this.description, this.coverDate, this.inStoreDate, this.image, this.characters,
+            this.teams, this.personList);
   }
 }

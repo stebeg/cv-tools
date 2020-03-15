@@ -73,9 +73,9 @@ public class VolumeReaderImplTest {
     assertEquals(expResult.getNumberOfTotalResults(), result.getNumberOfTotalResults());
 
     final int expResultItemCount = 2;
-    assertEquals(expResultItemCount, result.getVolumes().size());
+    assertEquals(expResultItemCount, result.getResult().size());
 
-    final Volume resultVolume1 = result.getVolumes().get(0);
+    final Volume resultVolume1 = result.getResult().get(0);
     assertEquals(expResultVolume1.getId(), resultVolume1.getId());
     assertEquals(expResultVolume1.getName(), resultVolume1.getName());
     assertEquals(expResultVolume1.getDescription(), resultVolume1.getDescription());
@@ -89,7 +89,7 @@ public class VolumeReaderImplTest {
         resultVolume1.getImage().getOriginalUrl());
     assertEquals(expResultVolume1.getImage().getThumbUrl(), resultVolume1.getImage().getThumbUrl());
 
-    final Volume resultVolume2 = result.getVolumes().get(1);
+    final Volume resultVolume2 = result.getResult().get(1);
     assertEquals(expResultVolume2.getId(), resultVolume2.getId());
     assertEquals(expResultVolume2.getName(), resultVolume2.getName());
     assertEquals(expResultVolume2.getDescription(), resultVolume2.getDescription());
@@ -127,9 +127,9 @@ public class VolumeReaderImplTest {
 
     final VolumeGetResult result = this.instance.getVolume(apiKey, volumeId);
     assertEquals(expResult.getStatusCode(), result.getStatusCode());
-    assertNotNull(result.getVolume());
+    assertNotNull(result.getResult());
 
-    final Volume volume = result.getVolume();
+    final Volume volume = result.getResult();
     assertEquals(expResultVolume.getId(), volume.getId());
     assertEquals(expResultVolume.getName(), volume.getName());
     assertEquals(expResultVolume.getDescription(), volume.getDescription());

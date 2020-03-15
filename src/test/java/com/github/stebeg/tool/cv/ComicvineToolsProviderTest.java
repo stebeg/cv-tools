@@ -2,6 +2,7 @@ package com.github.stebeg.tool.cv;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.github.stebeg.tool.cv.character.CharacterReader;
 import com.github.stebeg.tool.cv.issue.IssueReader;
 import com.github.stebeg.tool.cv.volume.VolumeReader;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,13 @@ import org.junit.jupiter.api.Test;
  * @author Steffen Berger
  */
 public class ComicvineToolsProviderTest {
+
+  @Test
+  public void testGetCharacterReader() {
+    final CharacterReader characterReader1 = ComicvineToolsProvider.getCharacterReader();
+    final CharacterReader characterReader2 = ComicvineToolsProvider.getCharacterReader();
+    assertEquals(characterReader1, characterReader2);
+  }
 
   @Test
   public void testGetVolumeReader() {

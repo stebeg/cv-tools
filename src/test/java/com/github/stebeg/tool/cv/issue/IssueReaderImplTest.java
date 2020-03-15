@@ -11,7 +11,7 @@ import com.github.stebeg.tool.cv.common.UrlConnectionBuilder;
 import com.github.stebeg.tool.cv.common.UrlContentReader;
 import com.github.stebeg.tool.cv.common.UrlContentReaderImpl;
 import com.github.stebeg.tool.cv.image.Image;
-import com.github.stebeg.tool.cv.person.SimplePerson;
+import com.github.stebeg.tool.cv.person.SimplePersonWithRole;
 import com.github.stebeg.tool.cv.team.SimpleTeam;
 import com.google.gson.Gson;
 import java.io.IOException;
@@ -77,9 +77,9 @@ public class IssueReaderImplTest {
     assertEquals(expResult.getNumberOfTotalResults(), result.getNumberOfTotalResults());
 
     final int expResultItemCount = 2;
-    assertEquals(expResultItemCount, result.getIssues().size());
+    assertEquals(expResultItemCount, result.getResult().size());
 
-    final Issue resultIssue1 = result.getIssues().get(0);
+    final Issue resultIssue1 = result.getResult().get(0);
     assertEquals(expResultIssue1.getId(), resultIssue1.getId());
     assertEquals(expResultIssue1.getIssueNumber(), resultIssue1.getIssueNumber());
     assertEquals(expResultIssue1.getName(), resultIssue1.getName());
@@ -91,7 +91,7 @@ public class IssueReaderImplTest {
         resultIssue1.getImage().getOriginalUrl());
     assertEquals(expResultIssue1.getImage().getThumbUrl(), resultIssue1.getImage().getThumbUrl());
 
-    final Issue resultIssue2 = result.getIssues().get(1);
+    final Issue resultIssue2 = result.getResult().get(1);
     assertEquals(expResultIssue2.getId(), resultIssue2.getId());
     assertEquals(expResultIssue2.getIssueNumber(), resultIssue2.getIssueNumber());
     assertEquals(expResultIssue2.getName(), resultIssue2.getName());
@@ -127,8 +127,9 @@ public class IssueReaderImplTest {
     expResultIssue.getTeams().add(new SimpleTeam(6992L, "Green Lantern Corps"));
     expResultIssue.getTeams().add(new SimpleTeam(42352L, "Sinestro Corps"));
 
-    expResultIssue.getPersonList().add(new SimplePerson(1533, "Doug Mahnke", "penciler, cover"));
-    expResultIssue.getPersonList().add(new SimplePerson(40439, "Geoff Johns", "writer"));
+    expResultIssue.getPersonList()
+        .add(new SimplePersonWithRole(1533, "Doug Mahnke", "penciler, cover"));
+    expResultIssue.getPersonList().add(new SimplePersonWithRole(40439, "Geoff Johns", "writer"));
 
     final URL url = getClass().getResource("/issue/issue-get-example.json");
     when(this.urlBuilderMock.buildIssueGetUrl(eq(issueId), anyMap())).thenReturn(url);
@@ -140,7 +141,7 @@ public class IssueReaderImplTest {
     final IssueGetResult result = this.instance.getIssue(apiKey, issueId);
     assertEquals(expResult.getStatusCode(), result.getStatusCode());
 
-    final Issue resultIssue = result.getIssue();
+    final Issue resultIssue = result.getResult();
     assertEquals(expResultIssue.getId(), resultIssue.getId());
     assertEquals(expResultIssue.getIssueNumber(), resultIssue.getIssueNumber());
     assertEquals(expResultIssue.getName(), resultIssue.getName());

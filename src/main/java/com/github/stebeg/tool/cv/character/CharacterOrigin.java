@@ -1,18 +1,18 @@
-package com.github.stebeg.tool.cv.person;
+package com.github.stebeg.tool.cv.character;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents the basic information of a comic book creator from the Comicvine API.
+ * Represents the origin of a comic character from Comicvine. Human, Alien, Robot ...etc.
  *
  * @author Steffen Berger
  */
-public class SimplePerson {
+public class CharacterOrigin {
 
-  private static final String ID_ATTRIBUTE_NAME = "id";
-  private static final String NAME_ATTRIBUTE_NAME = "name";
+  static final String ID_ATTRIBUTE_NAME = "id";
+  static final String NAME_ATTRIBUTE_NAME = "name";
 
   @SerializedName(value = ID_ATTRIBUTE_NAME)
   private final long id;
@@ -21,26 +21,26 @@ public class SimplePerson {
   private final String name;
 
   /**
-   * Creates a new representation of the basic information of a creator of a comic book issue
-   * retrieved from the Comicvine API.
+   * Creates a new representation of the origin of a comic character from Comicvine. Human, Alien,
+   * Robot ...etc.
    *
-   * @param id   The unique ID of the creator.
-   * @param name The name of the creator.
+   * @param id   The ID of the origin.
+   * @param name The name of the origin.
    */
-  public SimplePerson(long id, String name) {
+  CharacterOrigin(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * @return The unique ID of the creator.
+   * @return The ID of the origin.
    */
   public long getId() {
     return this.id;
   }
 
   /**
-   * @return The name of the creator.
+   * @return The name of the origin. Human, Alien, Robot ...etc.
    */
   public String getName() {
     return this.name;
@@ -73,7 +73,7 @@ public class SimplePerson {
     if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final SimplePerson that = (SimplePerson) obj;
+    final CharacterOrigin that = (CharacterOrigin) obj;
     return this.id == that.id &&
         Objects.equal(this.name, that.name);
   }
@@ -87,5 +87,4 @@ public class SimplePerson {
   public int hashCode() {
     return Objects.hashCode(this.id, this.name);
   }
-
 }

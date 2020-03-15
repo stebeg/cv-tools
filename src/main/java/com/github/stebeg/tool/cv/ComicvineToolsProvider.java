@@ -20,6 +20,8 @@
  */
 package com.github.stebeg.tool.cv;
 
+import com.github.stebeg.tool.cv.character.CharacterReader;
+import com.github.stebeg.tool.cv.character.CharacterReaderProvider;
 import com.github.stebeg.tool.cv.issue.IssueReader;
 import com.github.stebeg.tool.cv.issue.IssueReaderProvider;
 import com.github.stebeg.tool.cv.volume.VolumeReader;
@@ -33,11 +35,20 @@ import com.github.stebeg.tool.cv.volume.VolumeReaderProvider;
  */
 public final class ComicvineToolsProvider {
 
+  private static final CharacterReader CHARACTER_READER = CharacterReaderProvider.getInstance();
   private static final VolumeReader VOLUME_READER = VolumeReaderProvider.getInstance();
   private static final IssueReader ISSUE_READER = IssueReaderProvider.getInstance();
 
   private ComicvineToolsProvider() {
     throw new UnsupportedOperationException();
+  }
+
+  /**
+   * @return The only instance of the implementation of {@link CharacterReader}.
+   * @see CharacterReader
+   */
+  public static CharacterReader getCharacterReader() {
+    return CHARACTER_READER;
   }
 
   /**
