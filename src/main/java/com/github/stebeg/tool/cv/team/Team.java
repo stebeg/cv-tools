@@ -97,7 +97,7 @@ public class Team extends SimpleTeam {
   /**
    * Sets the main image of the team.
    *
-   * @param image The main image of the character.
+   * @param image The main image of the team.
    */
   void setImage(Image image) {
     this.image = image;
