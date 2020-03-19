@@ -7,6 +7,11 @@ import java.net.URL;
 import java.util.Map;
 import org.apache.http.client.utils.URIBuilder;
 
+/**
+ * An implementation for building Comicvine API URLs to retrieve team information.
+ *
+ * @author Steffen Berger
+ */
 class TeamUrlBuilderImpl implements TeamUrlBuilder {
 
   /**
