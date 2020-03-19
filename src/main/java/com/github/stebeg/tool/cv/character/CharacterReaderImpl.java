@@ -55,8 +55,10 @@ class CharacterReaderImpl implements CharacterReader {
    * @param gson             Builds objects from the JSON response retrieved from the Comicvine
    *                         API.
    */
-  CharacterReaderImpl(CharacterUrlBuilder urlBuilder,
-      UrlContentReader urlContentReader, Gson gson) {
+  CharacterReaderImpl(
+      CharacterUrlBuilder urlBuilder,
+      UrlContentReader urlContentReader,
+      Gson gson) {
     this.urlBuilder = urlBuilder;
     this.urlContentReader = urlContentReader;
     this.gson = gson;
