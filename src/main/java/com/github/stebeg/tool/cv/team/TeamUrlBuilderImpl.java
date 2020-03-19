@@ -15,8 +15,8 @@ import org.apache.http.client.utils.URIBuilder;
 class TeamUrlBuilderImpl implements TeamUrlBuilder {
 
   /**
-   * The URL fragment appended to {@link Constants#API_BASE_URL} to build the URL for searching
-   * volumes via Comicvine API.
+   * The URL fragment appended to {@link Constants#API_BASE_URL} to build the URL for reading teams
+   * via Comicvine API.
    */
   static final String API_TEAM_URL_FRAGMENT = "/team/";
 
