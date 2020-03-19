@@ -18,7 +18,7 @@ interface CharacterUrlBuilder {
    * @param parameter   The additional parameters which will be added to the URL. The keys in this
    *                    map represent the parameter names. The values of this map represent the
    *                    parameter values.
-   * @return The URL for retrieving charcter information from the Comicvine API.
+   * @return The URL for retrieving character information from the Comicvine API.
    * @throws IOException When building the URL fails.
    */
   URL buildCharacterGetUrl(long characterId, Map<String, String> parameter) throws IOException;
