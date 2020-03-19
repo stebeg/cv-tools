@@ -74,7 +74,18 @@ and issues.
         final long teamId = 11202L;
         
         final TeamReader teamReader = ComicvineToolsProvider.getTeamReader();
-        final TeamGetResult teamGetResult = teamReader.getTeam(API_KEY, teamId);
+        final TeamGetResult teamGetResult = teamReader.getTeam(apiKey, teamId);
         
         final Team team = teamGetResult.getResult();
         System.out.println(team.getName());
+
+### Reading publisher information
+
+        final String apiKey = "abcdef12345";
+        final long publisherId = 10L;
+
+        final PublisherReader publisherReader = ComicvineToolsProvider.getPublisherReader();
+        final PublisherGetResult publisherGetResult = publisherReader.getPublisher(apiKey, publisherId);
+
+        final Publisher publisher = publisherGetResult.getResult();
+        System.out.println(publisher.getName());

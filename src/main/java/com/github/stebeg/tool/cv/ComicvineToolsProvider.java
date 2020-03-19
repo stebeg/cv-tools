@@ -24,6 +24,8 @@ import com.github.stebeg.tool.cv.character.CharacterReader;
 import com.github.stebeg.tool.cv.character.CharacterReaderProvider;
 import com.github.stebeg.tool.cv.issue.IssueReader;
 import com.github.stebeg.tool.cv.issue.IssueReaderProvider;
+import com.github.stebeg.tool.cv.publisher.PublisherReader;
+import com.github.stebeg.tool.cv.publisher.PublisherReaderProvider;
 import com.github.stebeg.tool.cv.team.TeamReader;
 import com.github.stebeg.tool.cv.team.TeamReaderProvider;
 import com.github.stebeg.tool.cv.volume.VolumeReader;
@@ -39,6 +41,7 @@ public final class ComicvineToolsProvider {
 
   private static final CharacterReader CHARACTER_READER = CharacterReaderProvider.getInstance();
   private static final TeamReader TEAM_READER = TeamReaderProvider.getInstance();
+  private static final PublisherReader PUBLISHER_READER = PublisherReaderProvider.getInstance();
   private static final VolumeReader VOLUME_READER = VolumeReaderProvider.getInstance();
   private static final IssueReader ISSUE_READER = IssueReaderProvider.getInstance();
 
@@ -60,6 +63,14 @@ public final class ComicvineToolsProvider {
    */
   public static TeamReader getTeamReader() {
     return TEAM_READER;
+  }
+
+  /**
+   * @return The only instance of the implementation of {@link PublisherReader}.
+   * @see PublisherReader
+   */
+  public static PublisherReader getPublisherReader() {
+    return PUBLISHER_READER;
   }
 
   /**
