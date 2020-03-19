@@ -19,17 +19,17 @@ public class CharacterUrlBuilderImplTest {
 
   @Test
   public void buildCharacterGetUrl() throws IOException {
-    final long charcterId = 1234L;
+    final long characterId = 1234L;
     final String paramName = "foo", paramValue = "bar";
     final Map<String, String> parameter = ImmutableMap.of(paramName, paramValue);
     final String expPath = Constants.API_BASE_URL
         .concat(CharacterUrlBuilderImpl.API_CHARACTER_URL_FRAGMENT)
-        .concat("4005-").concat(String.valueOf(charcterId)).concat("/")
+        .concat("4005-").concat(String.valueOf(characterId)).concat("/")
         .concat("?").concat(Constants.CLIENT_PARAMETER_NAME)
         .concat("=").concat(Constants.CLIENT_PARAMETER_VALUE)
         .concat("&").concat(paramName).concat("=").concat(paramValue);
 
-    final URL result = this.instance.buildCharacterGetUrl(charcterId, parameter);
+    final URL result = this.instance.buildCharacterGetUrl(characterId, parameter);
     assertEquals(expPath, result.toString());
   }
 }
