@@ -14,6 +14,11 @@ import java.net.URL;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * An implementation for retrieving teams from the Comicvine API.
+ *
+ * @author Steffen Berger
+ */
 class TeamReaderImpl implements TeamReader {
 
   private static final String FORMAT_PARAMETER_NAME = "format";
