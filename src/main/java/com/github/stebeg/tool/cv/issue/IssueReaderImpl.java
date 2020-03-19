@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.issue;
 
+import com.github.stebeg.tool.cv.Constants;
 import com.github.stebeg.tool.cv.common.UrlContentReader;
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
@@ -19,8 +20,6 @@ import java.util.Map;
  * @author Steffen Berger
  */
 class IssueReaderImpl implements IssueReader {
-
-  private static final String API_KEY_PARAMETER_NAME = "api_key";
 
   private static final String FORMAT_PARAMETER_NAME = "format";
   private static final String FORMAT_PARAMETER_VALUE = "json";
@@ -84,7 +83,7 @@ class IssueReaderImpl implements IssueReader {
       final String apiKey,
       final long volumeId) throws IOException {
     final Map<String, String> parameter = ImmutableMap.<String, String>builder()
-        .put(API_KEY_PARAMETER_NAME, apiKey)
+        .put(Constants.API_KEY_PARAMETER_NAME, apiKey)
         .put(FORMAT_PARAMETER_NAME, FORMAT_PARAMETER_VALUE)
         .put(LIMIT_PARAMETER_NAME, LIMIT_PARAMETER_VALUE.toString())
         .put(FIELD_LIST_PARAMETER_NAME, VOLUME_ISSUES_FIELD_LIST_PARAMETER_VALUE)
@@ -111,7 +110,7 @@ class IssueReaderImpl implements IssueReader {
       final String apiKey,
       final long issueId) throws IOException {
     final Map<String, String> parameter = ImmutableMap.<String, String>builder()
-        .put(API_KEY_PARAMETER_NAME, apiKey)
+        .put(Constants.API_KEY_PARAMETER_NAME, apiKey)
         .put(FORMAT_PARAMETER_NAME, FORMAT_PARAMETER_VALUE)
         .put(LIMIT_PARAMETER_NAME, LIMIT_PARAMETER_VALUE.toString())
         .put(FIELD_LIST_PARAMETER_NAME, ISSUE_FIELD_LIST_PARAMETER_VALUE)

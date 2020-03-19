@@ -1,4 +1,4 @@
-package com.github.stebeg.tool.cv.character;
+package com.github.stebeg.tool.cv.team;
 
 import com.github.stebeg.tool.cv.Constants;
 import com.github.stebeg.tool.cv.common.UrlContentReader;
@@ -14,48 +14,37 @@ import java.net.URL;
 import java.util.List;
 import java.util.Map;
 
-/**
- * An implementation for retrieving characters from the Comicvine API.
- *
- * @author Steffen Berger
- */
-class CharacterReaderImpl implements CharacterReader {
+class TeamReaderImpl implements TeamReader {
 
   private static final String FORMAT_PARAMETER_NAME = "format";
   private static final String FORMAT_PARAMETER_VALUE = "json";
 
-  private static final List<String> CHARACTER_FIELD_NAMES = ImmutableList.of(
-      Character.ID_ATTRIBUTE_NAME,
-      Character.NAME_ATTRIBUTE_NAME,
-      Character.REAL_NAME_ATTRIBUTE_NAME,
-      Character.SUMMARY_ATTRIBUTE_NAME,
-      Character.DESCRIPTION_ATTRIBUTE_NAME,
-      Character.PUBLISHER_ATTRIBUTE_NAME,
-      Character.IMAGE_ATTRIBUTE_NAME,
-      Character.GENDER_ATTRIBUTE_NAME,
-      Character.ORIGIN_ATTRIBUTE_NAME,
-      Character.BIRTH_ATTRIBUTE_NAME,
-      Character.CREATORS_ATTRIBUTE_NAME,
-      Character.FIRST_APPEARED_IN_ATTRIBUTE_NAME);
+  private static final List<String> TEAM_FIELD_NAMES = ImmutableList.of(
+      Team.ID_ATTRIBUTE_NAME,
+      Team.NAME_ATTRIBUTE_NAME,
+      Team.SUMMARY_ATTRIBUTE_NAME,
+      Team.DESCRIPTION_ATTRIBUTE_NAME,
+      Team.PUBLISHER_ATTRIBUTE_NAME,
+      Team.IMAGE_ATTRIBUTE_NAME);
 
   private static final String FIELD_LIST_PARAMETER_NAME = "field_list";
-  private static final String CHARACTER_FIELD_LIST_PARAMETER_VALUE = Joiner
-      .on(',').join(CHARACTER_FIELD_NAMES);
+  private static final String TEAM_FIELD_LIST_PARAMETER_VALUE = Joiner
+      .on(',').join(TEAM_FIELD_NAMES);
 
-  private final CharacterUrlBuilder urlBuilder;
+  private final TeamUrlBuilder urlBuilder;
   private final UrlContentReader urlContentReader;
   private final Gson gson;
 
   /**
-   * Creates a new instance of the implementation for retrieving characters from the Comicvine API.
+   * Creates a new instance of the implementation for retrieving teams from the Comicvine API.
    *
-   * @param urlBuilder       Needed for building the Comicvine API URL for reading characters.
+   * @param urlBuilder       Needed for building the Comicvine API URL for reading teams.
    * @param urlContentReader Reads the response from the Comicvine API.
    * @param gson             Builds objects from the JSON response retrieved from the Comicvine
    *                         API.
    */
-  CharacterReaderImpl(
-      CharacterUrlBuilder urlBuilder,
+  TeamReaderImpl(
+      TeamUrlBuilder urlBuilder,
       UrlContentReader urlContentReader,
       Gson gson) {
     this.urlBuilder = urlBuilder;
@@ -66,26 +55,26 @@ class CharacterReaderImpl implements CharacterReader {
   /**
    * {@inheritDoc}
    *
-   * @param apiKey      {@inheritDoc}
-   * @param characterId {@inheritDoc}
+   * @param apiKey {@inheritDoc}
+   * @param teamId {@inheritDoc}
    * @return {@inheritDoc}
    * @throws IOException {@inheritDoc}
    */
   @Override
-  public CharacterGetResult getCharacter(
+  public TeamGetResult getTeam(
       final String apiKey,
-      final long characterId) throws IOException {
+      final long teamId) throws IOException {
     final Map<String, String> parameter = ImmutableMap.<String, String>builder()
         .put(Constants.API_KEY_PARAMETER_NAME, apiKey)
         .put(FORMAT_PARAMETER_NAME, FORMAT_PARAMETER_VALUE)
-        .put(FIELD_LIST_PARAMETER_NAME, CHARACTER_FIELD_LIST_PARAMETER_VALUE)
+        .put(FIELD_LIST_PARAMETER_NAME, TEAM_FIELD_LIST_PARAMETER_VALUE)
         .build();
-    final URL apiUrl = this.urlBuilder.buildCharacterGetUrl(characterId, parameter);
+    final URL apiUrl = this.urlBuilder.buildTeamGetUrl(teamId, parameter);
     final String jsonContent = this.urlContentReader.getJson(apiUrl);
 
     final JsonElement jsonElement = JsonParser.parseString(jsonContent);
     final JsonObject jsonObject = jsonElement.getAsJsonObject();
 
-    return this.gson.fromJson(jsonObject, CharacterGetResult.class);
+    return this.gson.fromJson(jsonObject, TeamGetResult.class);
   }
 }

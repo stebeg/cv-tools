@@ -60,10 +60,21 @@ and issues.
 ### Reading character information
 
         final String apiKey = "abcdef12345";
-        final int characterId = 11202;
+        final long characterId = 11202L;
         
         final CharacterReader characterReader = ComicvineToolsProvider.getCharacterReader();
         final CharacterGetResult characterGetResult = characterReader.getCharacter(apiKey, characterId);
         
         final Character character = characterGetResult.getResult();
         System.out.println(character.getRealName());
+
+### Reading team information
+
+        final String apiKey = "abcdef12345";
+        final long teamId = 11202L;
+        
+        final TeamReader teamReader = ComicvineToolsProvider.getTeamReader();
+        final TeamGetResult teamGetResult = teamReader.getTeam(API_KEY, teamId);
+        
+        final Team team = teamGetResult.getResult();
+        System.out.println(team.getName());

@@ -8,6 +8,12 @@ public class Constants {
   public static final String API_BASE_URL = "https://comicvine.gamespot.com/api";
 
   /**
+   * For retrieving data from the Comicvine API, a parameter for an API key is needed. This is the
+   * name of this parameter.
+   */
+  public static final String API_KEY_PARAMETER_NAME = "api_key";
+
+  /**
    * For retrieving data from the Comicvine API, a parameter is needed to identify the software.
    * This is the name of this parameter.
    */

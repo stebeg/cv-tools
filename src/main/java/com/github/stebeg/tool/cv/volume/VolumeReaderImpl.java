@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.volume;
 
+import com.github.stebeg.tool.cv.Constants;
 import com.github.stebeg.tool.cv.common.UrlContentReader;
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
@@ -20,7 +21,6 @@ import java.util.Map;
  */
 class VolumeReaderImpl implements VolumeReader {
 
-  private static final String API_KEY_PARAMETER_NAME = "api_key";
   private static final String QUERY_PARAMETER_NAME = "query";
 
   private static final String FORMAT_PARAMETER_NAME = "format";
@@ -78,7 +78,7 @@ class VolumeReaderImpl implements VolumeReader {
       final String apiKey,
       final String searchText) throws IOException {
     final Map<String, String> parameter = ImmutableMap.<String, String>builder()
-        .put(API_KEY_PARAMETER_NAME, apiKey)
+        .put(Constants.API_KEY_PARAMETER_NAME, apiKey)
         .put(FORMAT_PARAMETER_NAME, FORMAT_PARAMETER_VALUE)
         .put(LIMIT_PARAMETER_NAME, LIMIT_PARAMETER_VALUE.toString())
         .put(RESOURCES_PARAMETER_NAME, RESOURCES_PARAMETER_VALUE)
@@ -107,7 +107,7 @@ class VolumeReaderImpl implements VolumeReader {
       final String apiKey,
       final long volumeId) throws IOException {
     final Map<String, String> parameter = ImmutableMap.<String, String>builder()
-        .put(API_KEY_PARAMETER_NAME, apiKey)
+        .put(Constants.API_KEY_PARAMETER_NAME, apiKey)
         .put(FORMAT_PARAMETER_NAME, FORMAT_PARAMETER_VALUE)
         .put(FIELD_LIST_PARAMETER_NAME, FIELD_LIST_PARAMETER_VALUE)
         .build();
