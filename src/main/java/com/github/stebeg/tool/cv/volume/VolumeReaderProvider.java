@@ -4,7 +4,7 @@ import com.github.stebeg.tool.cv.common.UrlContentReaderProvider;
 import com.google.gson.Gson;
 
 /**
- * Provides an instance of the implementation of the {@link VolumeReader} interfaces for reading
+ * Provides an instance of the implementation of the {@link VolumeReader} interface for reading
  * information from the Comicvine API.
  *
  * @author Steffen Berger
