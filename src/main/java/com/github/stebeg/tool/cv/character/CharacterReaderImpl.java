@@ -25,7 +25,7 @@ class CharacterReaderImpl implements CharacterReader {
   private static final String FORMAT_PARAMETER_NAME = "format";
   private static final String FORMAT_PARAMETER_VALUE = "json";
 
-  private static final List<String> CHARACTERS_FIELD_NAMES = ImmutableList.of(
+  private static final List<String> CHARACTER_FIELD_NAMES = ImmutableList.of(
       Character.ID_ATTRIBUTE_NAME,
       Character.NAME_ATTRIBUTE_NAME,
       Character.REAL_NAME_ATTRIBUTE_NAME,
@@ -41,7 +41,7 @@ class CharacterReaderImpl implements CharacterReader {
 
   private static final String FIELD_LIST_PARAMETER_NAME = "field_list";
   private static final String CHARACTER_FIELD_LIST_PARAMETER_VALUE = Joiner
-      .on(',').join(CHARACTERS_FIELD_NAMES);
+      .on(',').join(CHARACTER_FIELD_NAMES);
 
   private final CharacterUrlBuilder urlBuilder;
   private final UrlContentReader urlContentReader;
