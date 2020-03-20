@@ -103,7 +103,7 @@ public class Publisher extends SimplePublisher {
    *
    * @param city The City the publisher resides in.
    */
-  public void setCity(String city) {
+  void setCity(String city) {
     this.city = city;
   }
 
@@ -119,7 +119,7 @@ public class Publisher extends SimplePublisher {
    *
    * @param state The State the publisher resides in.
    */
-  public void setState(String state) {
+  void setState(String state) {
     this.state = state;
   }
 }
