@@ -89,3 +89,14 @@ and issues.
 
         final Publisher publisher = publisherGetResult.getResult();
         System.out.println(publisher.getName());
+
+### Reading person information
+
+        final String apiKey = "abcdef12345";
+        final long personId = 40439L;
+
+        final PersonReader personReader = ComicvineToolsProvider.getPersonReader();
+        final PersonGetResult personGetResult = personReader.getPerson(apiKey, personId);
+
+        final Person person = personGetResult.getResult();
+        System.out.println(person.getName());

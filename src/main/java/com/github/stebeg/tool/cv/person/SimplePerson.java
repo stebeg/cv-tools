@@ -11,8 +11,8 @@ import com.google.gson.annotations.SerializedName;
  */
 public class SimplePerson {
 
-  private static final String ID_ATTRIBUTE_NAME = "id";
-  private static final String NAME_ATTRIBUTE_NAME = "name";
+  static final String ID_ATTRIBUTE_NAME = "id";
+  static final String NAME_ATTRIBUTE_NAME = "name";
 
   @SerializedName(value = ID_ATTRIBUTE_NAME)
   private final long id;

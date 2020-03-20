@@ -1,5 +1,7 @@
 package com.github.stebeg.tool.cv.common;
 
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 public abstract class AbstractApiGetResult<T> {
@@ -38,4 +40,45 @@ public abstract class AbstractApiGetResult<T> {
     return this.object;
   }
 
+  /**
+   * {@inheritDoc}
+   *
+   * @param obj {@inheritDoc}
+   * @return {@inheritDoc}
+   */
+  @Override
+  public boolean equals(final Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null || getClass() != obj.getClass()) {
+      return false;
+    }
+    final AbstractApiGetResult<?> that = (AbstractApiGetResult<?>) obj;
+    return this.statusCode == that.statusCode &&
+        Objects.equal(this.object, that.object);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public int hashCode() {
+    return Objects.hashCode(this.statusCode, this.object);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("statusCode", this.statusCode)
+        .add("object", this.object)
+        .toString();
+  }
 }
