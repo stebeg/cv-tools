@@ -2,6 +2,8 @@ package com.github.stebeg.tool.cv.team;
 
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.publisher.SimplePublisher;
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -103,4 +105,57 @@ public class Team extends SimpleTeam {
     this.image = image;
   }
 
+  /**
+   * {@inheritDoc}
+   *
+   * @param obj {@inheritDoc}
+   * @return {@inheritDoc}
+   */
+  @Override
+  public boolean equals(final Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null || getClass() != obj.getClass()) {
+      return false;
+    }
+    if (!super.equals(obj)) {
+      return false;
+    }
+    final Team team = (Team) obj;
+    return Objects.equal(this.getId(), team.getId()) &&
+        Objects.equal(this.getName(), team.getName()) &&
+        Objects.equal(this.summary, team.summary) &&
+        Objects.equal(this.description, team.description) &&
+        Objects.equal(this.publisher, team.publisher) &&
+        Objects.equal(this.image, team.image);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public int hashCode() {
+    return Objects
+        .hashCode(super.hashCode(), this.summary, this.description, this.publisher, this.image);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", this.getId())
+        .add("name", this.getName())
+        .add("summary", this.summary)
+        .add("description", this.description)
+        .add("publisher", this.publisher)
+        .add("image", this.image)
+        .toString();
+  }
 }

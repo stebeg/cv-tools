@@ -4,10 +4,12 @@ import com.github.stebeg.tool.cv.character.SimpleCharacter;
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.person.SimplePersonWithRole;
 import com.github.stebeg.tool.cv.team.SimpleTeam;
+import com.github.stebeg.tool.cv.volume.SimpleVolume;
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Represents information of a comic series issue retrieved from the Comicvine API.
@@ -26,6 +28,7 @@ public class Issue {
   static final String IN_STORE_DATE_ATTRIBUTE_NAME = "store_date";
 
   static final String IMAGE_ATTRIBUTE_NAME = "image";
+  static final String VOLUME_ATTRIBUTE_NAME = "volume";
 
   static final String CHARACTER_CREDITS_ATTRIBUTE_NAME = "character_credits";
   static final String TEAM_CREDITS_ATTRIBUTE_NAME = "team_credits";
@@ -51,6 +54,9 @@ public class Issue {
 
   @SerializedName(value = IMAGE_ATTRIBUTE_NAME)
   private Image image = null;
+
+  @SerializedName(value = VOLUME_ATTRIBUTE_NAME)
+  private SimpleVolume volume = null;
 
   @SerializedName(value = CHARACTER_CREDITS_ATTRIBUTE_NAME)
   private final List<SimpleCharacter> characters = new ArrayList<>();
@@ -167,6 +173,22 @@ public class Issue {
   }
 
   /**
+   * @return The volume this issue is a part of.
+   */
+  public SimpleVolume getVolume() {
+    return this.volume;
+  }
+
+  /**
+   * Sets the volume this issue is a part of.
+   *
+   * @param volume The volume this issue is a part of.
+   */
+  public void setVolume(SimpleVolume volume) {
+    this.volume = volume;
+  }
+
+  /**
    * @return A list of characters appearing in the issue.
    */
   public List<SimpleCharacter> getCharacters() {
@@ -193,28 +215,6 @@ public class Issue {
    * @return {@inheritDoc}
    */
   @Override
-  public String toString() {
-    return "Issue{"
-        + "id=" + this.id + ", "
-        + "issueNumber='" + this.issueNumber + "', "
-        + "name='" + this.name + "', "
-        + "description='" + this.description + "', "
-        + "coverDate='" + this.coverDate + "', "
-        + "inStoreDate='" + this.inStoreDate + "', "
-        + "image=" + this.image + ", "
-        + "characters=" + this.characters + ", "
-        + "teams=" + this.teams + ", "
-        + "personList=" + this.personList
-        + "}";
-  }
-
-  /**
-   * {@inheritDoc}
-   *
-   * @param obj {@inheritDoc}
-   * @return {@inheritDoc}
-   */
-  @Override
   public boolean equals(final Object obj) {
     if (this == obj) {
       return true;
@@ -223,16 +223,17 @@ public class Issue {
       return false;
     }
     final Issue issue = (Issue) obj;
-    return getId() == issue.getId()
-        && Objects.equals(getIssueNumber(), issue.getIssueNumber())
-        && Objects.equals(getName(), issue.getName())
-        && Objects.equals(getDescription(), issue.getDescription())
-        && Objects.equals(getCoverDate(), issue.getCoverDate())
-        && Objects.equals(getInStoreDate(), issue.getInStoreDate())
-        && Objects.equals(getImage(), issue.getImage())
-        && Objects.equals(getCharacters(), issue.getCharacters())
-        && Objects.equals(getTeams(), issue.getTeams())
-        && Objects.equals(getPersonList(), issue.getPersonList());
+    return this.id == issue.id &&
+        Objects.equal(this.issueNumber, issue.issueNumber) &&
+        Objects.equal(this.name, issue.name) &&
+        Objects.equal(this.description, issue.description) &&
+        Objects.equal(this.coverDate, issue.coverDate) &&
+        Objects.equal(this.inStoreDate, issue.inStoreDate) &&
+        Objects.equal(this.image, issue.image) &&
+        Objects.equal(this.volume, issue.volume) &&
+        Objects.equal(this.characters, issue.characters) &&
+        Objects.equal(this.teams, issue.teams) &&
+        Objects.equal(this.personList, issue.personList);
   }
 
   /**
@@ -243,8 +244,30 @@ public class Issue {
   @Override
   public int hashCode() {
     return Objects
-        .hash(getClass().getName(), this.id, this.issueNumber, this.name,
-            this.description, this.coverDate, this.inStoreDate, this.image, this.characters,
-            this.teams, this.personList);
+        .hashCode(this.id, this.issueNumber, this.name, this.description, this.coverDate,
+            this.inStoreDate, this.image, this.volume, this.characters, this.teams,
+            this.personList);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", this.id)
+        .add("issueNumber", this.issueNumber)
+        .add("name", this.name)
+        .add("description", this.description)
+        .add("coverDate", this.coverDate)
+        .add("inStoreDate", this.inStoreDate)
+        .add("image", this.image)
+        .add("volume", this.volume)
+        .add("characters", this.characters)
+        .add("teams", this.teams)
+        .add("personList", this.personList)
+        .toString();
   }
 }

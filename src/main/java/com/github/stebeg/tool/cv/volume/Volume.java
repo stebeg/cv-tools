@@ -2,6 +2,8 @@ package com.github.stebeg.tool.cv.volume;
 
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.publisher.SimplePublisher;
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -9,10 +11,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Volume {
-
-  static final String ID_ATTRIBUTE_NAME = "id";
-  static final String NAME_ATTRIBUTE_NAME = "name";
+public class Volume extends SimpleVolume {
 
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";
   static final String START_YEAR_ATTRIBUTE_NAME = "start_year";
@@ -20,12 +19,6 @@ public class Volume {
 
   static final String COUNT_OF_ISSUES_ATTRIBUTE_NAME = "count_of_issues";
   static final String IMAGE_ATTRIBUTE_NAME = "image";
-
-  @SerializedName(value = ID_ATTRIBUTE_NAME)
-  private final long id;
-
-  @SerializedName(value = NAME_ATTRIBUTE_NAME)
-  private final String name;
 
   @SerializedName(value = DESCRIPTION_ATTRIBUTE_NAME)
   private String description = null;
@@ -49,22 +42,7 @@ public class Volume {
    * @param name The name of the series/volume.
    */
   Volume(long id, String name) {
-    this.id = id;
-    this.name = name;
-  }
-
-  /**
-   * @return The unique ID of the series/volume.
-   */
-  public long getId() {
-    return this.id;
-  }
-
-  /**
-   * @return The name of the series/volume.
-   */
-  public String getName() {
-    return this.name;
+    super(id, name);
   }
 
   /**
@@ -148,4 +126,60 @@ public class Volume {
     this.image = image;
   }
 
+  /**
+   * {@inheritDoc}
+   *
+   * @param obj {@inheritDoc}
+   * @return {@inheritDoc}
+   */
+  @Override
+  public boolean equals(final Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null || getClass() != obj.getClass()) {
+      return false;
+    }
+    if (!super.equals(obj)) {
+      return false;
+    }
+    final Volume volume = (Volume) obj;
+    return Objects.equal(this.getId(), volume.getId()) &&
+        Objects.equal(this.getName(), volume.getName()) &&
+        Objects.equal(this.description, volume.description) &&
+        Objects.equal(this.startYear, volume.startYear) &&
+        Objects.equal(this.countOfIssues, volume.countOfIssues) &&
+        Objects.equal(this.publisher, volume.publisher) &&
+        Objects.equal(this.image, volume.image);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public int hashCode() {
+    return Objects
+        .hashCode(super.hashCode(), this.description, this.startYear, this.countOfIssues,
+            this.publisher, this.image);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", this.getId())
+        .add("name", this.getName())
+        .add("description", this.description)
+        .add("startYear", this.startYear)
+        .add("countOfIssues", this.countOfIssues)
+        .add("publisher", this.publisher)
+        .add("image", this.image)
+        .toString();
+  }
 }

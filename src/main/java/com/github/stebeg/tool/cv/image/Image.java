@@ -47,30 +47,18 @@ public class Image {
   /**
    * {@inheritDoc}
    *
+   * @param obj {@inheritDoc}
    * @return {@inheritDoc}
    */
   @Override
-  public String toString() {
-    return "Image{"
-        + "originalUrl='" + this.originalUrl + "', "
-        + "thumbUrl='" + this.thumbUrl + "'}";
-  }
-
-  /**
-   * {@inheritDoc}
-   *
-   * @param o {@inheritDoc}
-   * @return {@inheritDoc}
-   */
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
+  public boolean equals(final Object obj) {
+    if (this == obj) {
       return true;
     }
-    if (o == null || getClass() != o.getClass()) {
+    if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final Image image = (Image) o;
+    final Image image = (Image) obj;
     return Objects.equals(this.originalUrl, image.getOriginalUrl())
         && Objects.equals(this.thumbUrl, image.getThumbUrl());
   }
@@ -83,5 +71,17 @@ public class Image {
   @Override
   public int hashCode() {
     return Objects.hash(getClass().getName(), this.originalUrl, this.thumbUrl);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return "Image{"
+        + "originalUrl='" + this.originalUrl + "', "
+        + "thumbUrl='" + this.thumbUrl + "'}";
   }
 }

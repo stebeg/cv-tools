@@ -1,7 +1,8 @@
 package com.github.stebeg.tool.cv.person;
 
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
-import java.util.Objects;
 
 /**
  * Represents the basic information of a creator of a comic book issue retrieved from the Comicvine
@@ -40,19 +41,6 @@ public class SimplePersonWithRole extends SimplePerson {
   /**
    * {@inheritDoc}
    *
-   * @return {@inheritDoc}
-   */
-  @Override
-  public String toString() {
-    return "Person{"
-        + "id=" + this.getId() + ", "
-        + "name='" + this.getName() + "'" + ", "
-        + "role='" + this.role + "'}";
-  }
-
-  /**
-   * {@inheritDoc}
-   *
    * @param obj {@inheritDoc}
    * @return {@inheritDoc}
    */
@@ -66,8 +54,8 @@ public class SimplePersonWithRole extends SimplePerson {
     }
     final SimplePersonWithRole simplePersonWithRole = (SimplePersonWithRole) obj;
     return getId() == simplePersonWithRole.getId()
-        && Objects.equals(this.getName(), simplePersonWithRole.getName())
-        && Objects.equals(this.role, simplePersonWithRole.getRole());
+        && Objects.equal(this.getName(), simplePersonWithRole.getName())
+        && Objects.equal(this.role, simplePersonWithRole.getRole());
   }
 
   /**
@@ -77,6 +65,20 @@ public class SimplePersonWithRole extends SimplePerson {
    */
   @Override
   public int hashCode() {
-    return Objects.hash(getClass().getName(), this.getId(), this.getName(), this.role);
+    return Objects.hashCode(super.hashCode(), this.role);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", this.getId())
+        .add("name", this.getName())
+        .add("role", this.role)
+        .toString();
   }
 }

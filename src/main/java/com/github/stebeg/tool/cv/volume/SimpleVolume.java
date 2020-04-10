@@ -1,15 +1,10 @@
-package com.github.stebeg.tool.cv.person;
+package com.github.stebeg.tool.cv.volume;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Represents the basic information of a comic book creator from the Comicvine API.
- *
- * @author Steffen Berger
- */
-public class SimplePerson {
+public class SimpleVolume {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";
@@ -21,26 +16,25 @@ public class SimplePerson {
   private final String name;
 
   /**
-   * Creates a new representation of the basic information of a creator of a comic book issue
-   * retrieved from the Comicvine API.
+   * Creates a new simplified representation of a comic volume retrieved from the Comicvine API.
    *
-   * @param id   The unique ID of the creator.
-   * @param name The name of the creator.
+   * @param id   The unique ID of the series/volume.
+   * @param name The name of the series/volume.
    */
-  public SimplePerson(long id, String name) {
+  SimpleVolume(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * @return The unique ID of the creator.
+   * @return The unique ID of the series/volume.
    */
   public long getId() {
     return this.id;
   }
 
   /**
-   * @return The name of the creator.
+   * @return The name of the series/volume.
    */
   public String getName() {
     return this.name;
@@ -60,7 +54,7 @@ public class SimplePerson {
     if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final SimplePerson that = (SimplePerson) obj;
+    final SimpleVolume that = (SimpleVolume) obj;
     return this.id == that.id &&
         Objects.equal(this.name, that.name);
   }

@@ -210,6 +210,12 @@ public class Person extends SimplePerson {
     this.website = website;
   }
 
+  /**
+   * {@inheritDoc}
+   *
+   * @param obj {@inheritDoc}
+   * @return {@inheritDoc}
+   */
   @Override
   public boolean equals(final Object obj) {
     if (this == obj) {
@@ -222,7 +228,9 @@ public class Person extends SimplePerson {
       return false;
     }
     final Person person = (Person) obj;
-    return Objects.equal(this.summary, person.summary) &&
+    return Objects.equal(this.getId(), person.getId()) &&
+        Objects.equal(this.getName(), person.getName()) &&
+        Objects.equal(this.summary, person.summary) &&
         Objects.equal(this.description, person.description) &&
         Objects.equal(this.birth, person.birth) &&
         Objects.equal(this.death, person.death) &&
@@ -233,6 +241,11 @@ public class Person extends SimplePerson {
         Objects.equal(this.website, person.website);
   }
 
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
   @Override
   public int hashCode() {
     return Objects
@@ -240,9 +253,16 @@ public class Person extends SimplePerson {
             this.gender, this.image, this.country, this.hometown, this.website);
   }
 
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
   @Override
   public String toString() {
     return MoreObjects.toStringHelper(this)
+        .add("id", this.getId())
+        .add("name", this.getName())
         .add("summary", this.summary)
         .add("description", this.description)
         .add("birth", this.birth)

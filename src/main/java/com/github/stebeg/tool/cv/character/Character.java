@@ -3,6 +3,8 @@ package com.github.stebeg.tool.cv.character;
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.person.SimplePerson;
 import com.github.stebeg.tool.cv.publisher.SimplePublisher;
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
@@ -201,5 +203,70 @@ public class Character extends SimpleCharacter {
    */
   public List<SimplePerson> getCreatorList() {
     return this.creatorList;
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @param obj {@inheritDoc}
+   * @return {@inheritDoc}
+   */
+  @Override
+  public boolean equals(final Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null || getClass() != obj.getClass()) {
+      return false;
+    }
+    if (!super.equals(obj)) {
+      return false;
+    }
+    final Character character = (Character) obj;
+    return Objects.equal(this.getId(), character.getId()) &&
+        Objects.equal(this.getName(), character.getName()) &&
+        Objects.equal(this.realName, character.realName) &&
+        Objects.equal(this.summary, character.summary) &&
+        Objects.equal(this.description, character.description) &&
+        Objects.equal(this.publisher, character.publisher) &&
+        Objects.equal(this.image, character.image) &&
+        Objects.equal(this.gender, character.gender) &&
+        Objects.equal(this.origin, character.origin) &&
+        Objects.equal(this.birth, character.birth) &&
+        Objects.equal(this.creatorList, character.creatorList);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public int hashCode() {
+    return Objects
+        .hashCode(super.hashCode(), this.realName, this.summary, this.description, this.publisher,
+            this.image, this.gender, this.origin, this.birth, this.creatorList);
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @return {@inheritDoc}
+   */
+  @Override
+  public String toString() {
+    return MoreObjects.toStringHelper(this)
+        .add("id", this.getId())
+        .add("name", this.getName())
+        .add("realName", this.realName)
+        .add("summary", this.summary)
+        .add("description", this.description)
+        .add("publisher", this.publisher)
+        .add("image", this.image)
+        .add("gender", this.gender)
+        .add("origin", this.origin)
+        .add("birth", this.birth)
+        .add("creatorList", this.creatorList)
+        .toString();
   }
 }

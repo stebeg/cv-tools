@@ -34,7 +34,8 @@ class IssueReaderImpl implements IssueReader {
       Issue.ISSUE_NUMBER_ATTRIBUTE_NAME,
       Issue.COVER_DATE_ATTRIBUTE_NAME,
       Issue.IN_STORE_DATE_ATTRIBUTE_NAME,
-      Issue.IMAGE_ATTRIBUTE_NAME);
+      Issue.IMAGE_ATTRIBUTE_NAME,
+      Issue.VOLUME_ATTRIBUTE_NAME);
   private static final List<String> ISSUE_FIELD_NAMES = ImmutableList.<String>builder()
       .addAll(VOLUME_ISSUES_FIELD_NAMES)
       .add(Issue.CHARACTER_CREDITS_ATTRIBUTE_NAME)
