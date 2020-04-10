@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.image;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.google.gson.annotations.SerializedName;
 import java.util.Objects;
 
@@ -8,7 +9,7 @@ import java.util.Objects;
  *
  * @author Steffen Berger
  */
-public class Image {
+public class Image implements ComicvineEntity {
 
   private static final String ORIGINAL_URL_ATTRIBUTE_NAME = "original_url";
   private static final String THUMB_URL_ATTRIBUTE_NAME = "thumb_url";

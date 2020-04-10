@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.character;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -9,7 +10,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class SimpleCharacter {
+public class SimpleCharacter implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";

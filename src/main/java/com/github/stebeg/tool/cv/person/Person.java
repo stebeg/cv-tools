@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.person;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -10,7 +11,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Person extends SimplePerson {
+public class Person extends SimplePerson implements ComicvineEntity {
 
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";

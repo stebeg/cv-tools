@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.volume;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.publisher.SimplePublisher;
 import com.google.common.base.MoreObjects;
@@ -11,7 +12,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Volume extends SimpleVolume {
+public class Volume extends SimpleVolume implements ComicvineEntity {
 
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";
   static final String START_YEAR_ATTRIBUTE_NAME = "start_year";

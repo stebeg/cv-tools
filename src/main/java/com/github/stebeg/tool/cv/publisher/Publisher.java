@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.publisher;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
 import com.google.gson.annotations.SerializedName;
 
@@ -8,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Publisher extends SimplePublisher {
+public class Publisher extends SimplePublisher implements ComicvineEntity {
 
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";

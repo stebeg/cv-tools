@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.team;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.publisher.SimplePublisher;
 import com.google.common.base.MoreObjects;
@@ -11,7 +12,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Team extends SimpleTeam {
+public class Team extends SimpleTeam implements ComicvineEntity {
 
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";

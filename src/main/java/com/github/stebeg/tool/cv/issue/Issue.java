@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.issue;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.character.SimpleCharacter;
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.person.SimplePersonWithRole;
@@ -16,7 +17,7 @@ import java.util.List;
  *
  * @author Steffen Berger
  */
-public class Issue {
+public class Issue implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String ISSUE_NUMBER_ATTRIBUTE_NAME = "issue_number";

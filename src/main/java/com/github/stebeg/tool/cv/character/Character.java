@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.character;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
 import com.github.stebeg.tool.cv.person.SimplePerson;
 import com.github.stebeg.tool.cv.publisher.SimplePublisher;
@@ -14,7 +15,7 @@ import java.util.List;
  *
  * @author Steffen Berger
  */
-public class Character extends SimpleCharacter {
+public class Character extends SimpleCharacter implements ComicvineEntity {
 
   static final String REAL_NAME_ATTRIBUTE_NAME = "real_name";
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";

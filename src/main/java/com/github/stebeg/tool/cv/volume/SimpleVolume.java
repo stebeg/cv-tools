@@ -1,10 +1,11 @@
 package com.github.stebeg.tool.cv.volume;
 
+import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
-public class SimpleVolume {
+public class SimpleVolume implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";
