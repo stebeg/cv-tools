@@ -41,6 +41,7 @@ class IssueReaderImpl implements IssueReader {
       .add(Issue.CHARACTER_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.TEAM_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.PERSON_CREDITS_ATTRIBUTE_NAME)
+      .add(Issue.STORY_ARC_CREDITS_ATTRIBUTE_NAME)
       .build();
 
   private static final String FIELD_LIST_PARAMETER_NAME = "field_list";

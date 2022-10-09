@@ -1,0 +1,34 @@
+{
+  "status_code": 1,
+  "results": {
+    "real_name": "Harold Jordan",
+    "deck": "With the ability to overcome great fear and harness the power of will, test-pilot Hal Jordan was chosen to be the Green Lantern of Sector 2814 inheriting the ring of the dying alien Green Lantern, Abin Sur. He later on went to creating his own power ring from his own will power. Through sheer will power and determination, Hal has established an impressive record of heroism across the galaxy with the help of his fellow Green Lanterns as well as his peers in the Justice League.",
+    "description": "\u003cp\u003eHal Jordan is currently returning to earth after the events of Godhead and the war against the New Gods of New Genesis that was fought over the white lantern ring and the power wielded by Kyle Rayner, the Life Equation. Kyle gained power over the source code when he crossed over to the other side of the source wall. When he returned, the New Gods sensed his power and sought to take it for their own in hopes of finally defeating Darkseid and Apokolips for good. During this battle, Hal found himself making alliances with Red Lantern Guy Gardner, Sinestro, and even Black Hand who all helped him in ending the battle when they used boom tube technology to take the fight to the New God\u0027s planet of New Genesis. These events led to Hal taking some time off on Earth. After an encounter with his earth friends at a local bar on earth he had to accept than Carol Ferris has moved on in a new relationship with Kyle Rayner and he must rebuild his life.\u003c/p\u003e",
+    "publisher": {
+      "id": 10,
+      "name": "DC Comics"
+    },
+    "image": {
+      "original_url": "https://comicvine1.cbsistatic.com/uploads/original/11114/111147698/6520709-1532011657748.jpg",
+      "thumb_url": "https://comicvine1.cbsistatic.com/uploads/scale_avatar/11114/111147698/6520709-1532011657748.jpg"
+    },
+    "gender": 1,
+    "origin": {
+      "id": 4,
+      "name": "Human"
+    },
+    "birth": "Feb 20, 1974",
+    "creators": [
+      {
+        "id": 1764,
+        "name": "Gil Kane"
+      },
+      {
+        "id": 48152,
+        "name": "John Broome"
+      }
+    ],
+    "id": 11202,
+    "name": "Hal Jordan"
+  }
+}

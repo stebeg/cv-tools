@@ -9,7 +9,7 @@ import java.util.Objects;
  *
  * @author Steffen Berger
  */
-public class SimplePublisher implements ComicvineEntity {
+public class PublisherCredit implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";
@@ -21,13 +21,12 @@ public class SimplePublisher implements ComicvineEntity {
   private final String name;
 
   /**
-   * Creates a new representation of the basic information of a comic book publisher from
-   * Comicvine.
+   * Creates a new representation of the basic information of a comic book publisher from Comicvine.
    *
    * @param id   The publisher's unique ID.
    * @param name The publisher's name.
    */
-  public SimplePublisher(long id, String name) {
+  public PublisherCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
@@ -60,9 +59,9 @@ public class SimplePublisher implements ComicvineEntity {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    final SimplePublisher simplePublisher = (SimplePublisher) o;
-    return this.id == simplePublisher.getId()
-        && Objects.equals(this.name, simplePublisher.getName());
+    final PublisherCredit publisherCredit = (PublisherCredit) o;
+    return this.id == publisherCredit.getId()
+        && Objects.equals(this.name, publisherCredit.getName());
   }
 
   /**

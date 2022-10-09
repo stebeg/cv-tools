@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Publisher extends SimplePublisher implements ComicvineEntity {
+public class Publisher extends PublisherCredit implements ComicvineEntity {
 
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";

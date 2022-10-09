@@ -1,0 +1,15 @@
+{
+  "status_code": 1,
+  "results": {
+    "deck": "Originally known as \"National Publications\", DC is a publisher of comic books featuring iconic characters and teams such as Superman, Batman, Wonder Woman, Green Lantern, the Justice League of America, and the Teen Titans, and is considered the originator of the American superhero genre. DC, along with rival Marvel Comics, is one of the \"big two\" American comic book publishers. DC Entertainment is a subsidiary of Warner Brothers and its parent company Time Warner.",
+    "description": "\u003ch2\u003eCurrent Personnel\u003c/h2\u003e\u003cul\u003e\u003cli\u003e\u003ca href\u003d\"/diane-nelson/4040-60224/\" data-ref-id\u003d\"4040-60224\"\u003eDiane Nelson\u003c/a\u003e: President\u003c/li\u003e\u003cli\u003e\u003ca href\u003d\"/jim-lee/4040-2399/\" data-ref-id\u003d\"4040-2399\"\u003eJim Lee\u003c/a\u003e \u0026amp; \u003ca href\u003d\"/dan-didio/4040-51584/\" data-ref-id\u003d\"4040-51584\"\u003eDan Didio\u003c/a\u003e: Co-Publishers\u003c/li\u003e\u003cli\u003e\u003ca href\u003d\"/bob-harras/4040-40985/\" data-ref-id\u003d\"4040-40985\"\u003eBob Harras\u003c/a\u003e: Editor-In-Chief\u003c/li\u003e\u003cli\u003e\u003ca href\u003d\"/geoff-johns/4040-40439/\" data-ref-id\u003d\"4040-40439\"\u003eGeoff Johns\u003c/a\u003e: Chief Creative Officer\u003c/li\u003e\u003cli\u003e\u003ca href\u003d\"/john-rood/4040-71914/\" data-ref-id\u003d\"4040-71914\"\u003eJohn Rood\u003c/a\u003e: Executive Vice President, Sales, Marketing and Business Development\u003c/li\u003e\u003c/ul\u003e",
+    "image": {
+      "original_url": "https://comicvine1.cbsistatic.com/uploads/original/0/40/5213245-dc_logo_blue_final.jpg",
+      "thumb_url": "https://comicvine1.cbsistatic.com/uploads/scale_avatar/0/40/5213245-dc_logo_blue_final.jpg"
+    },
+    "location_city": "Burbank",
+    "location_state": "California",
+    "id": 10,
+    "name": "DC Comics"
+  }
+}

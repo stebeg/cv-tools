@@ -12,11 +12,10 @@ import java.util.Map;
 interface TeamUrlBuilder {
 
   /**
-   * Builds an URL for retrieving team information from the Comicvine API.
+   * Builds a URL for retrieving team information from the Comicvine API.
    *
    * @param teamId    The ID of the team.
-   * @param parameter The additional parameters which will be added to the URL. The keys in this map
-   *                  represent the parameter names. The values of this map represent the parameter
+   * @param parameter The additional parameters which will be added to the URL. The keys in this map represent the parameter names. The values of this map represent the parameter
    *                  values.
    * @return The URL for retrieving team information from the Comicvine API.
    * @throws IOException When building the URL fails.

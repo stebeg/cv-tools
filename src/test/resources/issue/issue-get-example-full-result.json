@@ -1,0 +1,228 @@
+{
+  "status_code": 1,
+  "results": {
+    "issue_number": "44",
+    "description": "\u003cp\u003e\u003ci\u003e“Blackest Night” continues! As Hal Jordan and Barry Allen investigate a bizarre crime in Gotham City, they come face to face with one of their oldest allies – J’onn J’onzz, the Martian Manhunter! But their old friend is not there for reunions; he’s come for much more. Meanwhile, Sinestro seeks to rebuild his army and take his revenge on the being who would usurp it – Mongul!\u003c/i\u003e\u003c/p\u003e\u003cp\u003e(NOTE: Although the solicit by DC says Mongul and Sinestro appear in this book, they do not)\u003c/p\u003e",
+    "cover_date": "2009-09-01",
+    "store_date": "2009-07-22",
+    "image": {
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/4/48277/887901-green_lantern_cover44.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/4/48277/887901-green_lantern_cover44.jpg"
+    },
+    "volume": {
+      "id": 18216,
+      "name": "Green Lantern"
+    },
+    "character_credits": [
+      {
+        "id": 22804,
+        "name": "Barry Allen"
+      },
+      {
+        "id": 69737,
+        "name": "Batman Clone"
+      },
+      {
+        "id": 58255,
+        "name": "Bleez"
+      },
+      {
+        "id": 61801,
+        "name": "Blume"
+      },
+      {
+        "id": 2060,
+        "name": "Boodikka"
+      },
+      {
+        "id": 18276,
+        "name": "Carol Ferris"
+      },
+      {
+        "id": 57929,
+        "name": "Dela Pharon"
+      },
+      {
+        "id": 6943,
+        "name": "Fatality"
+      },
+      {
+        "id": 61564,
+        "name": "Fury 6"
+      },
+      {
+        "id": 46405,
+        "name": "Graf Toren"
+      },
+      {
+        "id": 11202,
+        "name": "Hal Jordan"
+      },
+      {
+        "id": 46404,
+        "name": "Hannu"
+      },
+      {
+        "id": 10451,
+        "name": "John Stewart"
+      },
+      {
+        "id": 50473,
+        "name": "Kryb"
+      },
+      {
+        "id": 46403,
+        "name": "Laira"
+      },
+      {
+        "id": 58504,
+        "name": "Larfleeze"
+      },
+      {
+        "id": 2047,
+        "name": "Martian Manhunter"
+      },
+      {
+        "id": 61574,
+        "name": "Race"
+      },
+      {
+        "id": 52004,
+        "name": "Romat-Ru"
+      },
+      {
+        "id": 58254,
+        "name": "Saint Walker"
+      },
+      {
+        "id": 56693,
+        "name": "Scar"
+      },
+      {
+        "id": 54063,
+        "name": "Slushh"
+      },
+      {
+        "id": 58358,
+        "name": "Tekik"
+      },
+      {
+        "id": 10449,
+        "name": "Tomar Re"
+      },
+      {
+        "id": 10450,
+        "name": "Tomar Tu"
+      },
+      {
+        "id": 54062,
+        "name": "Tri-Eye"
+      },
+      {
+        "id": 59142,
+        "name": "Warth"
+      },
+      {
+        "id": 58956,
+        "name": "Zilius Zox"
+      }
+    ],
+    "team_credits": [
+      {
+        "id": 50743,
+        "name": "Black Lantern Corps"
+      },
+      {
+        "id": 50163,
+        "name": "Blue Lantern Corps"
+      },
+      {
+        "id": 6992,
+        "name": "Green Lantern Corps"
+      },
+      {
+        "id": 9057,
+        "name": "Guardians of the Universe"
+      },
+      {
+        "id": 50652,
+        "name": "Lost Lanterns"
+      },
+      {
+        "id": 50745,
+        "name": "Orange Lantern Corps"
+      },
+      {
+        "id": 50747,
+        "name": "Red Lantern Corps"
+      },
+      {
+        "id": 42352,
+        "name": "Sinestro Corps"
+      },
+      {
+        "id": 49913,
+        "name": "Star Sapphire Corps"
+      },
+      {
+        "id": 39176,
+        "name": "Zamarons"
+      }
+    ],
+    "person_credits": [
+      {
+        "role": "inker, cover",
+        "id": 3749,
+        "name": "Christian Alamy"
+      },
+      {
+        "role": "penciler, inker, cover",
+        "id": 1533,
+        "name": "Doug Mahnke"
+      },
+      {
+        "role": "editor",
+        "id": 41680,
+        "name": "Eddie Berganza"
+      },
+      {
+        "role": "writer",
+        "id": 40439,
+        "name": "Geoff Johns"
+      },
+      {
+        "role": "cover",
+        "id": 43264,
+        "name": "Philip Tan"
+      },
+      {
+        "role": "colorist",
+        "id": 44156,
+        "name": "Randy Mayor"
+      },
+      {
+        "role": "letterer",
+        "id": 4519,
+        "name": "Rob Leigh"
+      },
+      {
+        "role": "inker",
+        "id": 4374,
+        "name": "Rodney Ramos"
+      },
+      {
+        "role": "inker",
+        "id": 6197,
+        "name": "Tom Nguyen"
+      }
+    ],
+    "story_arc_credits": [
+      {
+        "id": 55766,
+        "name": "Blackest Night"
+      }
+    ],
+    "id": 164775,
+    "name": "Only the Good Die Young"
+  }
+}

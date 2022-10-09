@@ -1,11 +1,12 @@
 package com.github.stebeg.tool.cv.issue;
 
 import com.github.stebeg.tool.cv.ComicvineEntity;
-import com.github.stebeg.tool.cv.character.SimpleCharacter;
+import com.github.stebeg.tool.cv.character.CharacterCredit;
 import com.github.stebeg.tool.cv.image.Image;
-import com.github.stebeg.tool.cv.person.SimplePersonWithRole;
-import com.github.stebeg.tool.cv.team.SimpleTeam;
-import com.github.stebeg.tool.cv.volume.SimpleVolume;
+import com.github.stebeg.tool.cv.person.PersonCreditWithRole;
+import com.github.stebeg.tool.cv.storyarc.StoryArcCredit;
+import com.github.stebeg.tool.cv.team.TeamCredit;
+import com.github.stebeg.tool.cv.volume.VolumeCredit;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -17,12 +18,9 @@ import java.util.List;
  *
  * @author Steffen Berger
  */
-public class Issue implements ComicvineEntity {
+public class Issue extends IssueCredit implements ComicvineEntity {
 
-  static final String ID_ATTRIBUTE_NAME = "id";
   static final String ISSUE_NUMBER_ATTRIBUTE_NAME = "issue_number";
-
-  static final String NAME_ATTRIBUTE_NAME = "name";
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";
 
   static final String COVER_DATE_ATTRIBUTE_NAME = "cover_date";
@@ -34,15 +32,10 @@ public class Issue implements ComicvineEntity {
   static final String CHARACTER_CREDITS_ATTRIBUTE_NAME = "character_credits";
   static final String TEAM_CREDITS_ATTRIBUTE_NAME = "team_credits";
   static final String PERSON_CREDITS_ATTRIBUTE_NAME = "person_credits";
-
-  @SerializedName(value = ID_ATTRIBUTE_NAME)
-  private final long id;
+  static final String STORY_ARC_CREDITS_ATTRIBUTE_NAME = "story_arc_credits";
 
   @SerializedName(value = ISSUE_NUMBER_ATTRIBUTE_NAME)
   private final String issueNumber;
-
-  @SerializedName(value = NAME_ATTRIBUTE_NAME)
-  private String name = null;
 
   @SerializedName(value = DESCRIPTION_ATTRIBUTE_NAME)
   private String description = null;
@@ -57,33 +50,30 @@ public class Issue implements ComicvineEntity {
   private Image image = null;
 
   @SerializedName(value = VOLUME_ATTRIBUTE_NAME)
-  private SimpleVolume volume = null;
+  private VolumeCredit volumeCredit = null;
 
   @SerializedName(value = CHARACTER_CREDITS_ATTRIBUTE_NAME)
-  private final List<SimpleCharacter> characters = new ArrayList<>();
+  private final List<CharacterCredit> characterCredits = new ArrayList<>();
 
   @SerializedName(value = TEAM_CREDITS_ATTRIBUTE_NAME)
-  private final List<SimpleTeam> teams = new ArrayList<>();
+  private final List<TeamCredit> teamCredits = new ArrayList<>();
 
   @SerializedName(value = PERSON_CREDITS_ATTRIBUTE_NAME)
-  private final List<SimplePersonWithRole> personList = new ArrayList<>();
+  private final List<PersonCreditWithRole> personCredits = new ArrayList<>();
+
+  @SerializedName(value = STORY_ARC_CREDITS_ATTRIBUTE_NAME)
+  private final List<StoryArcCredit> storyArcCredits = new ArrayList<>();
 
   /**
    * Creates a new representation of a comic series issue retrieved from the Comicvine API.
    *
    * @param id          The unique ID of the issue.
+   * @param name        The name of the issue.
    * @param issueNumber The issue number.
    */
-  Issue(long id, String issueNumber) {
-    this.id = id;
+  Issue(long id, String name, String issueNumber) {
+    super(id, name);
     this.issueNumber = issueNumber;
-  }
-
-  /**
-   * @return The unique ID of the issue.
-   */
-  public long getId() {
-    return this.id;
   }
 
   /**
@@ -91,22 +81,6 @@ public class Issue implements ComicvineEntity {
    */
   public String getIssueNumber() {
     return this.issueNumber;
-  }
-
-  /**
-   * @return The name or title of the issue.
-   */
-  public String getName() {
-    return this.name;
-  }
-
-  /**
-   * Sets the name or title of the issue.
-   *
-   * @param name The name or title of the issue.
-   */
-  void setName(String name) {
-    this.name = name;
   }
 
   /**
@@ -176,38 +150,45 @@ public class Issue implements ComicvineEntity {
   /**
    * @return The volume this issue is a part of.
    */
-  public SimpleVolume getVolume() {
-    return this.volume;
+  public VolumeCredit getVolumeCredit() {
+    return this.volumeCredit;
   }
 
   /**
    * Sets the volume this issue is a part of.
    *
-   * @param volume The volume this issue is a part of.
+   * @param volumeCredit The volume this issue is a part of.
    */
-  public void setVolume(SimpleVolume volume) {
-    this.volume = volume;
+  public void setVolumeCredit(VolumeCredit volumeCredit) {
+    this.volumeCredit = volumeCredit;
   }
 
   /**
    * @return A list of characters appearing in the issue.
    */
-  public List<SimpleCharacter> getCharacters() {
-    return this.characters;
+  public List<CharacterCredit> getCharacterCredits() {
+    return this.characterCredits;
   }
 
   /**
    * @return A list of teams appearing in the issue.
    */
-  public List<SimpleTeam> getTeams() {
-    return this.teams;
+  public List<TeamCredit> getTeamCredits() {
+    return this.teamCredits;
   }
 
   /**
    * @return A list of creators of the issue (e.g. writer, cover artist, ...)
    */
-  public List<SimplePersonWithRole> getPersonList() {
-    return this.personList;
+  public List<PersonCreditWithRole> getPersonCredits() {
+    return this.personCredits;
+  }
+
+  /**
+   * @return A list of story arcs the issue is part of.
+   */
+  public List<StoryArcCredit> getStoryArcCredits() {
+    return this.storyArcCredits;
   }
 
   /**
@@ -224,17 +205,18 @@ public class Issue implements ComicvineEntity {
       return false;
     }
     final Issue issue = (Issue) obj;
-    return this.id == issue.id &&
+    return this.getId() == issue.getId() &&
         Objects.equal(this.issueNumber, issue.issueNumber) &&
-        Objects.equal(this.name, issue.name) &&
+        Objects.equal(this.getName(), issue.getName()) &&
         Objects.equal(this.description, issue.description) &&
         Objects.equal(this.coverDate, issue.coverDate) &&
         Objects.equal(this.inStoreDate, issue.inStoreDate) &&
         Objects.equal(this.image, issue.image) &&
-        Objects.equal(this.volume, issue.volume) &&
-        Objects.equal(this.characters, issue.characters) &&
-        Objects.equal(this.teams, issue.teams) &&
-        Objects.equal(this.personList, issue.personList);
+        Objects.equal(this.volumeCredit, issue.volumeCredit) &&
+        Objects.equal(this.characterCredits, issue.characterCredits) &&
+        Objects.equal(this.teamCredits, issue.teamCredits) &&
+        Objects.equal(this.personCredits, issue.personCredits) &&
+        Objects.equal(this.storyArcCredits, issue.storyArcCredits);
   }
 
   /**
@@ -245,9 +227,9 @@ public class Issue implements ComicvineEntity {
   @Override
   public int hashCode() {
     return Objects
-        .hashCode(this.id, this.issueNumber, this.name, this.description, this.coverDate,
-            this.inStoreDate, this.image, this.volume, this.characters, this.teams,
-            this.personList);
+        .hashCode(super.hashCode(), this.issueNumber, this.description, this.coverDate,
+            this.inStoreDate, this.image, this.volumeCredit, this.characterCredits, this.teamCredits,
+            this.personCredits, this.storyArcCredits);
   }
 
   /**
@@ -258,17 +240,18 @@ public class Issue implements ComicvineEntity {
   @Override
   public String toString() {
     return MoreObjects.toStringHelper(this)
-        .add("id", this.id)
+        .add("id", this.getId())
         .add("issueNumber", this.issueNumber)
-        .add("name", this.name)
+        .add("name", this.getName())
         .add("description", this.description)
         .add("coverDate", this.coverDate)
         .add("inStoreDate", this.inStoreDate)
         .add("image", this.image)
-        .add("volume", this.volume)
-        .add("characters", this.characters)
-        .add("teams", this.teams)
-        .add("personList", this.personList)
+        .add("volumeCredit", this.volumeCredit)
+        .add("characterCredits", this.characterCredits)
+        .add("teamCredits", this.teamCredits)
+        .add("personCredits", this.personCredits)
+        .add("storyArcCredits", this.storyArcCredits)
         .toString();
   }
 }

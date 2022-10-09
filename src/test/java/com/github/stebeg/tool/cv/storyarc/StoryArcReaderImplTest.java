@@ -1,4 +1,4 @@
-package com.github.stebeg.tool.cv.character;
+package com.github.stebeg.tool.cv.storyarc;
 
 import static org.mockito.ArgumentMatchers.anyMap;
 import static org.mockito.ArgumentMatchers.eq;
@@ -10,38 +10,41 @@ import com.github.stebeg.tool.cv.common.UrlConnectionBuilder;
 import com.github.stebeg.tool.cv.common.UrlContentReader;
 import com.github.stebeg.tool.cv.common.UrlContentReaderImpl;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.net.URL;
 import java.net.URLConnection;
 import org.junit.jupiter.api.Test;
 
-public class CharacterReaderImplTest extends AbstractJsonComparisonTest {
+public class StoryArcReaderImplTest extends AbstractJsonComparisonTest {
 
-  private final CharacterUrlBuilder urlBuilderMock;
+  private final StoryArcUrlBuilder urlBuilderMock;
   private final UrlConnectionBuilder urlConnectionBuilderMock;
 
-  private final CharacterReader instance;
+  private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+  private final StoryArcReader instance;
 
-  public CharacterReaderImplTest() {
-    this.urlBuilderMock = mock(CharacterUrlBuilder.class);
+  public StoryArcReaderImplTest() {
+    this.urlBuilderMock = mock(StoryArcUrlBuilder.class);
     this.urlConnectionBuilderMock = mock(UrlConnectionBuilder.class);
 
     final UrlContentReader urlContentReader = new UrlContentReaderImpl(
         this.urlConnectionBuilderMock);
-    this.instance = new CharacterReaderImpl(this.urlBuilderMock, urlContentReader, new Gson());
+    this.instance = new StoryArcReaderImpl(this.urlBuilderMock, urlContentReader, new Gson());
   }
 
   @Test
-  public void testGetCharacter() throws Exception {
-    final long characterId = 11202L;
+  public void testStoryArc() throws Exception {
+    final long storyArcId = 55766L;
     final String apiKey = "1234567890abcdef";
 
-    final URL url = getClass().getResource("/character/character-get-example.json");
-    when(this.urlBuilderMock.buildCharacterGetUrl(eq(characterId), anyMap())).thenReturn(url);
+    final URL url = getClass().getResource("/storyarc/storyarc-get-example.json");
+    when(this.urlBuilderMock.buildStoryArcGetUrl(eq(storyArcId), anyMap())).thenReturn(url);
 
     final URLConnection urlConnection = url.openConnection();
     when(this.urlConnectionBuilderMock.build(url)).thenReturn(urlConnection);
 
-    final CharacterGetResult result = this.instance.getCharacter(apiKey, characterId);
-    assertJsonEquals("/character/character-get-example-result.json", result);
+    final StoryArcGetResult result = this.instance.getStoryArc(apiKey, storyArcId);
+    assertJsonEquals("/storyarc/storyarc-get-example-result.json", result);
   }
+
 }

@@ -1,16 +1,16 @@
-package com.github.stebeg.tool.cv.team;
+package com.github.stebeg.tool.cv.person;
 
 import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
-import java.util.Objects;
 
 /**
- * Represents the basic information of a comic team from Comicvine.
+ * Represents the basic information of a comic book creator from the Comicvine API.
  *
  * @author Steffen Berger
  */
-public class SimpleTeam implements ComicvineEntity {
+public class PersonCredit implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";
@@ -22,25 +22,25 @@ public class SimpleTeam implements ComicvineEntity {
   private final String name;
 
   /**
-   * Creates a new representation of the basic information of a comic team from Comicvine.
+   * Creates a new representation of the basic information of a creator of a comic book issue retrieved from the Comicvine API.
    *
-   * @param id   The team's unique ID.
-   * @param name The team's name.
+   * @param id   The unique ID of the creator.
+   * @param name The name of the creator.
    */
-  public SimpleTeam(long id, String name) {
+  public PersonCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * @return The team's unique ID.
+   * @return The unique ID of the creator.
    */
   public long getId() {
     return this.id;
   }
 
   /**
-   * @return The team's name.
+   * @return The name of the creator.
    */
   public String getName() {
     return this.name;
@@ -60,9 +60,9 @@ public class SimpleTeam implements ComicvineEntity {
     if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final SimpleTeam simpleTeam = (SimpleTeam) obj;
-    return getId() == simpleTeam.getId()
-        && Objects.equals(this.name, simpleTeam.getName());
+    final PersonCredit that = (PersonCredit) obj;
+    return this.id == that.id &&
+        Objects.equal(this.name, that.name);
   }
 
   /**
@@ -72,7 +72,7 @@ public class SimpleTeam implements ComicvineEntity {
    */
   @Override
   public int hashCode() {
-    return Objects.hash(getClass().getName(), this.id, this.name);
+    return Objects.hashCode(this.id, this.name);
   }
 
   /**

@@ -1,0 +1,17 @@
+{
+  "status_code": 1,
+  "results": {
+    "deck": "The Green Lantern Corps is an intergalactic police force dedicated to the promotion of order and democracy throughout the universe. Each Green Lantern member protects a sector and it is their duty to defend it from any possible threat.",
+    "description": "\u003ch2\u003eOrigin\u003c/h2\u003e\u003cp\u003eAt the beginning of the universe, the population of the planet \u003ca href\u003d\"../../maltus/34-56204/\" rel\u003d\"nofollow\"\u003eMaltus\u003c/a\u003e evolved into powerful and highly intelligent beings.\u003c/p\u003e",
+    "publisher": {
+      "id": 10,
+      "name": "DC Comics"
+    },
+    "image": {
+      "original_url": "https://comicvine1.cbsistatic.com/uploads/original/11114/111147698/4849177-crd-xiywuaaqnca.jpg",
+      "thumb_url": "https://comicvine1.cbsistatic.com/uploads/scale_avatar/11114/111147698/4849177-crd-xiywuaaqnca.jpg"
+    },
+    "id": 6992,
+    "name": "Green Lantern Corps"
+  }
+}

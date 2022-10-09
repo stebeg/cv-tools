@@ -2,8 +2,8 @@ package com.github.stebeg.tool.cv.character;
 
 import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
-import com.github.stebeg.tool.cv.person.SimplePerson;
-import com.github.stebeg.tool.cv.publisher.SimplePublisher;
+import com.github.stebeg.tool.cv.person.PersonCredit;
+import com.github.stebeg.tool.cv.publisher.PublisherCredit;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author Steffen Berger
  */
-public class Character extends SimpleCharacter implements ComicvineEntity {
+public class Character extends CharacterCredit implements ComicvineEntity {
 
   static final String REAL_NAME_ATTRIBUTE_NAME = "real_name";
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";
@@ -41,7 +41,7 @@ public class Character extends SimpleCharacter implements ComicvineEntity {
   private String description;
 
   @SerializedName(value = PUBLISHER_ATTRIBUTE_NAME)
-  private SimplePublisher publisher;
+  private PublisherCredit publisher;
 
   @SerializedName(value = IMAGE_ATTRIBUTE_NAME)
   private Image image;
@@ -56,7 +56,7 @@ public class Character extends SimpleCharacter implements ComicvineEntity {
   private String birth;
 
   @SerializedName(value = CREATORS_ATTRIBUTE_NAME)
-  private final List<SimplePerson> creatorList = new ArrayList<>();
+  private final List<PersonCredit> creatorList = new ArrayList<>();
 
   /**
    * Creates a new representation of detailed information of a comic character from Comicvine.
@@ -119,7 +119,7 @@ public class Character extends SimpleCharacter implements ComicvineEntity {
   /**
    * @return The primary publisher a character is attached to.
    */
-  public SimplePublisher getPublisher() {
+  public PublisherCredit getPublisher() {
     return this.publisher;
   }
 
@@ -128,7 +128,7 @@ public class Character extends SimpleCharacter implements ComicvineEntity {
    *
    * @param publisher The primary publisher a character is attached to.
    */
-  void setPublisher(SimplePublisher publisher) {
+  void setPublisher(PublisherCredit publisher) {
     this.publisher = publisher;
   }
 
@@ -202,7 +202,7 @@ public class Character extends SimpleCharacter implements ComicvineEntity {
   /**
    * @return List of the real life people who created this character.
    */
-  public List<SimplePerson> getCreatorList() {
+  public List<PersonCredit> getCreatorList() {
     return this.creatorList;
   }
 

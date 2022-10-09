@@ -2,7 +2,7 @@ package com.github.stebeg.tool.cv.team;
 
 import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
-import com.github.stebeg.tool.cv.publisher.SimplePublisher;
+import com.github.stebeg.tool.cv.publisher.PublisherCredit;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -12,7 +12,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Team extends SimpleTeam implements ComicvineEntity {
+public class Team extends TeamCredit implements ComicvineEntity {
 
   static final String SUMMARY_ATTRIBUTE_NAME = "deck";
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";
@@ -27,7 +27,7 @@ public class Team extends SimpleTeam implements ComicvineEntity {
   private String description;
 
   @SerializedName(value = PUBLISHER_ATTRIBUTE_NAME)
-  private SimplePublisher publisher;
+  private PublisherCredit publisher;
 
   @SerializedName(value = IMAGE_ATTRIBUTE_NAME)
   private Image image;
@@ -77,7 +77,7 @@ public class Team extends SimpleTeam implements ComicvineEntity {
   /**
    * @return The primary publisher a team is attached to.
    */
-  public SimplePublisher getPublisher() {
+  public PublisherCredit getPublisher() {
     return this.publisher;
   }
 
@@ -86,7 +86,7 @@ public class Team extends SimpleTeam implements ComicvineEntity {
    *
    * @param publisher The primary publisher a character is attached to.
    */
-  void setPublisher(SimplePublisher publisher) {
+  void setPublisher(PublisherCredit publisher) {
     this.publisher = publisher;
   }
 

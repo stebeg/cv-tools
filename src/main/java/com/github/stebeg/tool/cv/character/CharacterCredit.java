@@ -1,4 +1,4 @@
-package com.github.stebeg.tool.cv.person;
+package com.github.stebeg.tool.cv.character;
 
 import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.google.common.base.MoreObjects;
@@ -6,11 +6,11 @@ import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents the basic information of a comic book creator from the Comicvine API.
+ * Represents the basic information of a comic character from Comicvine.
  *
  * @author Steffen Berger
  */
-public class SimplePerson implements ComicvineEntity {
+public class CharacterCredit implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";
@@ -22,26 +22,25 @@ public class SimplePerson implements ComicvineEntity {
   private final String name;
 
   /**
-   * Creates a new representation of the basic information of a creator of a comic book issue
-   * retrieved from the Comicvine API.
+   * Creates a new representation of the basic information of a comic character from Comicvine.
    *
-   * @param id   The unique ID of the creator.
-   * @param name The name of the creator.
+   * @param id   The character's unique ID.
+   * @param name The character's name.
    */
-  public SimplePerson(long id, String name) {
+  public CharacterCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * @return The unique ID of the creator.
+   * @return The character's unique ID.
    */
   public long getId() {
     return this.id;
   }
 
   /**
-   * @return The name of the creator.
+   * @return The character's name.
    */
   public String getName() {
     return this.name;
@@ -61,7 +60,7 @@ public class SimplePerson implements ComicvineEntity {
     if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final SimplePerson that = (SimplePerson) obj;
+    CharacterCredit that = (CharacterCredit) obj;
     return this.id == that.id &&
         Objects.equal(this.name, that.name);
   }

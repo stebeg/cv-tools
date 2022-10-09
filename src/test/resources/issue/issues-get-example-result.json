@@ -1,0 +1,31 @@
+{
+  "number_of_page_results": 2,
+  "number_of_total_results": 205,
+  "status_code": 1,
+  "results": [
+    {
+      "issue_number": "1",
+      "description": "\u003ch3\u003eThe Planet of Doomed Men\u003c/h3\u003e",
+      "cover_date": "1960-08-31",
+      "store_date": "1960-05-24",
+      "image": {
+        "original_url": "https://comicvine.gamespot.com/api/image/original/4457-2013-4869-1-green-lantern.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4457-2013-4869-1-green-lantern.jpg"
+      },
+      "id": 4869,
+      "name": "The Planet of Doomed Men; Menace of the Giant Puppet!"
+    },
+    {
+      "issue_number": "2",
+      "description": "\u003ch3\u003eSecret of the Golden Thunderbolts\u003c/h3\u003e",
+      "cover_date": "1960-10-01",
+      "store_date": "1960-07-26",
+      "image": {
+        "original_url": "https://comicvine.gamespot.com/api/image/original/4529-2013-4944-1-green-lantern.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4529-2013-4944-1-green-lantern.jpg"
+      },
+      "id": 4944,
+      "name": "The Secret of the Golden Thunderbolts!; Riddle of the Frozen Ghost Town!"
+    }
+  ]
+}

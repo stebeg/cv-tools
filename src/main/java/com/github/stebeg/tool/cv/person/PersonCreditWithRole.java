@@ -6,12 +6,11 @@ import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents the basic information of a creator of a comic book issue retrieved from the Comicvine
- * API.
+ * Represents the basic information of a creator of a comic book issue retrieved from the Comicvine API.
  *
  * @author Steffen Berger
  */
-public class SimplePersonWithRole extends SimplePerson implements ComicvineEntity {
+public class PersonCreditWithRole extends PersonCredit implements ComicvineEntity {
 
   private static final String ROLE_ATTRIBUTE_NAME = "role";
 
@@ -26,7 +25,7 @@ public class SimplePersonWithRole extends SimplePerson implements ComicvineEntit
    * @param name The name of the creator.
    * @param role The role of the creator (e.g. writer, cover artist, ...)
    */
-  public SimplePersonWithRole(long id, String name, String role) {
+  public PersonCreditWithRole(long id, String name, String role) {
     super(id, name);
     this.role = role;
   }
@@ -53,7 +52,7 @@ public class SimplePersonWithRole extends SimplePerson implements ComicvineEntit
     if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final SimplePersonWithRole simplePersonWithRole = (SimplePersonWithRole) obj;
+    final PersonCreditWithRole simplePersonWithRole = (PersonCreditWithRole) obj;
     return getId() == simplePersonWithRole.getId()
         && Objects.equal(this.getName(), simplePersonWithRole.getName())
         && Objects.equal(this.role, simplePersonWithRole.getRole());

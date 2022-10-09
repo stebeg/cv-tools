@@ -2,7 +2,7 @@ package com.github.stebeg.tool.cv.volume;
 
 import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.image.Image;
-import com.github.stebeg.tool.cv.publisher.SimplePublisher;
+import com.github.stebeg.tool.cv.publisher.PublisherCredit;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -12,7 +12,7 @@ import com.google.gson.annotations.SerializedName;
  *
  * @author Steffen Berger
  */
-public class Volume extends SimpleVolume implements ComicvineEntity {
+public class Volume extends VolumeCredit implements ComicvineEntity {
 
   static final String DESCRIPTION_ATTRIBUTE_NAME = "description";
   static final String START_YEAR_ATTRIBUTE_NAME = "start_year";
@@ -31,7 +31,7 @@ public class Volume extends SimpleVolume implements ComicvineEntity {
   private Integer countOfIssues = null;
 
   @SerializedName(value = PUBLISHER_ATTRIBUTE_NAME)
-  private SimplePublisher publisher = null;
+  private PublisherCredit publisherCredit = null;
 
   @SerializedName(value = IMAGE_ATTRIBUTE_NAME)
   private Image image = null;
@@ -97,17 +97,17 @@ public class Volume extends SimpleVolume implements ComicvineEntity {
   /**
    * @return The publisher of the series/volume.
    */
-  public SimplePublisher getPublisher() {
-    return this.publisher;
+  public PublisherCredit getPublisherCredit() {
+    return this.publisherCredit;
   }
 
   /**
    * Sets the publisher of the series/volume.
    *
-   * @param publisher The publisher of the series/volume.
+   * @param publisherCredit The publisher of the series/volume.
    */
-  void setPublisher(SimplePublisher publisher) {
-    this.publisher = publisher;
+  void setPublisherCredit(PublisherCredit publisherCredit) {
+    this.publisherCredit = publisherCredit;
   }
 
   /**
@@ -150,7 +150,7 @@ public class Volume extends SimpleVolume implements ComicvineEntity {
         Objects.equal(this.description, volume.description) &&
         Objects.equal(this.startYear, volume.startYear) &&
         Objects.equal(this.countOfIssues, volume.countOfIssues) &&
-        Objects.equal(this.publisher, volume.publisher) &&
+        Objects.equal(this.publisherCredit, volume.publisherCredit) &&
         Objects.equal(this.image, volume.image);
   }
 
@@ -163,7 +163,7 @@ public class Volume extends SimpleVolume implements ComicvineEntity {
   public int hashCode() {
     return Objects
         .hashCode(super.hashCode(), this.description, this.startYear, this.countOfIssues,
-            this.publisher, this.image);
+            this.publisherCredit, this.image);
   }
 
   /**
@@ -179,7 +179,7 @@ public class Volume extends SimpleVolume implements ComicvineEntity {
         .add("description", this.description)
         .add("startYear", this.startYear)
         .add("countOfIssues", this.countOfIssues)
-        .add("publisher", this.publisher)
+        .add("publisherCredit", this.publisherCredit)
         .add("image", this.image)
         .toString();
   }

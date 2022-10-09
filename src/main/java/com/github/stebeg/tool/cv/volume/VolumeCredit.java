@@ -5,7 +5,12 @@ import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
-public class SimpleVolume implements ComicvineEntity {
+/**
+ * Represents the basic information of a comic volume from Comicvine.
+ *
+ * @author Steffen Berger
+ */
+public class VolumeCredit implements ComicvineEntity {
 
   static final String ID_ATTRIBUTE_NAME = "id";
   static final String NAME_ATTRIBUTE_NAME = "name";
@@ -22,7 +27,7 @@ public class SimpleVolume implements ComicvineEntity {
    * @param id   The unique ID of the series/volume.
    * @param name The name of the series/volume.
    */
-  SimpleVolume(long id, String name) {
+  VolumeCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
@@ -55,7 +60,7 @@ public class SimpleVolume implements ComicvineEntity {
     if (obj == null || getClass() != obj.getClass()) {
       return false;
     }
-    final SimpleVolume that = (SimpleVolume) obj;
+    final VolumeCredit that = (VolumeCredit) obj;
     return this.id == that.id &&
         Objects.equal(this.name, that.name);
   }
