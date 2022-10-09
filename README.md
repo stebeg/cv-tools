@@ -12,7 +12,7 @@ and issues.
 
 ### Search volumes
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final String searchText = "Green Lantern";
 
         final VolumeReader volumeReader = ComicvineToolsProvider.getVolumeReader();
@@ -24,7 +24,7 @@ and issues.
 
 ### Reading volume information
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long volumeId = 2839L;
 
         final VolumeReader volumeReader = ComicvineToolsProvider.getVolumeReader();
@@ -36,7 +36,7 @@ and issues.
 
 ### Reading volume issues
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long volumeId = 2839L;
 
         final IssueReader issueReader = ComicvineToolsProvider.getIssueReader();
@@ -48,7 +48,7 @@ and issues.
 
 ### Reading issue information
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long issueId = 310551L;
 
         final IssueReader issueReader = ComicvineToolsProvider.getIssueReader();
@@ -59,7 +59,7 @@ and issues.
 
 ### Reading character information
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long characterId = 11202L;
         
         final CharacterReader characterReader = ComicvineToolsProvider.getCharacterReader();
@@ -70,7 +70,7 @@ and issues.
 
 ### Reading team information
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long teamId = 11202L;
         
         final TeamReader teamReader = ComicvineToolsProvider.getTeamReader();
@@ -81,7 +81,7 @@ and issues.
 
 ### Reading publisher information
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long publisherId = 10L;
 
         final PublisherReader publisherReader = ComicvineToolsProvider.getPublisherReader();
@@ -92,7 +92,7 @@ and issues.
 
 ### Reading person information
 
-        final String apiKey = "abcdef12345";
+        final String apiKey = "..."; // your API key
         final long personId = 40439L;
 
         final PersonReader personReader = ComicvineToolsProvider.getPersonReader();
@@ -100,3 +100,14 @@ and issues.
 
         final Person person = personGetResult.getResult();
         System.out.println(person.getName());
+
+### Reading story arcs
+
+        final String apiKey = "..."; // your API key
+        final long storyArcId = 55766L;
+
+        final StoryArcReader storyArcReader = ComicvineToolsProvider.getStoryArcReader();
+        final StoryArcGetResult storyArcGetResult = storyArcReader.getStoryArc(apiKey, storyArcId);
+
+        final StoryArc storyArc = storyArcGetResult.getResult();
+        System.out.println(storyArc.getName());

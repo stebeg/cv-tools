@@ -28,6 +28,8 @@ import com.github.stebeg.tool.cv.person.PersonReader;
 import com.github.stebeg.tool.cv.person.PersonReaderProvider;
 import com.github.stebeg.tool.cv.publisher.PublisherReader;
 import com.github.stebeg.tool.cv.publisher.PublisherReaderProvider;
+import com.github.stebeg.tool.cv.storyarc.StoryArcReader;
+import com.github.stebeg.tool.cv.storyarc.StoryArcReaderProvider;
 import com.github.stebeg.tool.cv.team.TeamReader;
 import com.github.stebeg.tool.cv.team.TeamReaderProvider;
 import com.github.stebeg.tool.cv.volume.VolumeReader;
@@ -47,6 +49,7 @@ public final class ComicvineToolsProvider {
   private static final PersonReader PERSON_READER = PersonReaderProvider.getInstance();
   private static final VolumeReader VOLUME_READER = VolumeReaderProvider.getInstance();
   private static final IssueReader ISSUE_READER = IssueReaderProvider.getInstance();
+  private static final StoryArcReader STORY_ARC_READER = StoryArcReaderProvider.getInstance();
 
   private ComicvineToolsProvider() {
     throw new UnsupportedOperationException();
@@ -98,5 +101,13 @@ public final class ComicvineToolsProvider {
    */
   public static IssueReader getIssueReader() {
     return ISSUE_READER;
+  }
+
+  /**
+   * @return The only instance of the implementation of {@link StoryArcReader}.
+   * @see StoryArcReader
+   */
+  public static StoryArcReader getStoryArcReader() {
+    return STORY_ARC_READER;
   }
 }
