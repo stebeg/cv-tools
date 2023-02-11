@@ -169,6 +169,36 @@
         "name": "Zamarons"
       }
     ],
+    "location_credits": [
+      {
+        "id": 23611,
+        "name": "Gotham City"
+      },
+      {
+        "id": 55781,
+        "name": "Mars"
+      },
+      {
+        "id": 56000,
+        "name": "Odym"
+      },
+      {
+        "id": 53799,
+        "name": "Okaara"
+      },
+      {
+        "id": 56616,
+        "name": "Xanshi"
+      },
+      {
+        "id": 55871,
+        "name": "Ysmault"
+      },
+      {
+        "id": 55959,
+        "name": "Zamaron"
+      }
+    ],
     "person_credits": [
       {
         "role": "inker, cover",

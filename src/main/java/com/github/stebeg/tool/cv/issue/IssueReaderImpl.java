@@ -40,6 +40,7 @@ class IssueReaderImpl implements IssueReader {
       .addAll(VOLUME_ISSUES_FIELD_NAMES)
       .add(Issue.CHARACTER_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.TEAM_CREDITS_ATTRIBUTE_NAME)
+      .add(Issue.LOCATION_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.PERSON_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.STORY_ARC_CREDITS_ATTRIBUTE_NAME)
       .build();

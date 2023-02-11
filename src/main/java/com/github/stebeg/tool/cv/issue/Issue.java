@@ -3,6 +3,7 @@ package com.github.stebeg.tool.cv.issue;
 import com.github.stebeg.tool.cv.ComicvineEntity;
 import com.github.stebeg.tool.cv.character.CharacterCredit;
 import com.github.stebeg.tool.cv.image.Image;
+import com.github.stebeg.tool.cv.location.LocationCredit;
 import com.github.stebeg.tool.cv.person.PersonCreditWithRole;
 import com.github.stebeg.tool.cv.storyarc.StoryArcCredit;
 import com.github.stebeg.tool.cv.team.TeamCredit;
@@ -31,6 +32,8 @@ public class Issue extends IssueCredit implements ComicvineEntity {
 
   static final String CHARACTER_CREDITS_ATTRIBUTE_NAME = "character_credits";
   static final String TEAM_CREDITS_ATTRIBUTE_NAME = "team_credits";
+  static final String LOCATION_CREDITS_ATTRIBUTE_NAME = "location_credits";
+
   static final String PERSON_CREDITS_ATTRIBUTE_NAME = "person_credits";
   static final String STORY_ARC_CREDITS_ATTRIBUTE_NAME = "story_arc_credits";
 
@@ -57,6 +60,9 @@ public class Issue extends IssueCredit implements ComicvineEntity {
 
   @SerializedName(value = TEAM_CREDITS_ATTRIBUTE_NAME)
   private final List<TeamCredit> teamCredits = new ArrayList<>();
+
+  @SerializedName(value = LOCATION_CREDITS_ATTRIBUTE_NAME)
+  private final List<LocationCredit> locationCredits = new ArrayList<>();
 
   @SerializedName(value = PERSON_CREDITS_ATTRIBUTE_NAME)
   private final List<PersonCreditWithRole> personCredits = new ArrayList<>();
@@ -175,6 +181,13 @@ public class Issue extends IssueCredit implements ComicvineEntity {
    */
   public List<TeamCredit> getTeamCredits() {
     return this.teamCredits;
+  }
+
+  /**
+   * @return A list of locations appearing in the issue.
+   */
+  public List<LocationCredit> getLocationCredits() {
+    return this.locationCredits;
   }
 
   /**
