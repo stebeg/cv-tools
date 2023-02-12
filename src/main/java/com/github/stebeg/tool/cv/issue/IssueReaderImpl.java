@@ -43,6 +43,8 @@ class IssueReaderImpl implements IssueReader {
       .add(Issue.LOCATION_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.PERSON_CREDITS_ATTRIBUTE_NAME)
       .add(Issue.STORY_ARC_CREDITS_ATTRIBUTE_NAME)
+      .add(Issue.WEB_URL_ATTRIBUTE_NAME)
+      .add(Issue.API_URL_ATTRIBUTE_NAME)
       .build();
 
   private static final String FIELD_LIST_PARAMETER_NAME = "field_list";

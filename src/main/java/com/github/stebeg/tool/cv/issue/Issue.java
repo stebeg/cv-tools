@@ -37,6 +37,9 @@ public class Issue extends IssueCredit implements ComicvineEntity {
   static final String PERSON_CREDITS_ATTRIBUTE_NAME = "person_credits";
   static final String STORY_ARC_CREDITS_ATTRIBUTE_NAME = "story_arc_credits";
 
+  static final String WEB_URL_ATTRIBUTE_NAME = "site_detail_url";
+  static final String API_URL_ATTRIBUTE_NAME = "api_detail_url";
+
   @SerializedName(value = ISSUE_NUMBER_ATTRIBUTE_NAME)
   private final String issueNumber;
 
@@ -69,6 +72,12 @@ public class Issue extends IssueCredit implements ComicvineEntity {
 
   @SerializedName(value = STORY_ARC_CREDITS_ATTRIBUTE_NAME)
   private final List<StoryArcCredit> storyArcCredits = new ArrayList<>();
+
+  @SerializedName(value = WEB_URL_ATTRIBUTE_NAME)
+  private String webUrl = null;
+
+  @SerializedName(value = API_URL_ATTRIBUTE_NAME)
+  private String apiUrl = null;
 
   /**
    * Creates a new representation of a comic series issue retrieved from the Comicvine API.
@@ -205,6 +214,38 @@ public class Issue extends IssueCredit implements ComicvineEntity {
   }
 
   /**
+   * @return The web url of the issue.
+   */
+  public String getWebUrl() {
+    return this.webUrl;
+  }
+
+  /**
+   * Sets the web url of the issue.
+   *
+   * @param webUrl The web url of the issue.
+   */
+  public void setWebUrl(String webUrl) {
+    this.webUrl = webUrl;
+  }
+
+  /**
+   * @return The API url of the issue.
+   */
+  public String getApiUrl() {
+    return this.apiUrl;
+  }
+
+  /**
+   * Sets the API url of the issue.
+   *
+   * @param apiUrl The API url of the issue.
+   */
+  public void setApiUrl(String apiUrl) {
+    this.apiUrl = apiUrl;
+  }
+
+  /**
    * {@inheritDoc}
    *
    * @return {@inheritDoc}
@@ -228,8 +269,11 @@ public class Issue extends IssueCredit implements ComicvineEntity {
         Objects.equal(this.volumeCredit, issue.volumeCredit) &&
         Objects.equal(this.characterCredits, issue.characterCredits) &&
         Objects.equal(this.teamCredits, issue.teamCredits) &&
+        Objects.equal(this.locationCredits, issue.locationCredits) &&
         Objects.equal(this.personCredits, issue.personCredits) &&
-        Objects.equal(this.storyArcCredits, issue.storyArcCredits);
+        Objects.equal(this.storyArcCredits, issue.storyArcCredits) &&
+        Objects.equal(this.webUrl, issue.webUrl) &&
+        Objects.equal(this.apiUrl, issue.apiUrl);
   }
 
   /**
@@ -242,7 +286,7 @@ public class Issue extends IssueCredit implements ComicvineEntity {
     return Objects
         .hashCode(super.hashCode(), this.issueNumber, this.description, this.coverDate,
             this.inStoreDate, this.image, this.volumeCredit, this.characterCredits, this.teamCredits,
-            this.personCredits, this.storyArcCredits);
+            this.locationCredits, this.personCredits, this.storyArcCredits, this.webUrl, this.apiUrl);
   }
 
   /**
@@ -263,8 +307,11 @@ public class Issue extends IssueCredit implements ComicvineEntity {
         .add("volumeCredit", this.volumeCredit)
         .add("characterCredits", this.characterCredits)
         .add("teamCredits", this.teamCredits)
+        .add("teamCredits", this.locationCredits)
         .add("personCredits", this.personCredits)
         .add("storyArcCredits", this.storyArcCredits)
+        .add("webUrl", this.webUrl)
+        .add("apiUrl", this.apiUrl)
         .toString();
   }
 }
