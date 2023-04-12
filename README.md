@@ -6,8 +6,8 @@ A Java library for retrieving information from the Comicvine API.
 You need a Comicvine API-key to use this library.  
 See [https://comicvine.gamespot.com/api/](https://comicvine.gamespot.com/api/)
 
-The `ComicvineToolsProvider` class provides instances for `CharacterReader` `VolumeReader` and 
-`IssueReader`, which can be used to search volumes and retrive informations for charcters volumes 
+The `ComicvineToolsProvider` class provides instances for `CharacterReader` `VolumeReader` and
+`IssueReader`, which can be used to search volumes and retrieve information for characters volumes
 and issues.
 
 ### Search volumes

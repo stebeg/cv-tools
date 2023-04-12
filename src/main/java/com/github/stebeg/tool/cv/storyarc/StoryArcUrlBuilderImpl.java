@@ -1,6 +1,7 @@
 package com.github.stebeg.tool.cv.storyarc;
 
 import com.github.stebeg.tool.cv.Constants;
+import com.github.stebeg.tool.cv.search.SearchUrlBuilderImpl;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -12,7 +13,7 @@ import org.apache.http.client.utils.URIBuilder;
  *
  * @author Steffen Berger
  */
-class StoryArcUrlBuilderImpl implements StoryArcUrlBuilder {
+class StoryArcUrlBuilderImpl extends SearchUrlBuilderImpl implements StoryArcUrlBuilder {
 
   /**
    * The URL fragment appended to {@link Constants#API_BASE_URL} to build the URL for reading story arcs via Comicvine API.
@@ -20,6 +21,18 @@ class StoryArcUrlBuilderImpl implements StoryArcUrlBuilder {
   static final String API_STORY_ARC_URL_FRAGMENT = "/story_arc/";
 
   StoryArcUrlBuilderImpl() {
+  }
+
+  /**
+   * {@inheritDoc}
+   *
+   * @param parameter {@inheritDoc}
+   * @return {@inheritDoc}
+   * @throws IOException {@inheritDoc}
+   */
+  @Override
+  public URL buildStoryArcSearchUrl(final Map<String, String> parameter) throws IOException {
+    return super.buildSearchUrl(parameter);
   }
 
   /**

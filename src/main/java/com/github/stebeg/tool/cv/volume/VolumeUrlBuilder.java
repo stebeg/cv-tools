@@ -12,11 +12,10 @@ import java.util.Map;
 interface VolumeUrlBuilder {
 
   /**
-   * Builds an URL for searching volumes via Comicvine API.
+   * Builds a URL for searching volumes via Comicvine API.
    *
-   * @param parameter The query parameters which will be added to the search URL. The keys in this
-   *                  map represent the parameter names. The values of this map represent the
-   *                  parameter values.
+   * @param parameter The query parameters which will be added to the search URL. The keys in this map represent the parameter names. The values of this map represent the parameter
+   *                  values.
    * @return The URL for searching volumes via Comicvine API.
    * @throws IOException When building the URL fails.
    */

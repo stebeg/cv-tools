@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.storyarc;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyMap;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
@@ -13,6 +14,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.net.URL;
 import java.net.URLConnection;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class StoryArcReaderImplTest extends AbstractJsonComparisonTest {
@@ -30,6 +32,26 @@ public class StoryArcReaderImplTest extends AbstractJsonComparisonTest {
     final UrlContentReader urlContentReader = new UrlContentReaderImpl(
         this.urlConnectionBuilderMock);
     this.instance = new StoryArcReaderImpl(this.urlBuilderMock, urlContentReader, new Gson());
+  }
+
+  @Test
+  @Disabled // Searching for story arcs is currently not working correctly (Problem within Comicvine API)
+  public void testSearchStoryArcs() throws Exception {
+    final String apiKey = "1234567890abcdef";
+    final String searchText = "Blackest";
+    final StoryArcSearchResult expResult = new StoryArcSearchResult(1, 2, 189);
+
+    final URL url = getClass().getResource("/storyarc/storyarc-search-example.json");
+    when(this.urlBuilderMock.buildStoryArcSearchUrl(anyMap())).thenReturn(url);
+
+    final URLConnection urlConnection = url.openConnection();
+    when(this.urlConnectionBuilderMock.build(url)).thenReturn(urlConnection);
+
+    final StoryArcSearchResult result = this.instance.searchStoryArcs(apiKey, searchText);
+    assertEquals(expResult.getStatusCode(), result.getStatusCode());
+    assertEquals(expResult.getNumberOfPageResults(), result.getNumberOfPageResults());
+    assertEquals(expResult.getNumberOfTotalResults(), result.getNumberOfTotalResults());
+    assertJsonEquals("/storyarc/story-arc-search-example-result.json", result);
   }
 
   @Test

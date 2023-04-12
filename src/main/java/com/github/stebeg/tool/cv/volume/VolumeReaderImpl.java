@@ -27,7 +27,10 @@ class VolumeReaderImpl implements VolumeReader {
   private static final String FORMAT_PARAMETER_VALUE = "json";
 
   private static final String LIMIT_PARAMETER_NAME = "limit";
-  private static final Integer LIMIT_PARAMETER_VALUE = 50;
+  private static final Integer DEFAULT_LIMIT_PARAMETER_VALUE = 100;
+
+  private static final String OFFSET_PARAMETER_NAME = "offset";
+  private static final Integer DEFAULT_OFFSET_PARAMETER_VALUE = 0;
 
   private static final String RESOURCES_PARAMETER_NAME = "resources";
   private static final String RESOURCES_PARAMETER_VALUE = "volume";
@@ -77,10 +80,23 @@ class VolumeReaderImpl implements VolumeReader {
   public VolumeSearchResult searchVolumes(
       final String apiKey,
       final String searchText) throws IOException {
+    return searchVolumes(apiKey, searchText, DEFAULT_LIMIT_PARAMETER_VALUE, DEFAULT_OFFSET_PARAMETER_VALUE);
+  }
+
+  @Override
+  public VolumeSearchResult searchVolumes(
+      final String apiKey,
+      final String searchText,
+      final Integer limit,
+      final Integer offset) throws IOException {
+    final Integer limitValue = limit != null ? limit : DEFAULT_LIMIT_PARAMETER_VALUE;
+    final Integer offsetValue = offset != null ? offset : DEFAULT_OFFSET_PARAMETER_VALUE;
+
     final Map<String, String> parameter = ImmutableMap.<String, String>builder()
         .put(Constants.API_KEY_PARAMETER_NAME, apiKey)
         .put(FORMAT_PARAMETER_NAME, FORMAT_PARAMETER_VALUE)
-        .put(LIMIT_PARAMETER_NAME, LIMIT_PARAMETER_VALUE.toString())
+        .put(LIMIT_PARAMETER_NAME, limitValue.toString())
+        .put(OFFSET_PARAMETER_NAME, offsetValue.toString())
         .put(RESOURCES_PARAMETER_NAME, RESOURCES_PARAMETER_VALUE)
         .put(FIELD_LIST_PARAMETER_NAME, FIELD_LIST_PARAMETER_VALUE)
         .put(QUERY_PARAMETER_NAME, searchText)

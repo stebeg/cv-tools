@@ -1,4 +1,4 @@
-package com.github.stebeg.tool.cv.volume;
+package com.github.stebeg.tool.cv.search;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,28 +9,25 @@ import java.net.URL;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 
-public class VolumeUrlBuilderImplTest {
+public class SearchUrlBuilderImplTest {
 
-  private final VolumeUrlBuilder instance;
+  private SearchUrlBuilderImpl instance;
 
-  public VolumeUrlBuilderImplTest() {
-    this.instance = new VolumeUrlBuilderImpl();
+  public SearchUrlBuilderImplTest() {
+    this.instance = new SearchUrlBuilderImpl();
   }
 
   @Test
-  public void testBuildVolumeGetUrl() throws IOException {
-    final long volumeId = 1234L;
+  public void testBuildSearchUrl() throws IOException {
     final String paramName = "foo", paramValue = "bar";
     final Map<String, String> parameter = ImmutableMap.of(paramName, paramValue);
     final String expPath = Constants.API_BASE_URL
-        .concat(VolumeUrlBuilderImpl.API_VOLUME_URL_FRAGMENT)
-        .concat("4050-").concat(String.valueOf(volumeId)).concat("/")
+        .concat(SearchUrlBuilderImpl.API_SEARCH_URL_FRAGMENT)
         .concat("?").concat(Constants.CLIENT_PARAMETER_NAME)
         .concat("=").concat(Constants.CLIENT_PARAMETER_VALUE)
         .concat("&").concat(paramName).concat("=").concat(paramValue);
 
-    final URL result = this.instance.buildVolumeGetUrl(volumeId, parameter);
+    final URL result = this.instance.buildSearchUrl(parameter);
     assertEquals(expPath, result.toString());
   }
-
 }

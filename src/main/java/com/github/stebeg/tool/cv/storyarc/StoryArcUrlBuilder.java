@@ -12,6 +12,16 @@ import java.util.Map;
 public interface StoryArcUrlBuilder {
 
   /**
+   * Builds a URL for searching story arcs via Comicvine API.
+   *
+   * @param parameter The query parameters which will be added to the search URL. The keys in this map represent the parameter names. The values of this map represent the parameter
+   *                  values.
+   * @return The URL for searching story arcs via Comicvine API.
+   * @throws IOException When building the URL fails.
+   */
+  URL buildStoryArcSearchUrl(Map<String, String> parameter) throws IOException;
+
+  /**
    * Builds a URL for retrieving story arc information from the Comicvine API.
    *
    * @param storyArcId The ID of the story arc.

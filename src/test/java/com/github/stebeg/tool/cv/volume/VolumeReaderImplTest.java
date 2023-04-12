@@ -1,5 +1,6 @@
 package com.github.stebeg.tool.cv.volume;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.anyMap;
 import static org.mockito.Mockito.eq;
 import static org.mockito.Mockito.mock;
@@ -46,6 +47,9 @@ public class VolumeReaderImplTest extends AbstractJsonComparisonTest {
     when(this.urlConnectionBuilderMock.build(url)).thenReturn(urlConnection);
 
     final VolumeSearchResult result = this.instance.searchVolumes(apiKey, searchText);
+    assertEquals(expResult.getStatusCode(), result.getStatusCode());
+    assertEquals(expResult.getNumberOfPageResults(), result.getNumberOfPageResults());
+    assertEquals(expResult.getNumberOfTotalResults(), result.getNumberOfTotalResults());
     assertJsonEquals("/volume/volume-search-example-result.json", result);
   }
 
