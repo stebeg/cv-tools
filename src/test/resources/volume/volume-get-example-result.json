@@ -2,7 +2,7 @@
   "status_code": 1,
   "results": {
     "description": "\u003cp\u003eThe Description of Green Lantern Volume 2.\u003c/p\u003e",
-    "start_year": 1960,
+    "start_year": "1960",
     "count_of_issues": 205,
     "publisher": {
       "id": 10,

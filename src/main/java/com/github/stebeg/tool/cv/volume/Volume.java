@@ -25,7 +25,7 @@ public class Volume extends VolumeCredit implements ComicvineEntity {
   private String description = null;
 
   @SerializedName(value = START_YEAR_ATTRIBUTE_NAME)
-  private Integer startYear = null;
+  private String startYear = null;
 
   @SerializedName(value = COUNT_OF_ISSUES_ATTRIBUTE_NAME)
   private Integer countOfIssues = null;
@@ -65,7 +65,7 @@ public class Volume extends VolumeCredit implements ComicvineEntity {
   /**
    * @return The year the first issue of the series/volume was released.
    */
-  public Integer getStartYear() {
+  public String getStartYear() {
     return this.startYear;
   }
 
@@ -74,7 +74,7 @@ public class Volume extends VolumeCredit implements ComicvineEntity {
    *
    * @param startYear The year the first issue of the series/volume was released.
    */
-  void setStartYear(Integer startYear) {
+  void setStartYear(String startYear) {
     this.startYear = startYear;
   }
 
