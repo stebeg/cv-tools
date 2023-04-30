@@ -14,7 +14,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.net.URL;
 import java.net.URLConnection;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class StoryArcReaderImplTest extends AbstractJsonComparisonTest {
@@ -35,11 +34,10 @@ public class StoryArcReaderImplTest extends AbstractJsonComparisonTest {
   }
 
   @Test
-  @Disabled // Searching for story arcs is currently not working correctly (Problem within Comicvine API)
   public void testSearchStoryArcs() throws Exception {
     final String apiKey = "1234567890abcdef";
     final String searchText = "Blackest";
-    final StoryArcSearchResult expResult = new StoryArcSearchResult(1, 2, 189);
+    final StoryArcSearchResult expResult = new StoryArcSearchResult(1, 1, 1);
 
     final URL url = getClass().getResource("/storyarc/storyarc-search-example.json");
     when(this.urlBuilderMock.buildStoryArcSearchUrl(anyMap())).thenReturn(url);
@@ -51,7 +49,7 @@ public class StoryArcReaderImplTest extends AbstractJsonComparisonTest {
     assertEquals(expResult.getStatusCode(), result.getStatusCode());
     assertEquals(expResult.getNumberOfPageResults(), result.getNumberOfPageResults());
     assertEquals(expResult.getNumberOfTotalResults(), result.getNumberOfTotalResults());
-    assertJsonEquals("/storyarc/story-arc-search-example-result.json", result);
+    assertJsonEquals("/storyarc/storyarc-search-example-result.json", result);
   }
 
   @Test

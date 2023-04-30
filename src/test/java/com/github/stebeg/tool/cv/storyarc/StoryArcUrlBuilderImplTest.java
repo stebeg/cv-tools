@@ -18,6 +18,20 @@ public class StoryArcUrlBuilderImplTest {
   }
 
   @Test
+  public void testBuildStoryArcSearchUrl() throws IOException {
+    final String paramName = "foo", paramValue = "bar";
+    final Map<String, String> parameter = ImmutableMap.of(paramName, paramValue);
+    final String expPath = Constants.API_BASE_URL
+        .concat(StoryArcUrlBuilderImpl.API_STORY_ARCS_URL_FRAGMENT)
+        .concat("?").concat(Constants.CLIENT_PARAMETER_NAME)
+        .concat("=").concat(Constants.CLIENT_PARAMETER_VALUE)
+        .concat("&").concat(paramName).concat("=").concat(paramValue);
+
+    final URL result = this.instance.buildStoryArcSearchUrl(parameter);
+    assertEquals(expPath, result.toString());
+  }
+
+  @Test
   public void testBuildStoryArcGetUrl() throws IOException {
     final long storyArcId = 1234L;
     final String paramName = "foo", paramValue = "bar";

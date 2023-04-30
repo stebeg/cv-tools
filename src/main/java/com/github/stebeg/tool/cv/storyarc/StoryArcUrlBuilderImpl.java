@@ -1,7 +1,6 @@
 package com.github.stebeg.tool.cv.storyarc;
 
 import com.github.stebeg.tool.cv.Constants;
-import com.github.stebeg.tool.cv.search.SearchUrlBuilderImpl;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -13,12 +12,13 @@ import org.apache.http.client.utils.URIBuilder;
  *
  * @author Steffen Berger
  */
-class StoryArcUrlBuilderImpl extends SearchUrlBuilderImpl implements StoryArcUrlBuilder {
+class StoryArcUrlBuilderImpl implements StoryArcUrlBuilder {
 
   /**
    * The URL fragment appended to {@link Constants#API_BASE_URL} to build the URL for reading story arcs via Comicvine API.
    */
   static final String API_STORY_ARC_URL_FRAGMENT = "/story_arc/";
+  static final String API_STORY_ARCS_URL_FRAGMENT = "/story_arcs/";
 
   StoryArcUrlBuilderImpl() {
   }
@@ -32,7 +32,19 @@ class StoryArcUrlBuilderImpl extends SearchUrlBuilderImpl implements StoryArcUrl
    */
   @Override
   public URL buildStoryArcSearchUrl(final Map<String, String> parameter) throws IOException {
-    return super.buildSearchUrl(parameter);
+    try {
+      final String url = Constants.API_BASE_URL.concat(API_STORY_ARCS_URL_FRAGMENT);
+      final URIBuilder uriBuilder = new URIBuilder(url);
+      uriBuilder.addParameter(
+          Constants.CLIENT_PARAMETER_NAME,
+          Constants.CLIENT_PARAMETER_VALUE);
+      for (final String parameterName : parameter.keySet()) {
+        uriBuilder.addParameter(parameterName, parameter.get(parameterName));
+      }
+      return uriBuilder.build().toURL();
+    } catch (URISyntaxException uriSyntaxException) {
+      throw new IOException(uriSyntaxException);
+    }
   }
 
   /**
