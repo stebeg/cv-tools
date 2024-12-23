@@ -1,0 +1,143 @@
+{
+  "error": "OK",
+  "limit": 3,
+  "offset": 0,
+  "number_of_page_results": 3,
+  "number_of_total_results": 390,
+  "status_code": 1,
+  "results": [
+    {
+      "aliases": "Goddess of the Dead\nLady of the Lantern\nLois Lane\nZatanna\nGreen Lantern",
+      "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-45112\/",
+      "birth": null,
+      "count_of_issue_appearances": 55,
+      "date_added": "2008-06-06 11:27:27",
+      "date_last_updated": "2023-05-17 19:03:22",
+      "deck": "Green Lantern is a woman who carries a lantern that can resurrect someone until they finish their unfinished business, if she places it on their grave.",
+      "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/first_appeared_in_issue\/4000-120435\/",
+        "id": 120435,
+        "name": "\"From Beyond The Unknown\"",
+        "issue_number": "1"
+      },
+      "gender": 2,
+      "id": 45112,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/2\/25835\/753969-greenlantern__earth_9_.jpg",
+        "image_tags": "All Images,Green Lantern"
+      },
+      "name": "Green Lantern (Tangent)",
+      "origin": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/origin\/4030-7\/",
+        "id": 7,
+        "name": "God\/Eternal"
+      },
+      "publisher": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "real_name": null,
+      "site_detail_url": "https:\/\/comicvine.gamespot.com\/green-lantern-tangent\/4005-45112\/",
+      "resource_type": "character"
+    },
+    {
+      "aliases": "Green Lantern \nHal Jordan III",
+      "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-86357\/",
+      "birth": null,
+      "count_of_issue_appearances": 1,
+      "date_added": "2012-11-04 22:41:38",
+      "date_last_updated": "2023-07-11 19:37:22",
+      "deck": "The grandson of Hal Jordan.",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<\/p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/first_appeared_in_issue\/4000-120389\/",
+        "id": 120389,
+        "name": "The Blood-Soaked Sands",
+        "issue_number": "1"
+      },
+      "gender": 1,
+      "id": 86357,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/13\/139809\/2685232-hal_jordan__earth_12_.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Green Lantern of the Milky Way",
+      "origin": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/origin\/4030-4\/",
+        "id": 4,
+        "name": "Human"
+      },
+      "publisher": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "real_name": "Hal Jordan III",
+      "site_detail_url": "https:\/\/comicvine.gamespot.com\/green-lantern-of-the-milky-way\/4005-86357\/",
+      "resource_type": "character"
+    },
+    {
+      "aliases": "Green Lantern\nLantern",
+      "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-64457\/",
+      "birth": null,
+      "count_of_issue_appearances": 3,
+      "date_added": "2009-08-04 09:04:40",
+      "date_last_updated": "2012-01-29 12:15:44",
+      "deck": "The Green Lantern of year 2029 is an enormous whale who comes to the aid of an aged Animal Man during a flash forward to the heroes \"last days\". It is unknown if this Lantern was the appointed Green Lantern of Sector 2814, or was operating outside of his assigned Space Sector.",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<\/p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/first_appeared_in_issue\/4000-161558\/",
+        "id": 161558,
+        "name": "Part Two: Rage",
+        "issue_number": "2"
+      },
+      "gender": 1,
+      "id": 64457,
+      "image": {
+        "icon_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/1\/13181\/903373-untitled.jpg",
+        "medium_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/1\/13181\/903373-untitled.jpg",
+        "screen_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/1\/13181\/903373-untitled.jpg",
+        "screen_large_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/1\/13181\/903373-untitled.jpg",
+        "small_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/1\/13181\/903373-untitled.jpg",
+        "super_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/1\/13181\/903373-untitled.jpg",
+        "thumb_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/1\/13181\/903373-untitled.jpg",
+        "tiny_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/1\/13181\/903373-untitled.jpg",
+        "original_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/1\/13181\/903373-untitled.jpg",
+        "image_tags": "All Images,Green Lantern"
+      },
+      "name": "Green Lantern: Circa 2029",
+      "origin": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/origin\/4030-8\/",
+        "id": 8,
+        "name": "Animal"
+      },
+      "publisher": {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "real_name": null,
+      "site_detail_url": "https:\/\/comicvine.gamespot.com\/green-lantern-circa-2029\/4005-64457\/",
+      "resource_type": "character"
+    }
+  ],
+  "version": "1.0"
+}

@@ -1,0 +1,234 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": "Harold Jordan\nGreen Lantern\nParallax\nSpectre",
+    "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-11202\/",
+    "birth": "Feb 20, 1974",
+    "character_enemies": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-50869\/",
+        "id": 50869,
+        "name": "Abnegazar",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/abnegazar\/4005-50869\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-5715\/",
+        "id": 5715,
+        "name": "Abra Kadabra",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/abra-kadabra\/4005-5715\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-73358\/",
+        "id": 73358,
+        "name": "Abraham Pointe",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/abraham-pointe\/4005-73358\/"
+      }
+    ],
+    "character_friends": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-49707\/",
+        "id": 49707,
+        "name": "Aa",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/aa\/4005-49707\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-22634\/",
+        "id": 22634,
+        "name": "Abin Sur",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/abin-sur\/4005-22634\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-16338\/",
+        "id": 16338,
+        "name": "Ace Morgan",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/ace-morgan\/4005-16338\/"
+      }
+    ],
+    "count_of_issue_appearances": 5454,
+    "creators": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/creator\/4040-1764\/",
+        "id": 1764,
+        "name": "Gil Kane",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/gil-kane\/4040-1764\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/creator\/4040-48152\/",
+        "id": 48152,
+        "name": "John Broome",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/john-broome\/4040-48152\/"
+      }
+    ],
+    "date_added": "2008-06-06 11:27:42",
+    "date_last_updated": "2024-08-27 06:29:11",
+    "deck": "With the ability to overcome great fear and harness the power of will, test-pilot Hal Jordan was chosen to be the Green Lantern of Sector 2814.",
+    "description": "<h2>Information<\/h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<\/p>",
+    "first_appeared_in_issue": {
+      "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/first_appeared_in_issue\/4000-4466\/",
+      "id": 4466,
+      "name": "S.O.S. Green Lantern \/ Secret of the Flaming Sphere \/ Menace of the Runaway Missile!",
+      "issue_number": "22"
+    },
+    "gender": 1,
+    "id": 11202,
+    "image": {
+      "icon_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "medium_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "screen_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "screen_large_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "small_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "super_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "thumb_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "tiny_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "original_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/12\/124259\/9439462-green-lantern-16-main-cover-675x1024.jpg",
+      "image_tags": "All Images"
+    },
+    "issue_credits": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/issue\/4000-1083717\/",
+        "id": 1083717,
+        "name": "Livin' Free; Live Fast! Die Now!",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/green-lanterngreen-arrow-worlds-finest-special-1-l\/4000-1083717\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/issue\/4000-1083609\/",
+        "id": 1083609,
+        "name": "The Secret Life of Ace Morgan",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/challengers-of-the-unknown-1-the-secret-life-of-ac\/4000-1083609\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/issue\/4000-1081543\/",
+        "id": 1081543,
+        "name": "Civil Corps Part III: Valley of Dying Stars",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/green-lantern-18-civil-corps-part-iii-valley-of-dy\/4000-1081543\/"
+      }
+    ],
+    "issues_died_in": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/issue\/4000-42940\/",
+        "id": 42940,
+        "name": "The Final Knight",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/the-final-night-4-the-final-knight\/4000-42940\/"
+      }
+    ],
+    "movies": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/movie\/4025-3021\/",
+        "id": 3021,
+        "name": "Justice League: Crisis on Infinite Earths - Part One",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/justice-league-crisis-on-infinite-earths-part-one\/4025-3021\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/movie\/4025-2987\/",
+        "id": 2987,
+        "name": "Scooby-Doo! and Krypto, Too!",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/scooby-doo-and-krypto-too\/4025-2987\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/movie\/4025-2748\/",
+        "id": 2748,
+        "name": "Green Lantern: Beware My Power",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/green-lantern-beware-my-power\/4025-2748\/"
+      }
+    ],
+    "name": "Hal Jordan",
+    "origin": {
+      "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/origin\/4030-4\/",
+      "id": 4,
+      "name": "Human"
+    },
+    "powers": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/power\/4035-1\/",
+        "id": 1,
+        "name": "Flight"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/power\/4035-2\/",
+        "id": 2,
+        "name": "Super Strength"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/power\/4035-3\/",
+        "id": 3,
+        "name": "Super Speed"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+      "id": 10,
+      "name": "DC Comics"
+    },
+    "real_name": "Harold Jordan",
+    "site_detail_url": "https:\/\/comicvine.gamespot.com\/hal-jordan\/4005-11202\/",
+    "story_arc_credits": [],
+    "team_enemies": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-20659\/",
+        "id": 20659,
+        "name": "Aliens (Xenomorphs)",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/aliens-xenomorphs\/4060-20659\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-49719\/",
+        "id": 49719,
+        "name": "Alpha Lanterns",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/alpha-lanterns\/4060-49719\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-53829\/",
+        "id": 53829,
+        "name": "Anti-Green Lantern Corps",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/anti-green-lantern-corps\/4060-53829\/"
+      }
+    ],
+    "team_friends": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-59012\/",
+        "id": 59012,
+        "name": "A.R.G.U.S.",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/argus\/4060-59012\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-63877\/",
+        "id": 63877,
+        "name": "Atlantis Royal Family",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/atlantis-royal-family\/4060-63877\/"
+      }
+    ],
+    "teams": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-50743\/",
+        "id": 50743,
+        "name": "Black Lantern Corps",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/black-lantern-corps\/4060-50743\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-24605\/",
+        "id": 24605,
+        "name": "Blackhawk Squadron",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/blackhawk-squadron\/4060-24605\/"
+      },
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-63867\/",
+        "id": 63867,
+        "name": "Blackstars",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/blackstars\/4060-63867\/"
+      }
+    ],
+    "volume_credits": [
+      {
+        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/volume\/4050-39745\/",
+        "id": 39745,
+        "name": "Universo DC",
+        "site_detail_url": "https:\/\/comicvine.gamespot.com\/universo-dc\/4050-39745\/"
+      }
+    ]
+  },
+  "version": "1.0"
+}
