@@ -27,7 +27,9 @@ public class Character extends CharacterListItem implements ComicvineEntity {
   }
 
   /**
-   * @return List of the real life people who created this character.
+   * Returns the list of references to the real life people who created this character.
+   *
+   * @return The list of references to the real life people who created this character.
    */
   public List<PersonCredit> getCreatorList() {
     return this.creatorList;

@@ -1,44 +1,44 @@
-package com.github.stebeg.comicvine.publisher;
+package com.github.stebeg.comicvine.location;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents the reference of a publisher.
+ * Represents the reference of a location.
  */
-public class PublisherCredit {
+public class LocationCredit {
 
-  @SerializedName(value = PublisherAttribute.ID)
+  @SerializedName(value = LocationAttribute.ID)
   private final long id;
 
-  @SerializedName(value = PublisherAttribute.NAME)
+  @SerializedName(value = LocationAttribute.NAME)
   private final String name;
 
   /**
-   * Creates a new representation of the reference of a publisher.
+   * Creates a new representation of the reference of a location.
    *
-   * @param id   The publisher's unique ID.
-   * @param name The publisher's name.
+   * @param id   The location's unique ID.
+   * @param name The location's name.
    */
-  public PublisherCredit(long id, String name) {
+  public LocationCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * Returns the publisher's unique ID.
+   * Returns the location's unique ID.
    *
-   * @return The publisher's unique ID.
+   * @return The location's unique ID.
    */
   public long getId() {
     return this.id;
   }
 
   /**
-   * Returns the publisher's name.
+   * Returns the location's name.
    *
-   * @return The publisher's name.
+   * @return The location's name.
    */
   public String getName() {
     return this.name;
@@ -52,7 +52,7 @@ public class PublisherCredit {
    */
   @Override
   public boolean equals(final Object obj) {
-    if (!(obj instanceof PublisherCredit that)) {
+    if (!(obj instanceof LocationCredit that)) {
       return false;
     }
     return this.id == that.id

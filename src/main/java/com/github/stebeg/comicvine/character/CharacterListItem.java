@@ -82,6 +82,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns a detailed HTML-description of the character.
+   *
    * @return A detailed HTML-description of the character.
    */
   public String getDescription() {

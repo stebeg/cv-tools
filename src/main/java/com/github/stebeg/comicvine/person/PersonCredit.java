@@ -79,6 +79,8 @@ public class PersonCredit {
     return MoreObjects.toStringHelper(this)
         .add("id", this.id)
         .add("name", this.name)
+        .omitEmptyValues()
+        .omitNullValues()
         .toString();
   }
 }

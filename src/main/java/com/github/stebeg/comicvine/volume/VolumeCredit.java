@@ -1,44 +1,44 @@
-package com.github.stebeg.comicvine.publisher;
+package com.github.stebeg.comicvine.volume;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents the reference of a publisher.
+ * Represents the reference of a volume.
  */
-public class PublisherCredit {
+public class VolumeCredit {
 
-  @SerializedName(value = PublisherAttribute.ID)
+  @SerializedName(value = VolumeAttribute.ID)
   private final long id;
 
-  @SerializedName(value = PublisherAttribute.NAME)
+  @SerializedName(value = VolumeAttribute.NAME)
   private final String name;
 
   /**
-   * Creates a new representation of the reference of a publisher.
+   * Creates a new representation of the reference of a volume.
    *
-   * @param id   The publisher's unique ID.
-   * @param name The publisher's name.
+   * @param id   The volume's unique ID.
+   * @param name The volume's name.
    */
-  public PublisherCredit(long id, String name) {
+  public VolumeCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * Returns the publisher's unique ID.
+   * Returns the volume's unique ID.
    *
-   * @return The publisher's unique ID.
+   * @return The volume's unique ID.
    */
   public long getId() {
     return this.id;
   }
 
   /**
-   * Returns the publisher's name.
+   * Returns the volume's name.
    *
-   * @return The publisher's name.
+   * @return The volume's name.
    */
   public String getName() {
     return this.name;
@@ -52,7 +52,7 @@ public class PublisherCredit {
    */
   @Override
   public boolean equals(final Object obj) {
-    if (!(obj instanceof PublisherCredit that)) {
+    if (!(obj instanceof VolumeCredit that)) {
       return false;
     }
     return this.id == that.id
