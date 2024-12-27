@@ -50,6 +50,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns the real name of the character.
+   *
    * @return Real name of the character.
    */
   public String getRealName() {
@@ -66,6 +68,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns a brief summary of the character.
+   *
    * @return Brief summary of the character.
    */
   public String getSummary() {
@@ -100,6 +104,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns a list of aliases the character is known by.
+   *
    * @return List of aliases the character is known by. A \n (newline) seperates each alias.
    */
   public String getAliases() {
@@ -116,6 +122,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns the primary publisher a character is attached to.
+   *
    * @return The primary publisher a character is attached to.
    */
   public PublisherCredit getPublisher() {
@@ -132,6 +140,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns the main image of the character.
+   *
    * @return Main image of the character.
    */
   public Image getImage() {
