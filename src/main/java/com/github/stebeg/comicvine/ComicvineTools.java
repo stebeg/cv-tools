@@ -3,6 +3,7 @@ package com.github.stebeg.comicvine;
 import com.github.stebeg.comicvine.character.CharacterRetriever;
 import com.github.stebeg.comicvine.common.request.UrlConnectionBuilder;
 import com.github.stebeg.comicvine.common.request.UrlContentReader;
+import com.github.stebeg.comicvine.location.LocationRetriever;
 import com.github.stebeg.comicvine.publisher.PublisherRetriever;
 import com.github.stebeg.comicvine.team.TeamRetriever;
 import com.google.gson.Gson;
@@ -18,6 +19,7 @@ public class ComicvineTools {
   private static final CharacterRetriever CHARACTER_RETRIEVER = new CharacterRetriever(URL_CONTENT_READER, GSON);
   private static final TeamRetriever TEAM_RETRIEVER = new TeamRetriever(URL_CONTENT_READER, GSON);
   private static final PublisherRetriever PUBLISHER_RETRIEVER = new PublisherRetriever(URL_CONTENT_READER, GSON);
+  private static final LocationRetriever LOCATION_RETRIEVER = new LocationRetriever(URL_CONTENT_READER, GSON);
 
   /**
    * Retrieves a singleton instance of the {@link CharacterRetriever}.
@@ -44,6 +46,15 @@ public class ComicvineTools {
    */
   public static PublisherRetriever getPublisherRetriever() {
     return PUBLISHER_RETRIEVER;
+  }
+
+  /**
+   * Retrieves a singleton instance of the {@link LocationRetriever}.
+   *
+   * @return A singleton instance of the {@link LocationRetriever}.
+   */
+  public static LocationRetriever getLocationRetriever() {
+    return LOCATION_RETRIEVER;
   }
 
 }

@@ -14,4 +14,34 @@ public class LocationAttribute {
    */
   public static final String NAME = "name";
 
+  /**
+   * The name of the attribute for the location's summary.
+   */
+  public static final String SUMMARY = "deck";
+
+  /**
+   * The name of the attribute for the location's description.
+   */
+  public static final String DESCRIPTION = "description";
+
+  /**
+   * The name of the attribute for the location's aliases.
+   */
+  public static final String ALIASES = "aliases";
+
+  /**
+   * The name of the attribute for the location's image.
+   */
+  public static final String IMAGE = "image";
+
+  /**
+   * The name of the attribute for the first year a location appeared in comics.
+   */
+  public static final String START_YEAR = "start_year";
+
+  /**
+   * The name of the attribute for the references of issues a location appeared in.
+   */
+  public static final String ISSUES = "issue_credits";
+
 }

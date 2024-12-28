@@ -1,5 +1,6 @@
 package com.github.stebeg.comicvine.location;
 
+import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -7,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Represents the reference of a location.
  */
-public class LocationCredit {
+public class LocationCredit implements ComicvineEntity {
 
   @SerializedName(value = LocationAttribute.ID)
   private final long id;
@@ -31,6 +32,7 @@ public class LocationCredit {
    *
    * @return The location's unique ID.
    */
+  @Override
   public long getId() {
     return this.id;
   }
@@ -40,6 +42,7 @@ public class LocationCredit {
    *
    * @return The location's name.
    */
+  @Override
   public String getName() {
     return this.name;
   }

@@ -177,6 +177,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * Returns the origin of the character.
+   *
    * @return The origin of the character. Human, Alien, Robot ...etc.
    */
   public CharacterOrigin getOrigin() {
@@ -193,6 +195,8 @@ public class CharacterListItem extends CharacterCredit {
   }
 
   /**
+   * A date, if one exists, that the character was born on. Not an origin date.
+   *
    * @return A date, if one exists, that the character was born on. Not an origin date.
    */
   public String getBirth() {
