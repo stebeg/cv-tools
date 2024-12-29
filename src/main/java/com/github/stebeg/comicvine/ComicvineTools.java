@@ -4,6 +4,7 @@ import com.github.stebeg.comicvine.character.CharacterRetriever;
 import com.github.stebeg.comicvine.common.request.UrlConnectionBuilder;
 import com.github.stebeg.comicvine.common.request.UrlContentReader;
 import com.github.stebeg.comicvine.location.LocationRetriever;
+import com.github.stebeg.comicvine.person.PersonRetriever;
 import com.github.stebeg.comicvine.publisher.PublisherRetriever;
 import com.github.stebeg.comicvine.storyarc.StoryArcRetriever;
 import com.github.stebeg.comicvine.team.TeamRetriever;
@@ -22,6 +23,7 @@ public class ComicvineTools {
   private static final PublisherRetriever PUBLISHER_RETRIEVER = new PublisherRetriever(URL_CONTENT_READER, GSON);
   private static final LocationRetriever LOCATION_RETRIEVER = new LocationRetriever(URL_CONTENT_READER, GSON);
   private static final StoryArcRetriever STORY_ARC_RETRIEVER = new StoryArcRetriever(URL_CONTENT_READER, GSON);
+  private static final PersonRetriever PERSON_RETRIEVER = new PersonRetriever(URL_CONTENT_READER, GSON);
 
   /**
    * Retrieves a singleton instance of the {@link CharacterRetriever}.
@@ -66,6 +68,15 @@ public class ComicvineTools {
    */
   public static StoryArcRetriever getStoryArcRetriever() {
     return STORY_ARC_RETRIEVER;
+  }
+
+  /**
+   * Retrieves a singleton instance of the {@link PersonRetriever}.
+   *
+   * @return A singleton instance of the {@link PersonRetriever}.
+   */
+  public static PersonRetriever getPersonRetriever() {
+    return PERSON_RETRIEVER;
   }
 
 }
