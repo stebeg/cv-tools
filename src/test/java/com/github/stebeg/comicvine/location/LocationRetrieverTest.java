@@ -45,7 +45,7 @@ public class LocationRetrieverTest {
 
     final Location expResult = new Location(locationId, "Metropolis");
     expResult.setSummary("Metropolis is much more than a bustling urban center. Like many east coast American cities, Metropolis is a melting pot of peoples and cultures from around the world. The city is often referred to as the Big Apricot, and the City of Tomorrow.");
-    expResult.setDescription("<h2>Imformation</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
+    expResult.setDescription("<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
     expResult.setStartYear("1939");
     expResult.setIssueList(ImmutableList.of(
         new IssueCredit(1080071, "Phantoms, Part Nine; Help Me"),
@@ -85,7 +85,7 @@ public class LocationRetrieverTest {
 
     final LocationListItem locationListItem1 = new LocationListItem(41184, "Metropolis");
     locationListItem1.setSummary("Metropolis is much more than a bustling urban center. Like many east coast American cities, Metropolis is a melting pot of peoples and cultures from around the world. The city is often referred to as the Big Apricot, and the City of Tomorrow.");
-    locationListItem1.setDescription("<h2>Imformation</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
+    locationListItem1.setDescription("<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
     locationListItem1.setStartYear("1939");
 
     final Image image = new Image();
@@ -167,7 +167,7 @@ public class LocationRetrieverTest {
 
     final LocationListItem locationListItem1 = new LocationListItem(41184, "Metropolis");
     locationListItem1.setSummary("Metropolis is much more than a bustling urban center. Like many east coast American cities, Metropolis is a melting pot of peoples and cultures from around the world. The city is often referred to as the Big Apricot, and the City of Tomorrow.");
-    locationListItem1.setDescription("<h2>Imformation</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
+    locationListItem1.setDescription("<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
     locationListItem1.setStartYear("1939");
 
     final Image image1 = new Image();

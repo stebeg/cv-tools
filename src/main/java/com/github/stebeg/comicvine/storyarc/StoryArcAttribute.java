@@ -14,4 +14,33 @@ public class StoryArcAttribute {
    */
   public static final String NAME = "name";
 
+  /**
+   * The name of the attribute for the story arc's aliases.
+   */
+  public static final String ALIASES = "aliases";
+
+  /**
+   * The name of the attribute for the story arc's brief summary.
+   */
+  public static final String SUMMARY = "deck";
+  /**
+   * The name of the attribute for the story arc's detailed description.
+   */
+  public static final String DESCRIPTION = "description";
+
+  /**
+   * The name of the attribute for the story arc's image.
+   */
+  public static final String IMAGE = "image";
+
+  /**
+   * The name of the attribute of the publisher of the story arc.
+   */
+  public static final String PUBLISHER = "publisher";
+
+  /**
+   * The name of the attribute for the references of issues of the story arc.
+   */
+  public static final String ISSUES = "issues";
+
 }

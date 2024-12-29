@@ -47,7 +47,7 @@ public class TeamRetrieverTest {
     final Team expResult = new Team(teamId, "Justice League of America");
     expResult.setAliases("JLA");
     expResult.setSummary("The Justice League (also known as the Justice League of America or the JLA) is a team comprised of the premier heroes of the DC Universe.");
-    expResult.setDescription("<h2>Imformation</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
+    expResult.setDescription("<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
 
     expResult.setPublisher(new PublisherCredit(10, "DC Comics"));
     expResult.setMemberList(ImmutableList.of(
@@ -88,7 +88,7 @@ public class TeamRetrieverTest {
 
     final TeamListItem teamListItem1 = new TeamListItem(22672, "Injustice League");
     teamListItem1.setSummary("The Injustice League assembled to oppose the JLA, having taken various forms that consist of major villains like Joker, Lex Luthor and Cheetah.");
-    teamListItem1.setDescription("<h2>Imformation</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
+    teamListItem1.setDescription("<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>");
     teamListItem1.setPublisher(new PublisherCredit(10, "DC Comics"));
 
     final Image team1Image = new Image();

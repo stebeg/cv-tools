@@ -7,95 +7,95 @@
   "status_code": 1,
   "results": {
     "aliases": "National Comics\nDetective Comics Inc.",
-    "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-10\/",
+    "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
     "characters": [
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-1253\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1253/",
         "id": 1253,
         "name": "Lightning Lad",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/lightning-lad\/4005-1253\/"
+        "site_detail_url": "https://comicvine.gamespot.com/lightning-lad/4005-1253/"
       },
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-1254\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1254/",
         "id": 1254,
         "name": "Dream Girl",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/dream-girl\/4005-1254\/"
+        "site_detail_url": "https://comicvine.gamespot.com/dream-girl/4005-1254/"
       },
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/character\/4005-1255\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1255/",
         "id": 1255,
         "name": "Brainiac 5",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/brainiac-5\/4005-1255\/"
+        "site_detail_url": "https://comicvine.gamespot.com/brainiac-5/4005-1255/"
       }
     ],
     "date_added": "2008-06-06 11:08:00",
     "date_last_updated": "2024-08-15 14:35:17",
     "deck": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-    "description": "<h2>Information<\/h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.<\/p>",
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
     "id": 10,
     "image": {
-      "icon_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_avatar\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "medium_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_medium\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "screen_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_medium\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "screen_large_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/screen_kubrick\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "small_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_small\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "super_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_large\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "thumb_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/scale_avatar\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "tiny_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/square_mini\/0\/40\/5213245-dc_logo_blue_final.jpg",
-      "original_url": "https:\/\/comicvine.gamespot.com\/a\/uploads\/original\/0\/40\/5213245-dc_logo_blue_final.jpg",
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/40/5213245-dc_logo_blue_final.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/40/5213245-dc_logo_blue_final.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/40/5213245-dc_logo_blue_final.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/40/5213245-dc_logo_blue_final.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/40/5213245-dc_logo_blue_final.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/40/5213245-dc_logo_blue_final.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/40/5213245-dc_logo_blue_final.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/40/5213245-dc_logo_blue_final.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/40/5213245-dc_logo_blue_final.jpg",
       "image_tags": "All Images,DC Comics logo"
     },
     "location_address": "4000 Warner Blvd",
     "location_city": "Burbank",
     "location_state": "California",
     "name": "DC Comics",
-    "site_detail_url": "https:\/\/comicvine.gamespot.com\/dc-comics\/4010-10\/",
+    "site_detail_url": "https://comicvine.gamespot.com/dc-comics/4010-10/",
     "story_arcs": [
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/story_arc\/4045-40503\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-40503/",
         "id": 40503,
         "name": "\"Batman: The Killing Joke\" The Killing Joke",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/batman-the-killing-joke-the-killing-joke\/4045-40503\/"
+        "site_detail_url": "https://comicvine.gamespot.com/batman-the-killing-joke-the-killing-joke/4045-40503/"
       },
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/story_arc\/4045-40645\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-40645/",
         "id": 40645,
         "name": "\"DC Annuals\" Bloodlines",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/dc-annuals-bloodlines\/4045-40645\/"
+        "site_detail_url": "https://comicvine.gamespot.com/dc-annuals-bloodlines/4045-40645/"
       }
     ],
     "teams": [
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-5701\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-5701/",
         "id": 5701,
         "name": "Doom Patrol",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/doom-patrol\/4060-5701\/"
+        "site_detail_url": "https://comicvine.gamespot.com/doom-patrol/4060-5701/"
       },
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-5704\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-5704/",
         "id": 5704,
         "name": "Outsiders",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/outsiders\/4060-5704\/"
+        "site_detail_url": "https://comicvine.gamespot.com/outsiders/4060-5704/"
       },
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/team\/4060-5712\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-5712/",
         "id": 5712,
         "name": "Metal Men",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/metal-men\/4060-5712\/"
+        "site_detail_url": "https://comicvine.gamespot.com/metal-men/4060-5712/"
       }
     ],
     "volumes": [
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/volume\/4050-771\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-771/",
         "id": 771,
         "name": "Movie Comics",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/movie-comics\/4050-771\/"
+        "site_detail_url": "https://comicvine.gamespot.com/movie-comics/4050-771/"
       },
       {
-        "api_detail_url": "https:\/\/comicvine.gamespot.com\/api\/volume\/4050-773\/",
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-773/",
         "id": 773,
         "name": "Superman",
-        "site_detail_url": "https:\/\/comicvine.gamespot.com\/superman\/4050-773\/"
+        "site_detail_url": "https://comicvine.gamespot.com/superman/4050-773/"
       }
     ]
   },

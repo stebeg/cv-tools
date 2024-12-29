@@ -1,0 +1,68 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": null,
+    "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-55766/",
+    "count_of_isssue_appearances": 0,
+    "date_added": "2008-12-06 21:29:02",
+    "date_last_updated": "2024-07-01 06:44:05",
+    "deck": "The Blackest Night is the third part of Geoff Johns's trilogy in the Green Lantern universe. This storyline will follow the events of Sinestro Corps War and the fallout of the War of Light.",
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+    "episodes": [],
+    "first_appeared_in_episode": null,
+    "first_appeared_in_issue": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-155207/",
+      "id": 155207,
+      "name": "Agent Orange Part 1",
+      "issue_number": "39"
+    },
+    "id": 55766,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/2/28028/860257-horrors.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/2/28028/860257-horrors.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/2/28028/860257-horrors.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/2/28028/860257-horrors.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/2/28028/860257-horrors.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/2/28028/860257-horrors.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/2/28028/860257-horrors.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/2/28028/860257-horrors.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/2/28028/860257-horrors.jpg",
+      "image_tags": "All Images,Black Hand,Black Lantern Corps,The Blackest Night"
+    },
+    "issues": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-155207/",
+        "id": 155207,
+        "name": "Agent Orange Part 1",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern-39-agent-orange-part-1/4000-155207/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-155833/",
+        "id": 155833,
+        "name": "Death Becomes Us",
+        "site_detail_url": "https://comicvine.gamespot.com/blackest-night-0-death-becomes-us/4000-155833/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-164031/",
+        "id": 164031,
+        "name": "Saint Walker; Mongul For Your Love; Tales of the Indigo Tribe",
+        "site_detail_url": "https://comicvine.gamespot.com/blackest-night-tales-of-the-corps-1-saint-walker-m/4000-164031/"
+      }
+    ],
+    "movies": [],
+    "name": "\"Green Lantern\" Blackest Night",
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+      "id": 10,
+      "name": "DC Comics",
+      "site_detail_url": "https://comicvine.gamespot.com/dc-comics/4010-10/"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/green-lantern-blackest-night/4045-55766/"
+  },
+  "version": "1.0"
+}

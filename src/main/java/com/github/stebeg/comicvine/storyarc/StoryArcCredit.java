@@ -1,5 +1,6 @@
 package com.github.stebeg.comicvine.storyarc;
 
+import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -7,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Represents the reference of a story arc.
  */
-public class StoryArcCredit {
+public class StoryArcCredit implements ComicvineEntity {
 
   @SerializedName(value = StoryArcAttribute.ID)
   private final long id;
