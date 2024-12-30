@@ -13,6 +13,10 @@ public class PersonAttribute {
    * The name of the attribute for the person's name.
    */
   public static final String NAME = "name";
+  /**
+   * The name of the attribute for the person's role(s) in creating a comic.
+   */
+  public static final String ROLES = "role";
 
   /**
    * The attribute name for the summary of the person.

@@ -1,0 +1,153 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": null,
+    "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-111265/",
+    "associated_images": [
+      {
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/574/146286-18216-111265-1-green-lantern.jpg",
+        "id": 146286,
+        "caption": null,
+        "image_tags": "All Images"
+      }
+    ],
+    "character_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-22634/",
+        "id": 22634,
+        "name": "Abin Sur",
+        "site_detail_url": "https://comicvine.gamespot.com/abin-sur/4005-22634/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-11202/",
+        "id": 11202,
+        "name": "Hal Jordan",
+        "site_detail_url": "https://comicvine.gamespot.com/hal-jordan/4005-11202/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-42891/",
+        "id": 42891,
+        "name": "Jillian Pearlman",
+        "site_detail_url": "https://comicvine.gamespot.com/jillian-pearlman/4005-42891/"
+      }
+    ],
+    "character_died_in": [],
+    "concept_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-41148/",
+        "id": 41148,
+        "name": "Green Lantern",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4015-41148/"
+      }
+    ],
+    "cover_date": "2005-07-01",
+    "date_added": "2008-06-06 11:21:45",
+    "date_last_updated": "2023-03-30 18:30:18",
+    "deck": null,
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>",
+    "first_appearance_characters": null,
+    "first_appearance_concepts": null,
+    "first_appearance_locations": null,
+    "first_appearance_objects": null,
+    "first_appearance_storyarcs": null,
+    "first_appearance_teams": null,
+    "has_staff_review": false,
+    "id": 111265,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/5/56044/1774825-green_lantern__2005__3rd_series__001b.jpeg",
+      "image_tags": "All Images"
+    },
+    "issue_number": "1",
+    "location_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-56427/",
+        "id": 56427,
+        "name": "3600 Sectors of Space",
+        "site_detail_url": "https://comicvine.gamespot.com/3600-sectors-of-space/4020-56427/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-55716/",
+        "id": 55716,
+        "name": "California",
+        "site_detail_url": "https://comicvine.gamespot.com/california/4020-55716/"
+      }
+    ],
+    "name": "Airborne",
+    "object_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-41361/",
+        "id": 41361,
+        "name": "Green Power Ring",
+        "site_detail_url": "https://comicvine.gamespot.com/green-power-ring/4055-41361/"
+      }
+    ],
+    "person_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-10945/",
+        "id": 10945,
+        "name": "Alex Ross",
+        "site_detail_url": "https://comicvine.gamespot.com/alex-ross/4040-10945/",
+        "role": "inker, colorist, cover"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-3590/",
+        "id": 3590,
+        "name": "Carlos Pacheco",
+        "site_detail_url": "https://comicvine.gamespot.com/carlos-pacheco/4040-3590/",
+        "role": "penciler, cover"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-9317/",
+        "id": 9317,
+        "name": "Ethan Van Sciver",
+        "site_detail_url": "https://comicvine.gamespot.com/ethan-van-sciver/4040-9317/",
+        "role": "penciler, inker"
+      }
+    ],
+    "site_detail_url": "https://comicvine.gamespot.com/green-lantern-1-airborne/4000-111265/",
+    "store_date": "2005-05-25",
+    "story_arc_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-54588/",
+        "id": 54588,
+        "name": "\"Green Lantern\" Rebirth",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern-rebirth/4045-54588/"
+      }
+    ],
+    "team_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-6992/",
+        "id": 6992,
+        "name": "Green Lantern Corps",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern-corps/4060-6992/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-55857/",
+        "id": 55857,
+        "name": "The Manhunters",
+        "site_detail_url": "https://comicvine.gamespot.com/the-manhunters/4060-55857/"
+      }
+    ],
+    "team_disbanded_in": [],
+    "volume": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-18216/",
+      "id": 18216,
+      "name": "Green Lantern",
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-18216/"
+    }
+  },
+  "version": "1.0"
+}
