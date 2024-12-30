@@ -65,7 +65,7 @@ public class SearchPublishersRequest extends AbstractApiRequest {
    * @param fieldNames The names of the fields to retrieve.
    * @return This request.
    */
-  public SearchPublishersRequest withFields(final List<String> fieldNames) {
+  public SearchPublishersRequest withFieldNames(final List<String> fieldNames) {
     final String fieldNameList = Joiner.on(',').join(fieldNames);
     getParameter().put(RequestAttribute.FIELD_LIST, fieldNameList);
     return this;

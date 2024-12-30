@@ -182,6 +182,7 @@ public class Issue extends IssueListItem {
         .add("volume", this.getVolume())
         .add("coverDate", this.getCoverDate())
         .add("inStoreDate", this.getInStoreDate())
+        .add("webUrl", this.getWebUrl())
         .add("characterList", this.characterList)
         .add("teamList", this.teamList)
         .add("locationList", this.locationList)

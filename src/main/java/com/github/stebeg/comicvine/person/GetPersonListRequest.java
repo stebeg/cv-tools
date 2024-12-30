@@ -71,7 +71,7 @@ public class GetPersonListRequest extends AbstractApiRequest {
    * @param fieldNames The names of the fields to retrieve.
    * @return This request.
    */
-  public GetPersonListRequest withFields(final List<String> fieldNames) {
+  public GetPersonListRequest withFieldNames(final List<String> fieldNames) {
     final String fieldNameList = Joiner.on(',').join(fieldNames);
     getParameter().put(RequestAttribute.FIELD_LIST, fieldNameList);
     return this;

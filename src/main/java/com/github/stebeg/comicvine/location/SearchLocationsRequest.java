@@ -65,7 +65,7 @@ public class SearchLocationsRequest extends AbstractApiRequest {
    * @param fieldNames The names of the fields to retrieve.
    * @return This request.
    */
-  public SearchLocationsRequest withFields(final List<String> fieldNames) {
+  public SearchLocationsRequest withFieldNames(final List<String> fieldNames) {
     final String fieldNameList = Joiner.on(',').join(fieldNames);
     getParameter().put(RequestAttribute.FIELD_LIST, fieldNameList);
     return this;

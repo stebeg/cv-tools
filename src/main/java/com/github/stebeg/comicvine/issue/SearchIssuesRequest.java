@@ -65,7 +65,7 @@ public class SearchIssuesRequest extends AbstractApiRequest {
    * @param fieldNames The names of the fields to retrieve.
    * @return This request.
    */
-  public SearchIssuesRequest withFields(final List<String> fieldNames) {
+  public SearchIssuesRequest withFieldNames(final List<String> fieldNames) {
     final String fieldNameList = Joiner.on(',').join(fieldNames);
     getParameter().put(RequestAttribute.FIELD_LIST, fieldNameList);
     return this;

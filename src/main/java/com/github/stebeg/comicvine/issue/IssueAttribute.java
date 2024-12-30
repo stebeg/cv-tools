@@ -49,6 +49,10 @@ public class IssueAttribute {
    * The attribute name for the images of the issue.
    */
   public static final String IMAGE = "image";
+  /**
+   * The attribute name for the Comicvine website url of the issue.
+   */
+  public static final String WEB_URL = "site_detail_url";
 
   /**
    * The attribute name for the list of references to the characters who appear in the issue.

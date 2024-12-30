@@ -36,6 +36,9 @@ public class IssueListItem extends IssueCredit {
   @SerializedName(value = IssueAttribute.IN_STORE_DATE)
   private String inStoreDate;
 
+  @SerializedName(value = IssueAttribute.WEB_URL)
+  private String webUrl;
+
 
   /**
    * Creates a new representation of a list item of an issue.
@@ -192,6 +195,24 @@ public class IssueListItem extends IssueCredit {
   }
 
   /**
+   * Returns the Comicvine website url of the issue.
+   *
+   * @return The Comicvine website url of the issue.
+   */
+  public String getWebUrl() {
+    return this.webUrl;
+  }
+
+  /**
+   * Sets the Comicvine website url of the issue.
+   *
+   * @param webUrl The Comicvine website url of the issue.
+   */
+  public void setWebUrl(String webUrl) {
+    this.webUrl = webUrl;
+  }
+
+  /**
    * {@inheritDoc}
    *
    * @param obj {@inheritDoc}
@@ -213,7 +234,8 @@ public class IssueListItem extends IssueCredit {
         && Objects.equal(issueNumber, issue.issueNumber)
         && Objects.equal(volume, issue.volume)
         && Objects.equal(coverDate, issue.coverDate)
-        && Objects.equal(inStoreDate, issue.inStoreDate);
+        && Objects.equal(inStoreDate, issue.inStoreDate)
+        && Objects.equal(webUrl, issue.webUrl);
   }
 
   /**
@@ -224,7 +246,7 @@ public class IssueListItem extends IssueCredit {
   @Override
   public int hashCode() {
     return Objects.hashCode(super.hashCode(), this.summary, this.description, this.aliases, this.image,
-        this.issueNumber, this.volume, this.coverDate, this.inStoreDate);
+        this.issueNumber, this.volume, this.coverDate, this.inStoreDate, this.webUrl);
   }
 
   /**
@@ -245,6 +267,7 @@ public class IssueListItem extends IssueCredit {
         .add("volume", this.volume)
         .add("coverDate", this.coverDate)
         .add("inStoreDate", this.inStoreDate)
+        .add("webUrl", this.webUrl)
         .omitEmptyValues()
         .omitNullValues()
         .toString();

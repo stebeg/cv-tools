@@ -54,6 +54,7 @@ public class IssueRetrieverTest {
     expResult.setCoverDate("2005-07-01");
     expResult.setInStoreDate("2005-05-25");
     expResult.setVolume(new VolumeCredit(18216, "Green Lantern"));
+    expResult.setWebUrl("https://comicvine.gamespot.com/green-lantern-1-airborne/4000-111265/");
 
     expResult.setCharacterList(ImmutableList.of(
         new CharacterCredit(22634, "Abin Sur"),
@@ -117,6 +118,7 @@ public class IssueRetrieverTest {
     issueListItem1.setCoverDate("1959-10-31");
     issueListItem1.setDescription("<p>Abin Sur lay dying in the desert next to his crashed ship. He uses the Power Battery to send the ring out to find help.</p>");
     issueListItem1.setVolume(new VolumeCredit(1770, "Showcase"));
+    issueListItem1.setWebUrl("https://comicvine.gamespot.com/showcase-22-sos-green-lantern-secret-of-the-flamin/4000-4466/");
 
     final Image issueListItem1Image = new Image();
     issueListItem1Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/4066-1770-4466-1-showcase.jpg");
@@ -137,6 +139,7 @@ public class IssueRetrieverTest {
     issueListItem2.setInStoreDate("1961-09-26");
     issueListItem2.setDescription("<p>Hal is flying over Coast City when he notices that his ring is losing energy and he doesn't know why.</p>");
     issueListItem2.setVolume(new VolumeCredit(2839, "Green Lantern"));
+    issueListItem2.setWebUrl("https://comicvine.gamespot.com/green-lantern-9-the-battle-of-the-power-rings-gree/4000-5536/");
 
     final Image issueListItem2Image = new Image();
     issueListItem2Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/6/67663/4346358-09.jpg");
@@ -157,6 +160,7 @@ public class IssueRetrieverTest {
     issueListItem3.setInStoreDate("1962-01-04");
     issueListItem3.setDescription("<p>The Green Lantern of Sector 2814, Hal Jordan, stands trial before a court of his peers.</p>");
     issueListItem3.setVolume(new VolumeCredit(2839, "Green Lantern"));
+    issueListItem3.setWebUrl("https://comicvine.gamespot.com/green-lantern-11-the-strange-trial-of-green-lanter/4000-5778/");
 
     final Image issueListItem3Image = new Image();
     issueListItem3Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/5297-2013-5778-1-green-lantern.jpg");
@@ -202,6 +206,7 @@ public class IssueRetrieverTest {
     issueListItem1.setIssueNumber("121");
     issueListItem1.setCoverDate("2022-10-01");
     issueListItem1.setVolume(new VolumeCredit(78611, "Green Lantern"));
+    issueListItem1.setWebUrl("https://comicvine.gamespot.com/green-lantern-121/4000-982571/");
 
     final Image issueListItem1Image = new Image();
     issueListItem1Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/8901257-2022-10-18-0001.jpg");
@@ -220,6 +225,7 @@ public class IssueRetrieverTest {
     issueListItem2.setIssueNumber("119");
     issueListItem2.setCoverDate("2022-08-01");
     issueListItem2.setVolume(new VolumeCredit(78611, "Green Lantern"));
+    issueListItem2.setWebUrl("https://comicvine.gamespot.com/green-lantern-119/4000-982569/");
 
     final Image issueListItem2Image = new Image();
     issueListItem2Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/8901255-grelan0001.jpg");
@@ -238,6 +244,7 @@ public class IssueRetrieverTest {
     issueListItem3.setIssueNumber("120");
     issueListItem3.setCoverDate("2022-09-01");
     issueListItem3.setVolume(new VolumeCredit(78611, "Green Lantern"));
+    issueListItem3.setWebUrl("https://comicvine.gamespot.com/green-lantern-120/4000-982570/");
 
     final Image issueListItem3Image = new Image();
     issueListItem3Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/8901256-gl-mm-dd-0001.jpg");
