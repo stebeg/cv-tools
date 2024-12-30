@@ -32,6 +32,7 @@ public class PersonCredit implements ComicvineEntity {
    *
    * @return The person's unique ID.
    */
+  @Override
   public long getId() {
     return this.id;
   }
@@ -41,6 +42,7 @@ public class PersonCredit implements ComicvineEntity {
    *
    * @return The person's name.
    */
+  @Override
   public String getName() {
     return this.name;
   }

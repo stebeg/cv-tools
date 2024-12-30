@@ -1,0 +1,137 @@
+{
+  "error": "OK",
+  "limit": 3,
+  "offset": 0,
+  "number_of_page_results": 3,
+  "number_of_total_results": 296,
+  "status_code": 1,
+  "results": [
+    {
+      "aliases": "Green Lantern co-starring Green ArrowrnThe Green Lantern Corps",
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-2839/",
+      "count_of_issues": 205,
+      "date_added": "2008-06-06 11:08:14",
+      "date_last_updated": "2024-11-17 09:59:22",
+      "deck": "Volume 2",
+      "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>",
+      "first_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-4869/",
+        "id": 4869,
+        "name": "The Planet of Doomed Men; Menace of the Giant Puppet!",
+        "issue_number": "1"
+      },
+      "id": 2839,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "image_tags": "All Images"
+      },
+      "last_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-27229/",
+        "id": 27229,
+        "name": "Bad Reputation!",
+        "issue_number": "205"
+      },
+      "name": "Green Lantern",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-2839/",
+      "start_year": "1960"
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-3077/",
+      "count_of_issues": 3,
+      "date_added": "2008-06-06 11:08:15",
+      "date_last_updated": "2019-05-03 21:06:37",
+      "deck": " ",
+      "description": "<p>Three issue mini-series.</p>",
+      "first_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-21224/",
+        "id": 21224,
+        "name": "Challenge!",
+        "issue_number": "1"
+      },
+      "id": 3077,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg",
+        "image_tags": "All Images"
+      },
+      "last_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-21357/",
+        "id": 21357,
+        "name": "Triumph!",
+        "issue_number": "3"
+      },
+      "name": "Tales of the Green Lantern Corps",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/tales-of-the-green-lantern-corps/4050-3077/",
+      "start_year": "1981"
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-3198/",
+      "count_of_issues": 7,
+      "date_added": "2008-06-06 11:08:15",
+      "date_last_updated": "2020-05-26 12:43:40",
+      "deck": "A reprint series of one of the most powerful team ups ever.",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>",
+      "first_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-23505/",
+        "id": 23505,
+        "name": "No Evil Shall Escape My Sight! / Journey to Desolation!",
+        "issue_number": "1"
+      },
+      "id": 3198,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/4/21075-3198-23505-1-green-lantern--gree.jpg",
+        "image_tags": "All Images"
+      },
+      "last_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-24160/",
+        "id": 24160,
+        "name": "...And Through Him Save A World! / The Killing of an Archer! / Green Arrow is Dead! / The Fate of an Archer",
+        "issue_number": "7"
+      },
+      "name": "Green Lantern/Green Arrow",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/green-lanterngreen-arrow/4050-3198/",
+      "start_year": "1983"
+    }
+  ],
+  "version": "1.0"
+}

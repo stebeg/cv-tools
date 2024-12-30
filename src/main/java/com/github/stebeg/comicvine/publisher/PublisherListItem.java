@@ -1,6 +1,5 @@
 package com.github.stebeg.comicvine.publisher;
 
-import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.github.stebeg.comicvine.image.Image;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -10,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
  * Represents a list item of a comic book publisher. This is a simplified version of the {@link Publisher} class used for
  * search results and listing publishers.
  */
-public class PublisherListItem extends PublisherCredit implements ComicvineEntity {
+public class PublisherListItem extends PublisherCredit {
 
   @SerializedName(value = PublisherAttribute.SUMMARY)
   private String summary;

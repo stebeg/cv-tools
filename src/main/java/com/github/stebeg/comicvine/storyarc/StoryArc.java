@@ -1,6 +1,6 @@
 package com.github.stebeg.comicvine.storyarc;
 
-import com.github.stebeg.tool.cv.issue.IssueCredit;
+import com.github.stebeg.comicvine.issue.IssueCredit;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;

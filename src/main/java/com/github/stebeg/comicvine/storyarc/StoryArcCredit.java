@@ -32,6 +32,7 @@ public class StoryArcCredit implements ComicvineEntity {
    *
    * @return The story arc's unique ID.
    */
+  @Override
   public long getId() {
     return this.id;
   }
@@ -41,6 +42,7 @@ public class StoryArcCredit implements ComicvineEntity {
    *
    * @return The story arc's name.
    */
+  @Override
   public String getName() {
     return this.name;
   }

@@ -1,0 +1,168 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": null,
+    "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-42808/",
+    "characters": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-11202/",
+        "id": 11202,
+        "name": "Hal Jordan",
+        "site_detail_url": "https://comicvine.gamespot.com/hal-jordan/4005-11202/",
+        "count": "57"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-10448/",
+        "id": 10448,
+        "name": "Sinestro",
+        "site_detail_url": "https://comicvine.gamespot.com/sinestro/4005-10448/",
+        "count": "25"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-6952/",
+        "id": 6952,
+        "name": "Kilowog",
+        "site_detail_url": "https://comicvine.gamespot.com/kilowog/4005-6952/",
+        "count": "24"
+      }
+    ],
+    "concepts": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-41148/",
+        "id": 41148,
+        "name": "Green Lantern",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4015-41148/",
+        "count": "50"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-57349/",
+        "id": 57349,
+        "name": "Variant Cover",
+        "site_detail_url": "https://comicvine.gamespot.com/variant-cover/4015-57349/",
+        "count": "15"
+      }
+    ],
+    "count_of_issues": 57,
+    "date_added": "2011-09-13 12:15:58",
+    "date_last_updated": "2023-12-21 14:38:34",
+    "deck": "Volume 5.",
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+    "first_issue": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-292583/",
+      "id": 292583,
+      "name": "Sinestro, Part One",
+      "issue_number": "1"
+    },
+    "id": 42808,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/9116/2008261-1.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/9116/2008261-1.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/9116/2008261-1.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/9116/2008261-1.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/9116/2008261-1.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9116/2008261-1.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/9116/2008261-1.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/9116/2008261-1.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/9116/2008261-1.jpg",
+      "image_tags": "All Images"
+    },
+    "issues": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-292583/",
+        "id": 292583,
+        "name": "Sinestro, Part One",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern-1-sinestro-part-one/4000-292583/",
+        "issue_number": "1"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-294843/",
+        "id": 294843,
+        "name": "Sinestro, Part Two",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern-2-sinestro-part-two/4000-294843/",
+        "issue_number": "2"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-301647/",
+        "id": 301647,
+        "name": "Sinestro, Part Three",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern-3-sinestro-part-three/4000-301647/",
+        "issue_number": "3"
+      }
+    ],
+    "last_issue": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-528484/",
+      "id": 528484,
+      "name": "Agents of Gray",
+      "issue_number": "52"
+    },
+    "locations": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-41360/",
+        "id": 41360,
+        "name": "Oa",
+        "site_detail_url": "https://comicvine.gamespot.com/oa/4020-41360/",
+        "count": "17"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-47879/",
+        "id": 47879,
+        "name": "Coast City",
+        "site_detail_url": "https://comicvine.gamespot.com/coast-city/4020-47879/",
+        "count": "17"
+      }
+    ],
+    "name": "Green Lantern",
+    "objects": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/object/4005-11202/",
+        "id": 11202,
+        "name": "Hal Jordan",
+        "site_detail_url": "https://comicvine.gamespot.com/hal-jordan/4005-11202/",
+        "count": "57"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/object/4005-10448/",
+        "id": 10448,
+        "name": "Sinestro",
+        "site_detail_url": "https://comicvine.gamespot.com/sinestro/4005-10448/",
+        "count": "25"
+      }
+    ],
+    "people": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-9587/",
+        "id": 9587,
+        "name": "Alex Sinclair",
+        "site_detail_url": "https://comicvine.gamespot.com/alex-sinclair/4040-9587/",
+        "count": "51"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-7995/",
+        "id": 7995,
+        "name": "Dave Sharpe",
+        "site_detail_url": "https://comicvine.gamespot.com/dave-sharpe/4040-7995/",
+        "count": "38"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-40984/",
+        "id": 40984,
+        "name": "Matt Idelson",
+        "site_detail_url": "https://comicvine.gamespot.com/matt-idelson/4040-40984/",
+        "count": "36"
+      }
+    ],
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+      "id": 10,
+      "name": "DC Comics"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-42808/",
+    "start_year": "2011"
+  },
+  "version": "1.0"
+}

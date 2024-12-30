@@ -1,4 +1,4 @@
-package com.github.stebeg.comicvine.publisher;
+package com.github.stebeg.comicvine.issue;
 
 import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.google.common.base.MoreObjects;
@@ -6,31 +6,31 @@ import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Represents the reference of a publisher.
+ * Represents the reference of an issue.
  */
-public class PublisherCredit implements ComicvineEntity {
+public class IssueCredit implements ComicvineEntity {
 
-  @SerializedName(value = PublisherAttribute.ID)
+  @SerializedName(value = IssueAttribute.ID)
   private final long id;
 
-  @SerializedName(value = PublisherAttribute.NAME)
+  @SerializedName(value = IssueAttribute.NAME)
   private final String name;
 
   /**
-   * Creates a new representation of the reference of a publisher.
+   * Creates a new representation of the reference of an issue.
    *
-   * @param id   The publisher's unique ID.
-   * @param name The publisher's name.
+   * @param id   The issue's unique ID.
+   * @param name The issue's name.
    */
-  public PublisherCredit(long id, String name) {
+  public IssueCredit(long id, String name) {
     this.id = id;
     this.name = name;
   }
 
   /**
-   * Returns the publisher's unique ID.
+   * Returns the issue's unique ID.
    *
-   * @return The publisher's unique ID.
+   * @return The issue's unique ID.
    */
   @Override
   public long getId() {
@@ -38,9 +38,9 @@ public class PublisherCredit implements ComicvineEntity {
   }
 
   /**
-   * Returns the publisher's name.
+   * Returns the issue's name.
    *
-   * @return The publisher's name.
+   * @return The issue's name.
    */
   @Override
   public String getName() {
@@ -55,7 +55,7 @@ public class PublisherCredit implements ComicvineEntity {
    */
   @Override
   public boolean equals(final Object obj) {
-    if (!(obj instanceof PublisherCredit that)) {
+    if (!(obj instanceof IssueCredit that)) {
       return false;
     }
     return this.id == that.id

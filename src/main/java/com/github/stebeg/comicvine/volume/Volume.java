@@ -1,4 +1,4 @@
-package com.github.stebeg.comicvine.location;
+package com.github.stebeg.comicvine.volume;
 
 import com.github.stebeg.comicvine.issue.IssueCredit;
 import com.google.common.base.MoreObjects;
@@ -8,36 +8,36 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * Represents detailed information of a comic location from Comicvine.
+ * Represents detailed information of a comic volume from Comicvine.
  */
-public class Location extends LocationListItem {
+public class Volume extends VolumeListItem {
 
-  @SerializedName(value = LocationAttribute.ISSUES)
+  @SerializedName(value = VolumeAttribute.ISSUES)
   private List<IssueCredit> issueList;
 
   /**
-   * Creates a new representation of detailed information of a comic location from Comicvine.
+   * Creates a new representation of detailed information of a comic volume from Comicvine.
    *
-   * @param id   The location's unique ID.
-   * @param name The location's name.
+   * @param id   The volume's unique ID.
+   * @param name The volume's name.
    */
-  Location(long id, String name) {
+  Volume(long id, String name) {
     super(id, name);
   }
 
   /**
-   * Returns a list of references to issues the location appeared in.
+   * Returns the list of issues of the volume.
    *
-   * @return A list of references to issues the location appeared in.
+   * @return The list of issues of the volume.
    */
   public List<IssueCredit> getIssueList() {
     return this.issueList;
   }
 
   /**
-   * Sets the list of references to issues the location appeared in.
+   * Sets the list of issues of the volume.
    *
-   * @param issueList The list of references to issues the location appeared in.
+   * @param issueList The list of issues of the volume.
    */
   public void setIssueList(List<IssueCredit> issueList) {
     this.issueList = issueList;
@@ -51,14 +51,14 @@ public class Location extends LocationListItem {
    */
   @Override
   public boolean equals(final Object obj) {
-    if (!(obj instanceof Location)) {
+    if (!(obj instanceof Volume)) {
       return false;
     }
     if (!super.equals(obj)) {
       return false;
     }
-    final Location location = (Location) obj;
-    return Objects.equal(issueList, location.issueList);
+    final Volume volume = (Volume) obj;
+    return Objects.equal(issueList, volume.issueList);
   }
 
   /**
@@ -84,8 +84,12 @@ public class Location extends LocationListItem {
         .add("summary", this.getSummary())
         .add("description", this.getDescription())
         .add("aliases", this.getAliases())
+        .add("publisher", this.getPublisher())
         .add("image", this.getImage())
+        .add("issueCount", this.getIssueCount())
         .add("startYear", this.getStartYear())
+        .add("firstIssue", this.getFirstIssue())
+        .add("lastIssue", this.getLastIssue())
         .add("issueList", this.issueList)
         .omitEmptyValues()
         .omitNullValues()

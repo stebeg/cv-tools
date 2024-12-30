@@ -1,5 +1,6 @@
 package com.github.stebeg.comicvine.volume;
 
+import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -7,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
 /**
  * Represents the reference of a volume.
  */
-public class VolumeCredit {
+public class VolumeCredit implements ComicvineEntity {
 
   @SerializedName(value = VolumeAttribute.ID)
   private final long id;
@@ -31,6 +32,7 @@ public class VolumeCredit {
    *
    * @return The volume's unique ID.
    */
+  @Override
   public long getId() {
     return this.id;
   }
@@ -40,6 +42,7 @@ public class VolumeCredit {
    *
    * @return The volume's name.
    */
+  @Override
   public String getName() {
     return this.name;
   }

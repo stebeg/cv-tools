@@ -1,7 +1,6 @@
 package com.github.stebeg.comicvine.team;
 
 import com.github.stebeg.comicvine.character.CharacterCredit;
-import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.gson.annotations.SerializedName;
@@ -11,7 +10,7 @@ import java.util.List;
 /**
  * Represents detailed information of a comic team from Comicvine.
  */
-public class Team extends TeamListItem implements ComicvineEntity {
+public class Team extends TeamListItem {
 
   @SerializedName(value = TeamAttribute.MEMBERS)
   private List<CharacterCredit> memberList;

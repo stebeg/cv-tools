@@ -1,6 +1,5 @@
 package com.github.stebeg.comicvine.character;
 
-import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.github.stebeg.comicvine.person.PersonCredit;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -11,7 +10,7 @@ import java.util.List;
 /**
  * Represents detailed information of a comic character from Comicvine.
  */
-public class Character extends CharacterListItem implements ComicvineEntity {
+public class Character extends CharacterListItem {
 
   @SerializedName(value = CharacterAttribute.CREATORS)
   private List<PersonCredit> creatorList;

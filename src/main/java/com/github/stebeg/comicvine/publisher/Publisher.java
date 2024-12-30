@@ -1,7 +1,6 @@
 package com.github.stebeg.comicvine.publisher;
 
 import com.github.stebeg.comicvine.character.CharacterCredit;
-import com.github.stebeg.comicvine.common.ComicvineEntity;
 import com.github.stebeg.comicvine.storyarc.StoryArcCredit;
 import com.github.stebeg.comicvine.team.TeamCredit;
 import com.github.stebeg.comicvine.volume.VolumeCredit;
@@ -14,7 +13,7 @@ import java.util.List;
 /**
  * Represents detailed information of a comic publisher from Comicvine.
  */
-public class Publisher extends PublisherListItem implements ComicvineEntity {
+public class Publisher extends PublisherListItem {
 
   @SerializedName(value = PublisherAttribute.CHARACTERS)
   private List<CharacterCredit> characterList;
