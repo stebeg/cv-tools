@@ -6,7 +6,7 @@
 
     <groupId>io.github.stebeg</groupId>
     <artifactId>cv-tools</artifactId>
-    <version>1.0.0-RC2</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>Comicvine Tools</name>
