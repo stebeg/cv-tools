@@ -1,0 +1,114 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": "Geoffrey Johns",
+    "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-40439/",
+    "birth": "1973-01-25 00:00:00",
+    "count_of_isssue_appearances": null,
+    "country": "United States",
+    "created_characters": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-148828/",
+        "id": 148828,
+        "name": "Aalok of the Komeriah",
+        "site_detail_url": "https://comicvine.gamespot.com/aalok-of-the-komeriah/4005-148828/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-89639/",
+        "id": 89639,
+        "name": "Aaron Cole",
+        "site_detail_url": "https://comicvine.gamespot.com/aaron-cole/4005-89639/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-9351/",
+        "id": 9351,
+        "name": "Alex Montez",
+        "site_detail_url": "https://comicvine.gamespot.com/alex-montez/4005-9351/"
+      }
+    ],
+    "date_added": "2008-06-06 11:28:14",
+    "date_last_updated": "2024-01-08 00:45:39",
+    "death": null,
+    "deck": "Geoff Johns is the CEO for Mad Ghost Productions at Warner Brothers. He previously wrote Action Comics, Justice Society of America, Flash, Aquaman, Teen Titans prior to focusing on movies. He is also known for his historic nine-year run on Green Lantern in which he greatly expanded the mythos. ",
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+    "email": null,
+    "gender": 1,
+    "hometown": "Detroit, MI",
+    "id": 40439,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/7/71975/1590165-3268449133_19b54820e0.jpg",
+      "image_tags": "All Images"
+    },
+    "issues": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1072175/",
+        "id": 1072175,
+        "name": "Curveballs",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-society-of-america-12-curveballs/4000-1072175/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1079388/",
+        "id": 1079388,
+        "name": "1955",
+        "site_detail_url": "https://comicvine.gamespot.com/hyde-street-2-1955/4000-1079388/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1078601/",
+        "id": 1078601,
+        "name": null,
+        "site_detail_url": "https://comicvine.gamespot.com/geiger-8/4000-1078601/"
+      }
+    ],
+    "name": "Geoff Johns",
+    "site_detail_url": "https://comicvine.gamespot.com/geoff-johns/4040-40439/",
+    "story_arc_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-49544/",
+        "id": 49544,
+        "name": "\"Teenage Mutant Ninja Turtles\" Return to New York",
+        "site_detail_url": "https://comicvine.gamespot.com/teenage-mutant-ninja-turtles-return-to-new-york/4045-49544/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-56099/",
+        "id": 56099,
+        "name": "\"Black Jack\" Shizumu Onna",
+        "site_detail_url": "https://comicvine.gamespot.com/black-jack-shizumu-onna/4045-56099/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-56361/",
+        "id": 56361,
+        "name": "\"Black Jack\" Kimi no Miss da!",
+        "site_detail_url": "https://comicvine.gamespot.com/black-jack-kimi-no-miss-da/4045-56361/"
+      }
+    ],
+    "volume_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-5261/",
+        "id": 5261,
+        "name": "Superboy",
+        "site_detail_url": "https://comicvine.gamespot.com/superboy/4050-5261/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-6331/",
+        "id": 6331,
+        "name": "JSA",
+        "site_detail_url": "https://comicvine.gamespot.com/jsa/4050-6331/"
+      }
+    ],
+    "website": "http://www.geoffjohns.com"
+  },
+  "version": "1.0"
+}

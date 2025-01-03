@@ -1,113 +1,76 @@
 # cv-tools
 A Java library for retrieving information from the Comicvine API.
 
+## Adding ***cv-tools*** to your build
+
+To add a dependency on ***cv-tools*** using Maven, use the following:
+```xml
+<dependency>
+  <groupId>io.github.stebeg</groupId>
+  <artifactId>cv-tools</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 ## Usage
 
 You need a Comicvine API-key to use this library.  
 See [https://comicvine.gamespot.com/api/](https://comicvine.gamespot.com/api/)
 
-The `ComicvineToolsProvider` class provides instances for `CharacterReader` `VolumeReader` and
-`IssueReader`, which can be used to search volumes and retrieve information for characters volumes
-and issues.
+The `ComicvineTools` class provides instances various retriever classes such as `VolumeRetriever`, `IssueRetriever`, and
+`CharacterRetriever`, which can be used to search and retrieve information for the respective entities.
 
-### Search volumes
+### Example for searching volumes
 
-        final String apiKey = "..."; // your API key
-        final String searchText = "Green Lantern";
+```java
+final String apiKey = "..."; // your API key
+final VolumeRetriever volumeRetriever = ComicvineTools.getVolumeRetriever();
 
-        final VolumeReader volumeReader = ComicvineToolsProvider.getVolumeReader();
-        final VolumeSearchResult result = volumeReader.searchVolumes(apiKey, searchText);
+final String searchText = "Green Lantern";
+final List<String> fieldNames = List.of(
+    VolumeAttribute.ID,
+    VolumeAttribute.NAME,
+    VolumeAttribute.DESCRIPTION,
+    VolumeAttribute.START_YEAR,
+    VolumeAttribute.ISSUE_COUNT,
+    VolumeAttribute.IMAGE,
+    VolumeAttribute.PUBLISHER);
+final SearchVolumesRequest request = new SearchVolumesRequest(apiKey, searchText)
+    .withFieldNames(fieldNames)
+    .withLimit(100);
+final ApiListResponse<VolumeListItem> response = volumeRetriever.searchVolumes(request);
+final List<VolumeListItem> volumes = response.getResults();
+```
 
-        for (final Volume volume : result.getVolumes()) {
-            System.out.println("volume name = " + volume.getName());
-        }
+### Example for retrieving a volume by its ID
 
-### Reading volume information
+```java
+final String apiKey = "..."; // your API key
+final VolumeRetriever volumeRetriever = ComicvineTools.getVolumeRetriever();
 
-        final String apiKey = "..."; // your API key
-        final long volumeId = 2839L;
+final long volumeId = 42808L;
+final List<String> fieldNames = List.of(
+    VolumeAttribute.ID,
+    VolumeAttribute.NAME,
+    VolumeAttribute.DESCRIPTION,
+    VolumeAttribute.START_YEAR,
+    VolumeAttribute.ISSUE_COUNT,
+    VolumeAttribute.IMAGE,
+    VolumeAttribute.PUBLISHER);
+final GetVolumeByIdRequest request = new GetVolumeByIdRequest(apiKey, volumeId);
+final ApiResponse<Volume> response = volumeRetriever.getVolumeById(request);
+final Volume volume = response.getResult();
+```
 
-        final VolumeReader volumeReader = ComicvineToolsProvider.getVolumeReader();
-        final VolumeGetResult result = volumeReader.getVolume(apiKey, volumeId);
+## Available retrievers
 
-        final Volume volume = result.getVolume();
-        System.out.println("volume name = " + volume.getName());
-    
+Retrievers are available for the following Comicvine entities:
 
-### Reading volume issues
-
-        final String apiKey = "..."; // your API key
-        final long volumeId = 2839L;
-
-        final IssueReader issueReader = ComicvineToolsProvider.getIssueReader();
-        final IssuesGetResult result = issueReader.getVolumeIssues(apiKey, volumeId);
-
-        for (final Issue issue : result.getIssues()) {
-            System.out.println("Issue number = " + issue.getIssueNumber());
-        }
-
-### Reading issue information
-
-        final String apiKey = "..."; // your API key
-        final long issueId = 310551L;
-
-        final IssueReader issueReader = ComicvineToolsProvider.getIssueReader();
-        final IssueGetResult result = issueReader.getIssue(apiKey, issueId);
-
-        final Issue issue = result.getIssue();
-        System.out.println("Issue number = " + issue.getIssueNumber());
-
-### Reading character information
-
-        final String apiKey = "..."; // your API key
-        final long characterId = 11202L;
-        
-        final CharacterReader characterReader = ComicvineToolsProvider.getCharacterReader();
-        final CharacterGetResult characterGetResult = characterReader.getCharacter(apiKey, characterId);
-        
-        final Character character = characterGetResult.getResult();
-        System.out.println(character.getRealName());
-
-### Reading team information
-
-        final String apiKey = "..."; // your API key
-        final long teamId = 11202L;
-        
-        final TeamReader teamReader = ComicvineToolsProvider.getTeamReader();
-        final TeamGetResult teamGetResult = teamReader.getTeam(apiKey, teamId);
-        
-        final Team team = teamGetResult.getResult();
-        System.out.println(team.getName());
-
-### Reading publisher information
-
-        final String apiKey = "..."; // your API key
-        final long publisherId = 10L;
-
-        final PublisherReader publisherReader = ComicvineToolsProvider.getPublisherReader();
-        final PublisherGetResult publisherGetResult = publisherReader.getPublisher(apiKey, publisherId);
-
-        final Publisher publisher = publisherGetResult.getResult();
-        System.out.println(publisher.getName());
-
-### Reading person information
-
-        final String apiKey = "..."; // your API key
-        final long personId = 40439L;
-
-        final PersonReader personReader = ComicvineToolsProvider.getPersonReader();
-        final PersonGetResult personGetResult = personReader.getPerson(apiKey, personId);
-
-        final Person person = personGetResult.getResult();
-        System.out.println(person.getName());
-
-### Reading story arcs
-
-        final String apiKey = "..."; // your API key
-        final long storyArcId = 55766L;
-
-        final StoryArcReader storyArcReader = ComicvineToolsProvider.getStoryArcReader();
-        final StoryArcGetResult storyArcGetResult = storyArcReader.getStoryArc(apiKey, storyArcId);
-
-        final StoryArc storyArc = storyArcGetResult.getResult();
-        System.out.println(storyArc.getName());
+* character
+* issue
+* location
+* person
+* publisher
+* story arc
+* team
+* volume

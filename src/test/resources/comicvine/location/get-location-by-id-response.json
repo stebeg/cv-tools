@@ -1,0 +1,83 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": null,
+    "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-41184/",
+    "count_of_issue_appearances": 5525,
+    "date_added": "2008-06-06 11:27:50",
+    "date_last_updated": "2024-12-19 18:15:41",
+    "deck": "Metropolis is much more than a bustling urban center. Like many east coast American cities, Metropolis is a melting pot of peoples and cultures from around the world. The city is often referred to as the Big Apricot, and the City of Tomorrow.",
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+    "first_appeared_in_issue": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-110227/",
+      "id": 110227,
+      "name": null,
+      "issue_number": "1"
+    },
+    "id": 41184,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/8/86187/1669361-5241024543_4d024eaa09_b.jpg",
+      "image_tags": "All Images,Art - Justin Van Genderen"
+    },
+    "issue_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1080071/",
+        "id": 1080071,
+        "name": "Phantoms, Part Nine; Help Me",
+        "site_detail_url": "https://comicvine.gamespot.com/action-comics-1078-phantoms-part-nine-help-me/4000-1080071/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1080079/",
+        "id": 1080079,
+        "name": "Santa's Oath?; Secret Santa; Ghosts of Christmas Present; It's a Criminal Life; Deadman Walking; Silent Nite; The Perfect Gift; O Glowy Night",
+        "site_detail_url": "https://comicvine.gamespot.com/dcs-batman-smells-robin-laid-an-egg-1-santas-oath-/4000-1080079/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1081536/",
+        "id": 1081536,
+        "name": "Phantoms, Part Ten; We",
+        "site_detail_url": "https://comicvine.gamespot.com/action-comics-1079-phantoms-part-ten-we/4000-1081536/"
+      }
+    ],
+    "movies": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/movie/4025-3097/",
+        "id": 3097,
+        "name": "Justice League: Crisis on Infinite Earths - Part Three",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-crisis-on-infinite-earths-part-thre/4025-3097/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/movie/4025-3053/",
+        "id": 3053,
+        "name": "Justice League: Crisis on Infinite Earths - Part Two",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-crisis-on-infinite-earths-part-two/4025-3053/"
+      }
+    ],
+    "name": "Metropolis",
+    "site_detail_url": "https://comicvine.gamespot.com/metropolis/4020-41184/",
+    "start_year": "1939",
+    "story_arc_credits": [],
+    "volume_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-160158/",
+        "id": 160158,
+        "name": "Justice League of America 1 (Facsimile Edition)",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-of-america-1-facsimile-edition/4050-160158/"
+      }
+    ]
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,207 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": "JLA",
+    "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-31815/",
+    "character_enemies": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-47300/",
+        "id": 47300,
+        "name": "A-Mortal",
+        "site_detail_url": "https://comicvine.gamespot.com/a-mortal/4005-47300/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-50869/",
+        "id": 50869,
+        "name": "Abnegazar",
+        "site_detail_url": "https://comicvine.gamespot.com/abnegazar/4005-50869/"
+      }
+    ],
+    "character_friends": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-4604/",
+        "id": 4604,
+        "name": "Adam Strange",
+        "site_detail_url": "https://comicvine.gamespot.com/adam-strange/4005-4604/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-9298/",
+        "id": 9298,
+        "name": "Al Pratt",
+        "site_detail_url": "https://comicvine.gamespot.com/al-pratt/4005-9298/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-12663/",
+        "id": 12663,
+        "name": "Alan Scott",
+        "site_detail_url": "https://comicvine.gamespot.com/alan-scott/4005-12663/"
+      }
+    ],
+    "characters": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1807/",
+        "id": 1807,
+        "name": "Superman",
+        "site_detail_url": "https://comicvine.gamespot.com/superman/4005-1807/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-23879/",
+        "id": 23879,
+        "name": "Wally West",
+        "site_detail_url": "https://comicvine.gamespot.com/wally-west/4005-23879/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-2048/",
+        "id": 2048,
+        "name": "Wonder Woman",
+        "site_detail_url": "https://comicvine.gamespot.com/wonder-woman/4005-2048/"
+      }
+    ],
+    "count_of_isssue_appearances": 0,
+    "count_of_team_members": 480,
+    "date_added": "2008-06-06 11:27:48",
+    "date_last_updated": "2023-04-09 18:31:06",
+    "deck": "The Justice League (also known as the Justice League of America or the JLA) is a team comprised of the premier heroes of the DC Universe.",
+    "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+    "disbanded_in_issues": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-286859/",
+        "id": 286859,
+        "name": "Adjourned",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-of-america-60-adjourned/4000-286859/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-960844/",
+        "id": 960844,
+        "name": "Dawn of DC",
+        "site_detail_url": "https://comicvine.gamespot.com/dark-crisis-7-dawn-of-dc/4000-960844/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-106230/",
+        "id": 106230,
+        "name": "Requiem for a League",
+        "site_detail_url": "https://comicvine.gamespot.com/jla-120-requiem-for-a-league/4000-106230/"
+      }
+    ],
+    "first_appeared_in_issue": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-4699/",
+      "id": 4699,
+      "name": "Starro the Conqueror!",
+      "issue_number": "28"
+    },
+    "id": 31815,
+    "image": {
+      "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11142/111427220/8339053-johnjla.jpeg",
+      "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11142/111427220/8339053-johnjla.jpeg",
+      "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11142/111427220/8339053-johnjla.jpeg",
+      "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11142/111427220/8339053-johnjla.jpeg",
+      "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11142/111427220/8339053-johnjla.jpeg",
+      "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11142/111427220/8339053-johnjla.jpeg",
+      "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11142/111427220/8339053-johnjla.jpeg",
+      "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11142/111427220/8339053-johnjla.jpeg",
+      "original_url": "https://comicvine.gamespot.com/a/uploads/original/11142/111427220/8339053-johnjla.jpeg",
+      "image_tags": "All Images,Earth 0,rebirth,Superman"
+    },
+    "isssues_disbanded_in": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-286859/",
+        "id": 286859,
+        "name": "Adjourned",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-of-america-60-adjourned/4000-286859/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-960844/",
+        "id": 960844,
+        "name": "Dawn of DC",
+        "site_detail_url": "https://comicvine.gamespot.com/dark-crisis-7-dawn-of-dc/4000-960844/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-106230/",
+        "id": 106230,
+        "name": "Requiem for a League",
+        "site_detail_url": "https://comicvine.gamespot.com/jla-120-requiem-for-a-league/4000-106230/"
+      }
+    ],
+    "issue_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1085934/",
+        "id": 1085934,
+        "name": null,
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-unlimited-2/4000-1085934/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1083616/",
+        "id": 1083616,
+        "name": "The Case of the Runaway Ring",
+        "site_detail_url": "https://comicvine.gamespot.com/the-question-all-along-the-watchtower-2-the-case-o/4000-1083616/"
+      }
+    ],
+    "movies": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/movie/4025-3097/",
+        "id": 3097,
+        "name": "Justice League: Crisis on Infinite Earths - Part Three",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-crisis-on-infinite-earths-part-thre/4025-3097/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/movie/4025-3053/",
+        "id": 3053,
+        "name": "Justice League: Crisis on Infinite Earths - Part Two",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-crisis-on-infinite-earths-part-two/4025-3053/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/movie/4025-3021/",
+        "id": 3021,
+        "name": "Justice League: Crisis on Infinite Earths - Part One",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-crisis-on-infinite-earths-part-one/4025-3021/"
+      }
+    ],
+    "name": "Justice League of America",
+    "publisher": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+      "id": 10,
+      "name": "DC Comics"
+    },
+    "site_detail_url": "https://comicvine.gamespot.com/justice-league-of-america/4060-31815/",
+    "story_arc_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-40503/",
+        "id": 40503,
+        "name": "\"Batman: The Killing Joke\" The Killing Joke",
+        "site_detail_url": "https://comicvine.gamespot.com/batman-the-killing-joke-the-killing-joke/4045-40503/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-40645/",
+        "id": 40645,
+        "name": "\"DC Annuals\" Bloodlines",
+        "site_detail_url": "https://comicvine.gamespot.com/dc-annuals-bloodlines/4045-40645/"
+      }
+    ],
+    "volume_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-1683/",
+        "id": 1683,
+        "name": "The Brave and the Bold",
+        "site_detail_url": "https://comicvine.gamespot.com/the-brave-and-the-bold/4050-1683/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-2014/",
+        "id": 2014,
+        "name": "Justice League of America",
+        "site_detail_url": "https://comicvine.gamespot.com/justice-league-of-america/4050-2014/"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-773/",
+        "id": 773,
+        "name": "Superman",
+        "site_detail_url": "https://comicvine.gamespot.com/superman/4050-773/"
+      }
+    ]
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,119 @@
+{
+  "error": "OK",
+  "limit": 3,
+  "offset": 0,
+  "number_of_page_results": 3,
+  "number_of_total_results": 28,
+  "status_code": 1,
+  "results": [
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-22672/",
+      "count_of_isssue_appearances": 0,
+      "count_of_team_members": 97,
+      "date_added": "2008-06-06 11:27:47",
+      "date_last_updated": "2022-04-17 17:20:43",
+      "deck": "The Injustice League assembled to oppose the JLA, having taken various forms that consist of major villains like Joker, Lex Luthor and Cheetah.",
+      "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-30807/",
+        "id": 30807,
+        "name": "Gross Injustice",
+        "issue_number": "23"
+      },
+      "id": 22672,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/3/31666/3236888-forever_evil_2_nu6utwlniu_.jpg",
+        "image_tags": "All Images,Artwork,Comics,DCnU,Injustice League,Modern Age II (2001 - present),New 52,Parallax"
+      },
+      "name": "Injustice League",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/injustice-league/4060-22672/"
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-25003/",
+      "count_of_isssue_appearances": 0,
+      "count_of_team_members": 55,
+      "date_added": "2008-06-06 11:27:48",
+      "date_last_updated": "2021-01-13 23:22:29",
+      "deck": "Initially formed as a special missions task force working with the UN, the JLTF eventually became the Justice League training team for younger heroes under the sometimes strict but watchful eye of J'onn J'onzz.",
+      "description": "<h2>Origin</h2><p>Initially formed as a special missions task force working with the UN, the JLTF eventually became the Justice League training team for younger heroes under the sometimes strict but watchful eye of J'onn J'onzz.</p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-37317/",
+        "id": 37317,
+        "name": "The Tyranny Gun!",
+        "issue_number": "1"
+      },
+      "id": 25003,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/1494/95535-23579-justice-league-task.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/1494/95535-23579-justice-league-task.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/1494/95535-23579-justice-league-task.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/1494/95535-23579-justice-league-task.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/1494/95535-23579-justice-league-task.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/1494/95535-23579-justice-league-task.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/1494/95535-23579-justice-league-task.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/1494/95535-23579-justice-league-task.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/1494/95535-23579-justice-league-task.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Justice League Task Force",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/justice-league-task-force/4060-25003/"
+    },
+    {
+      "aliases": "JLI",
+      "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-26208/",
+      "count_of_isssue_appearances": 0,
+      "count_of_team_members": 105,
+      "date_added": "2008-06-06 11:27:48",
+      "date_last_updated": "2023-03-27 02:14:22",
+      "deck": "Sanctioned by the United Nations, the Justice League International is designed to be a publicly accountable answer to the Justice League.",
+      "description": "<p>Sanctioned by the United Nations, the Justice League International is designed to be a publicly accountable answer to the Justice League.</p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-27962/",
+        "id": 27962,
+        "name": "Finale!",
+        "issue_number": "6"
+      },
+      "id": 26208,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/11138/111381541/8728974-fbhcipyuuaebrwb.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Justice League International",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/justice-league-international/4060-26208/"
+    }
+  ],
+  "version": "1.0"
+}

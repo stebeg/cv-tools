@@ -1,0 +1,140 @@
+{
+  "error": "OK",
+  "limit": 3,
+  "offset": 0,
+  "number_of_page_results": 3,
+  "number_of_total_results": 640,
+  "status_code": 1,
+  "results": [
+    {
+      "aliases": "Green Lantern co-starring Green ArrowrnThe Green Lantern Corps",
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-2839/",
+      "count_of_issues": 205,
+      "date_added": "2008-06-06 11:08:14",
+      "date_last_updated": "2024-11-17 09:59:22",
+      "deck": "Volume 2",
+      "description": "<h2>Information</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>",
+      "first_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-4869/",
+        "id": 4869,
+        "name": "The Planet of Doomed Men; Menace of the Giant Puppet!",
+        "issue_number": "1"
+      },
+      "id": 2839,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/4/4457-2013-4869-1-green-lantern.jpg",
+        "image_tags": "All Images"
+      },
+      "last_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-27229/",
+        "id": 27229,
+        "name": "Bad Reputation!",
+        "issue_number": "205"
+      },
+      "name": "Green Lantern",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-2839/",
+      "start_year": "1960",
+      "resource_type": "volume"
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-25944/",
+      "count_of_issues": 38,
+      "date_added": "2009-03-09 21:23:36",
+      "date_last_updated": "2023-12-08 13:27:47",
+      "deck": "Volume 1",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>",
+      "first_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-153317/",
+        "id": 153317,
+        "name": "Green Lantern",
+        "issue_number": "1"
+      },
+      "id": 25944,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/2/27783/732037-gl_1.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/2/27783/732037-gl_1.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/2/27783/732037-gl_1.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/2/27783/732037-gl_1.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/2/27783/732037-gl_1.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/2/27783/732037-gl_1.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/2/27783/732037-gl_1.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/2/27783/732037-gl_1.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/2/27783/732037-gl_1.jpg",
+        "image_tags": "All Images"
+      },
+      "last_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-159450/",
+        "id": 159450,
+        "name": "The Murdered Clues!; The Double Play!; The Impossible Mr. Paradox!",
+        "issue_number": "38"
+      },
+      "name": "Green Lantern",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-25944/",
+      "start_year": "1941",
+      "resource_type": "volume"
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-79179/",
+      "count_of_issues": 20,
+      "date_added": "2014-12-30 14:31:00",
+      "date_last_updated": "2023-10-06 03:23:58",
+      "deck": null,
+      "description": "<p>Spanish publication of Green Lantern.</p>",
+      "first_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-475174/",
+        "id": 475174,
+        "name": null,
+        "issue_number": "1"
+      },
+      "id": 79179,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11120/111202620/4302188-4908474690-1863..jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11120/111202620/4302188-4908474690-1863..jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11120/111202620/4302188-4908474690-1863..jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11120/111202620/4302188-4908474690-1863..jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11120/111202620/4302188-4908474690-1863..jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11120/111202620/4302188-4908474690-1863..jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11120/111202620/4302188-4908474690-1863..jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11120/111202620/4302188-4908474690-1863..jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/11120/111202620/4302188-4908474690-1863..jpg",
+        "image_tags": "All Images"
+      },
+      "last_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-475692/",
+        "id": 475692,
+        "name": "La guerra de los green lantern",
+        "issue_number": "20"
+      },
+      "name": "Green Lantern",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-3432/",
+        "id": 3432,
+        "name": "ECC Ediciones"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-79179/",
+      "start_year": "2009",
+      "resource_type": "volume"
+    }
+  ],
+  "version": "1.0"
+}

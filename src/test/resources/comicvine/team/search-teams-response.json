@@ -1,0 +1,122 @@
+{
+  "error": "OK",
+  "limit": 3,
+  "offset": 0,
+  "number_of_page_results": 3,
+  "number_of_total_results": 94,
+  "status_code": 1,
+  "results": [
+    {
+      "aliases": "The Multiversity\r\nJustice League Incarnate",
+      "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-61230/",
+      "count_of_isssue_appearances": 0,
+      "count_of_team_members": 16,
+      "date_added": "2014-11-21 12:06:08",
+      "date_last_updated": "2022-09-10 01:17:30",
+      "deck": "The Cosmic neighborhood Watch, the squadron of super-guardians, the Justice League of the Multiverse, a volunteer army reunited to protect the orrery of worlds against the dark forces from beyond the 52 known universes.",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-462852/",
+        "id": 462852,
+        "name": "House of Heroes",
+        "issue_number": "1"
+      },
+      "id": 61230,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11138/111381541/8292798-justiceleagueincarnate2.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/11138/111381541/8292798-justiceleagueincarnate2.png",
+        "image_tags": "All Images"
+      },
+      "name": "Justice Incarnate",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/justice-incarnate/4060-61230/",
+      "resource_type": "team"
+    },
+    {
+      "aliases": "JLA3K\r\nJustice League 3001",
+      "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-60967/",
+      "count_of_isssue_appearances": 0,
+      "count_of_team_members": 14,
+      "date_added": "2014-07-01 18:46:09",
+      "date_last_updated": "2023-06-30 00:37:46",
+      "deck": "Created by Cadmus in the year 3000, the heroes from the past rise to fight the menaces of tomorrow.",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>",
+      "first_appeared_in_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-436150/",
+        "id": 436150,
+        "name": "Yesterday Lives!",
+        "issue_number": "1"
+      },
+      "id": 60967,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/11111/111113340/5141263-3790957044-NOV15.jpg",
+        "image_tags": "All Images"
+      },
+      "name": "Justice League 3000",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-10/",
+        "id": 10,
+        "name": "DC Comics"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/justice-league-3000/4060-60967/",
+      "resource_type": "team"
+    },
+    {
+      "aliases": "DOJ\r\nUS Department of Justice",
+      "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-62328/",
+      "count_of_isssue_appearances": 0,
+      "count_of_team_members": 23,
+      "date_added": "2016-04-18 12:51:35",
+      "date_last_updated": "2017-03-26 22:05:44",
+      "deck": null,
+      "description": null,
+      "first_appeared_in_issue": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-393562/",
+        "id": 393562,
+        "name": null,
+        "issue_number": "1"
+      },
+      "id": 62328,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/114183/5158897-720px-seal_of_the_united_states_department_of_justice.svg.png",
+        "image_tags": "All Images"
+      },
+      "name": "United States Department of Justice",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-159/",
+        "id": 159,
+        "name": "Non-Fictional"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/united-states-department-of-justice/4060-62328/",
+      "resource_type": "team"
+    }
+  ],
+  "version": "1.0"
+}

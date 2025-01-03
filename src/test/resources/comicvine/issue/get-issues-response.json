@@ -1,0 +1,113 @@
+{
+  "error": "OK",
+  "limit": 3,
+  "offset": 0,
+  "number_of_page_results": 3,
+  "number_of_total_results": 208,
+  "status_code": 1,
+  "results": [
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-4466/",
+      "cover_date": "1959-10-31",
+      "date_added": "2008-06-06 11:10:40",
+      "date_last_updated": "2016-10-20 12:29:52",
+      "deck": null,
+      "description": "<p>Abin Sur lay dying in the desert next to his crashed ship. He uses the Power Battery to send the ring out to find help.</p>",
+      "has_staff_review": false,
+      "id": 4466,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/4066-1770-4466-1-showcase.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/4066-1770-4466-1-showcase.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/4066-1770-4466-1-showcase.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/4066-1770-4466-1-showcase.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/4/4066-1770-4466-1-showcase.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/4066-1770-4466-1-showcase.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/4066-1770-4466-1-showcase.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/4/4066-1770-4466-1-showcase.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/4/4066-1770-4466-1-showcase.jpg",
+        "image_tags": "All Images"
+      },
+      "associated_images": [],
+      "issue_number": "22",
+      "name": "S.O.S. Green Lantern / Secret of the Flaming Sphere / Menace of the Runaway Missile!",
+      "site_detail_url": "https://comicvine.gamespot.com/showcase-22-sos-green-lantern-secret-of-the-flamin/4000-4466/",
+      "store_date": null,
+      "volume": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-1770/",
+        "id": 1770,
+        "name": "Showcase",
+        "site_detail_url": "https://comicvine.gamespot.com/showcase/4050-1770/"
+      }
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-5536/",
+      "cover_date": "1961-12-01",
+      "date_added": "2008-06-06 11:11:00",
+      "date_last_updated": "2019-11-24 19:36:22",
+      "deck": null,
+      "description": "<p>Hal is flying over Coast City when he notices that his ring is losing energy and he doesn't know why.</p>",
+      "has_staff_review": false,
+      "id": 5536,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/6/67663/4346358-09.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/6/67663/4346358-09.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/6/67663/4346358-09.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/6/67663/4346358-09.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/6/67663/4346358-09.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4346358-09.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/6/67663/4346358-09.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/6/67663/4346358-09.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/6/67663/4346358-09.jpg",
+        "image_tags": "All Images"
+      },
+      "associated_images": [],
+      "issue_number": "9",
+      "name": "The Battle of the Power Rings!; Green Lantern's Brother Act",
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern-9-the-battle-of-the-power-rings-gree/4000-5536/",
+      "store_date": "1961-09-26",
+      "volume": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-2839/",
+        "id": 2839,
+        "name": "Green Lantern",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-2839/"
+      }
+    },
+    {
+      "aliases": null,
+      "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-5778/",
+      "cover_date": "1962-03-01",
+      "date_added": "2008-06-06 11:11:00",
+      "date_last_updated": "2016-08-14 05:03:38",
+      "deck": null,
+      "description": "<p>The Green Lantern of Sector 2814, Hal Jordan, stands trial before a court of his peers.</p>",
+      "has_staff_review": false,
+      "id": 5778,
+      "image": {
+        "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "original_url": "https://comicvine.gamespot.com/a/uploads/original/0/4/5297-2013-5778-1-green-lantern.jpg",
+        "image_tags": "All Images"
+      },
+      "associated_images": [],
+      "issue_number": "11",
+      "name": "The Strange Trial Of Green Lantern!/The Trail Of The Missing Ring!",
+      "site_detail_url": "https://comicvine.gamespot.com/green-lantern-11-the-strange-trial-of-green-lanter/4000-5778/",
+      "store_date": "1962-01-04",
+      "volume": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-2839/",
+        "id": 2839,
+        "name": "Green Lantern",
+        "site_detail_url": "https://comicvine.gamespot.com/green-lantern/4050-2839/"
+      }
+    }
+  ],
+  "version": "1.0"
+}
