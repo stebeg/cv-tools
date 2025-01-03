@@ -57,7 +57,8 @@ final List<String> fieldNames = List.of(
     VolumeAttribute.ISSUE_COUNT,
     VolumeAttribute.IMAGE,
     VolumeAttribute.PUBLISHER);
-final GetVolumeByIdRequest request = new GetVolumeByIdRequest(apiKey, volumeId);
+final GetVolumeByIdRequest request = new GetVolumeByIdRequest(apiKey, volumeId)
+    .withFieldNames(fieldNames);
 final ApiResponse<Volume> response = volumeRetriever.getVolumeById(request);
 final Volume volume = response.getResult();
 ```
