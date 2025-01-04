@@ -3,6 +3,8 @@ A Java library for retrieving information from the Comicvine API.
 
 ## Adding ***cv-tools*** to your build
 
+***cv-tools*** requires JDK 17 or higher.
+
 To add a dependency on ***cv-tools*** using Maven, use the following:
 ```xml
 <dependency>
@@ -12,12 +14,15 @@ To add a dependency on ***cv-tools*** using Maven, use the following:
 </dependency>
 ```
 
+See [Maven Central](https://central.sonatype.com/artifact/io.github.stebeg/cv-tools) for more details, including 
+snippets for other build systems such as Gradle and Ivy.
+
 ## Usage
 
 You need a Comicvine API-key to use this library.  
 See [https://comicvine.gamespot.com/api/](https://comicvine.gamespot.com/api/)
 
-The `ComicvineTools` class provides instances various retriever classes such as `VolumeRetriever`, `IssueRetriever`, and
+The `ComicvineTools` class provides instances for various retriever classes such as `VolumeRetriever`, `IssueRetriever`, and
 `CharacterRetriever`, which can be used to search and retrieve information for the respective entities.
 
 ### Example for searching volumes
