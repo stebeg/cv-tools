@@ -10,7 +10,7 @@ To add a dependency on ***cv-tools*** using Maven, use the following:
 <dependency>
   <groupId>io.github.stebeg</groupId>
   <artifactId>cv-tools</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 

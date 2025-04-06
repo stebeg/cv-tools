@@ -57,7 +57,7 @@ public class GetStoryArcByIdRequest extends AbstractApiRequest {
   protected String getRequestUrlFragment() {
     final String urlFragment = API_URL_FRAGMENT
         .concat("/")
-        .concat("4005-").concat(String.valueOf(this.id))
+        .concat("4045-").concat(String.valueOf(this.id))
         .concat("/");
     return urlFragment;
   }
