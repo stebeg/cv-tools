@@ -44,4 +44,21 @@ public abstract class AbstractComicvineEntityRetriever {
     return jsonElement.getAsJsonObject();
   }
 
+  /**
+   * Checks if the JSON object or the results member of the JSON object is empty.
+   *
+   * @param jsonObject The JSON object to check.
+   * @return {@code true} if the JSON object or the results member of the JSON object is empty; {@code false} otherwise.
+   */
+  protected boolean isEmptyObjectResponse(final JsonObject jsonObject) {
+    if (jsonObject == null || jsonObject.get("results") == null) {
+      return true;
+    }
+    final String resultsValue = jsonObject.get("results").toString();
+    if (Strings.isNullOrEmpty(resultsValue)) {
+      return true;
+    }
+    return Objects.equals(resultsValue, "[]");
+  }
+
 }

@@ -22,6 +22,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -98,6 +99,24 @@ public class IssueRetrieverTest {
     final ApiResponse<Issue> result = this.instance.getIssueById(request);
     assertEquals(StatusCode.OKAY, result.getStatusCode());
     assertEquals(expResult.toString(), result.getResult().toString());
+  }
+
+  @Test
+  public void testGetIssueById_NotFoundResponse() throws Exception {
+    final long issueId = 9999999L;
+    final GetIssueByIdRequest request = new GetIssueByIdRequest("12345", issueId);
+
+    final URL url = getClass().getResource("/comicvine/error/not-found-error-response.json");
+    assertNotNull(url);
+
+    final File jsonResultFile = new File(url.getFile());
+    final byte[] bytes = Files.readAllBytes(jsonResultFile.toPath());
+    final String jsonContent = new String(bytes);
+    when(this.urlContentReaderMock.getJson(request.toUrl())).thenReturn(jsonContent);
+
+    final ApiResponse<Issue> result = this.instance.getIssueById(request);
+    assertEquals(StatusCode.OBJECT_NOT_FOUND, result.getStatusCode());
+    assertNull(result.getResult());
   }
 
   @Test

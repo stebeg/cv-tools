@@ -18,6 +18,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -79,6 +80,24 @@ public class VolumeRetrieverTest {
   }
 
   @Test
+  public void testGetVolumeById_NotFoundResponse() throws Exception {
+    final long volumeId = 9999999L;
+    final GetVolumeByIdRequest request = new GetVolumeByIdRequest("12345", volumeId);
+
+    final URL url = getClass().getResource("/comicvine/error/not-found-error-response.json");
+    assertNotNull(url);
+
+    final File jsonResultFile = new File(url.getFile());
+    final byte[] bytes = Files.readAllBytes(jsonResultFile.toPath());
+    final String jsonContent = new String(bytes);
+    when(this.urlContentReaderMock.getJson(request.toUrl())).thenReturn(jsonContent);
+
+    final ApiResponse<Volume> result = this.instance.getVolumeById(request);
+    assertEquals(StatusCode.OBJECT_NOT_FOUND, result.getStatusCode());
+    assertNull(result.getResult());
+  }
+
+  @Test
   public void testGetVolumes() throws Exception {
     final String filter = "name:Green Lantern";
     final GetVolumeListRequest request = new GetVolumeListRequest("12345", filter).withLimit(3);
@@ -104,11 +123,11 @@ public class VolumeRetrieverTest {
     final Image volumeListItem1Image = new Image();
     volumeListItem1Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setMediumUrl("https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/4457-2013-4869-1-green-lantern.jpg");
-    volumeListItem1Image.setScreenUrl( "https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/4457-2013-4869-1-green-lantern.jpg");
+    volumeListItem1Image.setScreenUrl("https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setScreenLargeUrl("https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setSmallUrl("https://comicvine.gamespot.com/a/uploads/scale_small/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setSuperUrl("https://comicvine.gamespot.com/a/uploads/scale_large/0/4/4457-2013-4869-1-green-lantern.jpg");
-    volumeListItem1Image.setThumbUrl( "https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/4457-2013-4869-1-green-lantern.jpg");
+    volumeListItem1Image.setThumbUrl("https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setTinyUrl("https://comicvine.gamespot.com/a/uploads/square_mini/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setOriginalUrl("https://comicvine.gamespot.com/a/uploads/original/0/4/4457-2013-4869-1-green-lantern.jpg");
     volumeListItem1Image.setImageTags("All Images");
@@ -129,7 +148,7 @@ public class VolumeRetrieverTest {
     volumeListItem2Image.setScreenUrl("https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
     volumeListItem2Image.setScreenLargeUrl("https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
     volumeListItem2Image.setSmallUrl("https://comicvine.gamespot.com/a/uploads/scale_small/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
-    volumeListItem2Image.setSuperUrl( "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
+    volumeListItem2Image.setSuperUrl("https://comicvine.gamespot.com/a/uploads/scale_large/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
     volumeListItem2Image.setThumbUrl("https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
     volumeListItem2Image.setTinyUrl("https://comicvine.gamespot.com/a/uploads/square_mini/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
     volumeListItem2Image.setOriginalUrl("https://comicvine.gamespot.com/a/uploads/original/0/4/18996-3077-21224-1-tales-of-the-green-l.jpg");
@@ -149,7 +168,7 @@ public class VolumeRetrieverTest {
     volumeListItem3Image.setIconUrl("https://comicvine.gamespot.com/a/uploads/square_avatar/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
     volumeListItem3Image.setMediumUrl("https://comicvine.gamespot.com/a/uploads/scale_medium/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
     volumeListItem3Image.setScreenUrl("https://comicvine.gamespot.com/a/uploads/screen_medium/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
-    volumeListItem3Image.setScreenLargeUrl( "https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
+    volumeListItem3Image.setScreenLargeUrl("https://comicvine.gamespot.com/a/uploads/screen_kubrick/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
     volumeListItem3Image.setSmallUrl("https://comicvine.gamespot.com/a/uploads/scale_small/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
     volumeListItem3Image.setSuperUrl("https://comicvine.gamespot.com/a/uploads/scale_large/0/4/21075-3198-23505-1-green-lantern--gree.jpg");
     volumeListItem3Image.setThumbUrl("https://comicvine.gamespot.com/a/uploads/scale_avatar/0/4/21075-3198-23505-1-green-lantern--gree.jpg");

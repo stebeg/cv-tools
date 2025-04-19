@@ -42,7 +42,7 @@ public class TeamRetriever extends AbstractComicvineEntityRetriever {
   public ApiResponse<Team> getTeamById(
       final GetTeamByIdRequest request) throws IOException {
     final JsonObject jsonObject = super.getJsonObject(request);
-    if (jsonObject == null) {
+    if (isEmptyObjectResponse(jsonObject)) {
       return new EmptyApiResponse<>();
     }
     final Type type = new TypeToken<ApiResponse<Team>>() {

@@ -42,7 +42,7 @@ public class IssueRetriever extends AbstractComicvineEntityRetriever {
   public ApiResponse<Issue> getIssueById(
       final GetIssueByIdRequest request) throws IOException {
     final JsonObject jsonObject = super.getJsonObject(request);
-    if (jsonObject == null) {
+    if (isEmptyObjectResponse(jsonObject)) {
       return new EmptyApiResponse<>();
     }
     final Type type = new TypeToken<ApiResponse<Issue>>() {

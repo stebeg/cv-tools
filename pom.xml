@@ -6,7 +6,7 @@
 
     <groupId>io.github.stebeg</groupId>
     <artifactId>cv-tools</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>Comicvine Tools</name>
@@ -53,7 +53,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-        <google.guava.version>33.4.7-jre</google.guava.version>
+        <google.guava.version>33.4.8-jre</google.guava.version>
         <google.gson.version>2.13.0</google.gson.version>
         <jsoup.version>1.19.1</jsoup.version>
         <apache.http.client.version>4.5.14</apache.http.client.version>
@@ -64,7 +64,7 @@
         <javadoc.plugin.version>3.6.2</javadoc.plugin.version>
         <sources.plugin.version>3.3.1</sources.plugin.version>
         <gpg.plugin.version>3.2.7</gpg.plugin.version>
-        <sonatype.plugin.version>0.6.0</sonatype.plugin.version>
+        <sonatype.plugin.version>0.7.0</sonatype.plugin.version>
     </properties>
 
     <dependencies>

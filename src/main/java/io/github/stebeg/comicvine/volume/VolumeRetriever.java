@@ -42,7 +42,7 @@ public class VolumeRetriever extends AbstractComicvineEntityRetriever {
   public ApiResponse<Volume> getVolumeById(
       final GetVolumeByIdRequest request) throws IOException {
     final JsonObject jsonObject = super.getJsonObject(request);
-    if (jsonObject == null) {
+    if (isEmptyObjectResponse(jsonObject)) {
       return new EmptyApiResponse<>();
     }
     final Type type = new TypeToken<ApiResponse<Volume>>() {

@@ -17,6 +17,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -75,6 +76,24 @@ public class PersonRetrieverTest {
     final ApiResponse<Person> result = this.instance.getPersonById(request);
     assertEquals(StatusCode.OKAY, result.getStatusCode());
     assertEquals(expResult.toString(), result.getResult().toString());
+  }
+
+  @Test
+  public void testGetPersonById_NotFoundResponse() throws Exception {
+    final long personId = 9999999L;
+    final GetPersonByIdRequest request = new GetPersonByIdRequest("12345", personId);
+
+    final URL url = getClass().getResource("/comicvine/error/not-found-error-response.json");
+    assertNotNull(url);
+
+    final File jsonResultFile = new File(url.getFile());
+    final byte[] bytes = Files.readAllBytes(jsonResultFile.toPath());
+    final String jsonContent = new String(bytes);
+    when(this.urlContentReaderMock.getJson(request.toUrl())).thenReturn(jsonContent);
+
+    final ApiResponse<Person> result = this.instance.getPersonById(request);
+    assertEquals(StatusCode.OBJECT_NOT_FOUND, result.getStatusCode());
+    assertNull(result.getResult());
   }
 
   @Test
